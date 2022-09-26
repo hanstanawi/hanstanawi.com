@@ -4,7 +4,7 @@ import IntroSection from './sections/IntroSection';
 const Homepage = () => {
   return (
     <main className='bg-white'>
-      {/* <IntroSection /> */}
+      <IntroSection />
       {/* <AboutSection /> */}
     </main>
   );

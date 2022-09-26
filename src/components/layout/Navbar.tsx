@@ -7,7 +7,7 @@ const Navbar = () => {
       {/* CONTAINER */}
       <div className='flex container justify-between mx-auto items-center px-10'>
         {/* LOGO */}
-        <div className='flex items-center'>
+        <div className='flex items-center gap-x-1'>
           <Logo />
           <div className='text-sm'>
             <p>Hans Tanawi</p>
@@ -23,13 +23,19 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link href='#'>Experience</Link>
+              <Link href='#'>
+                <a className='border-b'>Experience</a>
+              </Link>
             </li>
             <li>
-              <Link href='#'>Project</Link>
+              <Link href='#'>
+                <a className='border-b'>Projects</a>
+              </Link>
             </li>
             <li>
-              <Link href='#'>Contact</Link>
+              <Link href='#'>
+                <a className='border-b'>Contact</a>
+              </Link>
             </li>
           </ul>
         </nav>
