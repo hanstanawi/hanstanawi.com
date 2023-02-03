@@ -1,11 +1,11 @@
 import Button from 'components/Button';
 import SectionLayout from 'components/layout/SectionLayout';
-import SocialLinks from '../components/SocialLinks';
+import SocialLinks from './components/SocialLinks';
 
 const SUBTITLE = `I'm a full stack engineer specializing building things for web
 and based in Taipei, Taiwan`;
 
-const IntroSection = () => {
+const Hero = () => {
   return (
     <section>
       <SectionLayout>
@@ -25,4 +25,4 @@ const IntroSection = () => {
   );
 };
 
-export default IntroSection;
+export default Hero;
