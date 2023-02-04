@@ -7,7 +7,7 @@ and based in Taipei, Taiwan`;
 
 const Hero = () => {
   return (
-    <section>
+    <section id='hero'>
       <SectionLayout>
         <div className='h-[700px] flex flex-col justify-center items-start gap-y-2 pt-14'>
           <p className='text-gray-500 text-base font-light pb-2'>

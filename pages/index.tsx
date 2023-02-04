@@ -11,9 +11,6 @@ import Projects from 'features/projects';
 import Contact from 'features/contact';
 /**
  * - Setup ESLint and Prettier
- * - Implement Navbar
- * - Setup Document.js
- * - Setup Head tag
  * - Add Navbar and Footer in Head component as wrapper
  * - Implement Hero section
  * - Import svg, png
@@ -25,11 +22,11 @@ const Home: NextPage = () => {
       <main className='bg-white'>
         <Hero />
         <About />
-        <Experience />
+        {/* <Experience />
         <Projects />
-        <Contact />
+        <Contact /> */}
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };
