@@ -24,3 +24,9 @@ export const TOOLS_SKILLS = [
   'Figma',
   'Linux',
 ];
+
+export const SKILLS = {
+  LANGUAGES: LANGUAGES_SKILLS,
+  FRAMEWORKS: FRAMEWORKS_SKILLS,
+  TOOLS: TOOLS_SKILLS,
+};
