@@ -11,7 +11,9 @@ const NavItem = ({ title, link }: NavItemProps) => {
   return (
     <li className='cursor-pointer text-gray-500 hover:text-black'>
       <Link href={link}>
-        <a className='border-b border-black pb-2'>{title}</a>
+        <a className='border-b hover:border-black border-transparent pb-1'>
+          {title}
+        </a>
       </Link>
     </li>
   );

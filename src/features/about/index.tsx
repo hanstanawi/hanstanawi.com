@@ -6,9 +6,9 @@ const About = () => {
   return (
     <section id='about'>
       <SectionLayout>
-        <div className='h-[550px] w-full'>
+        <div className='h-[600px] w-full'>
           {/* TITLE */}
-          <div className='flex items-center gap-x-16 mb-4'>
+          <div className='flex items-center gap-x-16 mb-6'>
             <div className='h-[1px] bg-[#E5E5E5] w-1/2'></div>
             <h2 className='text-5xl text-black w-1/2'>About</h2>
           </div>
