@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <header className='w-full bg-white fixed h-24 flex items-center border-b border-gray-200 z-20'>
       {/* CONTAINER */}
-      <div className='flex container justify-between mx-auto items-center px-10'>
+      <div className='flex container justify-between mx-auto items-center md:px-10 px-6'>
         {/* LOGO */}
         <div className='flex items-center gap-x-1'>
           <Logo />
@@ -41,7 +41,7 @@ const Navbar = () => {
             <NavItem title='Projects' link='#' />
             <NavItem title='Contact' link='#' />
           </ul>
-          <Button sizeClasses='px-4 py-3 text-sm'>Resume</Button>
+          <Button sizeClasses='px-4 py-2.5 text-sm'>Resume</Button>
         </nav>
         {/* NAV MOBILE */}
         <Hamburger isOpen={false} onToggleOpen={() => {}} />
