@@ -1,12 +1,20 @@
+import cx from 'classnames';
 import { ReactNode } from 'react';
 
 type ButtonProps = {
   children: ReactNode;
+  sizeClasses: string;
 };
 
-const Button = ({ children }: ButtonProps) => {
+const Button = ({ children, sizeClasses }: ButtonProps) => {
   return (
-    <button className='bg-transparent rounded-lg font-medium text-black border border-gray-700 px-8 py-4 hover:text-white hover:bg-black'>
+    <button
+      className={cx(
+        `bg-transparent rounded-lg font-medium text-black 
+        border border-gray-700 hover:text-white hover:bg-black`,
+        sizeClasses
+      )}
+    >
       {children}
     </button>
   );

@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const ProfileImage = () => {
   return (
-    <div className='w-1/2 pt-2.5'>
+    <div className='md:w-1/2 w-full pt-2.5'>
       <Image
         src='/profile.jpg'
         height='500'

@@ -8,12 +8,14 @@ const About = () => {
       <SectionLayout>
         <div className='h-[600px] w-full'>
           {/* TITLE */}
-          <div className='flex items-center gap-x-16 mb-6'>
-            <div className='h-[1px] bg-[#E5E5E5] w-1/2'></div>
-            <h2 className='text-5xl text-black w-1/2'>About</h2>
+          <div className='flex items-center md:gap-x-16 gap-x-12 mb-6'>
+            <div className='h-[1px] bg-[#E5E5E5] md:w-1/2 w-3/4'></div>
+            <h2 className='md:text-5xl text-3xl text-black md:w-1/2 w-1/4'>
+              About
+            </h2>
           </div>
           {/* CONTENT */}
-          <div className='flex gap-x-16 items-start'>
+          <div className='flex md:flex-row flex-col-reverse md:gap-x-16 gap-x-0 md:gap-y-0 gap-y-8 items-start'>
             <ProfileImage />
             <Content />
           </div>

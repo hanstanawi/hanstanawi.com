@@ -1,6 +1,7 @@
 import Button from 'components/Button';
 import Link from 'next/link';
 import Logo from 'public/icons/ht-logo.svg';
+import Hamburger from './Hamburger';
 
 type NavItemProps = {
   title: string;
@@ -27,23 +28,23 @@ const Navbar = () => {
         {/* LOGO */}
         <div className='flex items-center gap-x-1'>
           <Logo />
-          <div className='text-sm'>
+          <div className='text-sm hidden md:block'>
             <p>Hans Tanawi</p>
             <p>Full Stack Engineer</p>
           </div>
         </div>
-        {/* NAV */}
-        <nav className='flex items-center gap-x-12'>
+        {/* NAV DESKTOP */}
+        <nav className='sm:flex items-center gap-x-12 hidden'>
           <ul className='flex gap-x-10 text-base'>
             <NavItem title='About' link='#' />
             <NavItem title='Experience' link='#' />
             <NavItem title='Projects' link='#' />
             <NavItem title='Contact' link='#' />
           </ul>
-          <button className='bg-transparent rounded-lg font-medium text-sm text-black border border-gray-700 px-4 py-3 hover:text-white hover:bg-black'>
-            Resume
-          </button>
+          <Button sizeClasses='px-4 py-3 text-sm'>Resume</Button>
         </nav>
+        {/* NAV MOBILE */}
+        <Hamburger isOpen={false} onToggleOpen={() => {}} />
       </div>
     </header>
   );
