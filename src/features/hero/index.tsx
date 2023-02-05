@@ -1,13 +1,13 @@
 import Button from 'components/Button';
 import SectionLayout from 'components/layout/SectionLayout';
-import SocialLinks from '../components/SocialLinks';
+import SocialLinks from './components/SocialLinks';
 
 const SUBTITLE = `I'm a full stack engineer specializing building things for web
 and based in Taipei, Taiwan`;
 
-const IntroSection = () => {
+const Hero = () => {
   return (
-    <section>
+    <section id='hero'>
       <SectionLayout>
         <div className='h-[700px] flex flex-col justify-center items-start gap-y-2 pt-14'>
           <p className='text-gray-500 text-base font-light pb-2'>
@@ -25,4 +25,4 @@ const IntroSection = () => {
   );
 };
 
-export default IntroSection;
+export default Hero;
