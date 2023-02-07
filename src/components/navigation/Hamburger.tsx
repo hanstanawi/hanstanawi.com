@@ -29,6 +29,7 @@ const Hamburger = ({ isOpen, onToggleOpen }: HamburgerProps) => {
           transform: rotate(0deg);
           transition: 0.5s ease-in-out;
           cursor: pointer;
+          transform: scaleX(-1);
         }
 
         .nav-icon span {
@@ -59,10 +60,14 @@ const Hamburger = ({ isOpen, onToggleOpen }: HamburgerProps) => {
           opacity: 0;
         }
         .nav-icon.open span:nth-child(1) {
+          top: 7px;
+          width: 100%;
           transform: rotate(45deg);
         }
         .nav-icon.open span:nth-child(2) {
           transform: rotate(-45deg);
+          width: 100%;
+          top: 7px;
         }
       `}</style>
     </>

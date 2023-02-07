@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import SocialLinks from './SocialLinks';
+import SocialLinks from '../SocialLinks';
 
 const Footer = () => {
   return (
