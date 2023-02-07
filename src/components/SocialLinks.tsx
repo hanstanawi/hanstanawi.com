@@ -7,24 +7,40 @@ const SOCIAL_LINKS = {
   INSTAGRAM: 'https://instagram.com/hanstanawi',
 };
 
-const SocialLinks = () => {
+type SocialLinksProps = {
+  small?: boolean;
+};
+
+const SocialLinks = ({ small = false }: SocialLinksProps) => {
+  const desktopSize = small ? 22 : 27;
+  const mobileSize = small ? 16 : 20;
+
   return (
     <>
       {/* DESKTOP */}
       <div className='md:flex gap-x-4 my-4 hidden'>
         <Link href={SOCIAL_LINKS.GITHUB}>
           <a target='_blank' className='cursor-pointer'>
-            <FaGithub className='hover:text-black text-gray-500' size={27} />
+            <FaGithub
+              className='hover:text-black text-gray-500'
+              size={desktopSize}
+            />
           </a>
         </Link>
         <Link href={SOCIAL_LINKS.LINKEDIN}>
           <a target='_blank' className='cursor-pointer'>
-            <FaLinkedin className='hover:text-black text-gray-500' size={27} />
+            <FaLinkedin
+              className='hover:text-black text-gray-500'
+              size={desktopSize}
+            />
           </a>
         </Link>
         <Link href={SOCIAL_LINKS.INSTAGRAM}>
           <a target='_blank' className='cursor-pointer'>
-            <FaInstagram className='hover:text-black text-gray-500' size={27} />
+            <FaInstagram
+              className='hover:text-black text-gray-500'
+              size={desktopSize}
+            />
           </a>
         </Link>
       </div>
@@ -32,17 +48,26 @@ const SocialLinks = () => {
       <div className='flex gap-x-4 my-4 md:hidden'>
         <Link href={SOCIAL_LINKS.GITHUB}>
           <a target='_blank' className='cursor-pointer'>
-            <FaGithub className='hover:text-black text-gray-500' size={20} />
+            <FaGithub
+              className='hover:text-black text-gray-500'
+              size={mobileSize}
+            />
           </a>
         </Link>
         <Link href={SOCIAL_LINKS.LINKEDIN}>
           <a target='_blank' className='cursor-pointer'>
-            <FaLinkedin className='hover:text-black text-gray-500' size={20} />
+            <FaLinkedin
+              className='hover:text-black text-gray-500'
+              size={mobileSize}
+            />
           </a>
         </Link>
         <Link href={SOCIAL_LINKS.INSTAGRAM}>
           <a target='_blank' className='cursor-pointer'>
-            <FaInstagram className='hover:text-black text-gray-500' size={20} />
+            <FaInstagram
+              className='hover:text-black text-gray-500'
+              size={mobileSize}
+            />
           </a>
         </Link>
       </div>

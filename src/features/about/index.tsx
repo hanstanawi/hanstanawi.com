@@ -6,7 +6,7 @@ const About = () => {
   return (
     <section id='about'>
       <SectionLayout>
-        <div className='h-[600px] w-full'>
+        <div className='h-[900px] md:h-[600px] w-full'>
           {/* TITLE */}
           <div className='flex items-center md:gap-x-16 gap-x-4 mb-6'>
             <div className='h-[1px] bg-[#E5E5E5] md:w-1/2 w-3/4'></div>
