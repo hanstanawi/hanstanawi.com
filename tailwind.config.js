@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         basic: ['-apple-system', 'Roboto', 'sans-serif'],
       },
+      colors: {
+        tealGreen: '#04A2B9',
+      },
     },
   },
   plugins: [],

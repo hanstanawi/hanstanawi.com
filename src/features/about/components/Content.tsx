@@ -2,8 +2,8 @@ import SkillSection from './SkillSection';
 
 const Content = () => {
   return (
-    <div className='w-1/2'>
-      <div className='flex flex-col gap-y-5 text-gray-500 text-justify text-lg'>
+    <div className='md:w-1/2 w-full'>
+      <div className='flex flex-col gap-y-5 text-gray-500 text-justify md:text-lg text-base'>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
