@@ -22,7 +22,7 @@ const NavItem = ({ title, link }: NavItemProps) => {
 
 const Navbar = () => {
   return (
-    <header className='w-full bg-white fixed h-24 flex items-center border-b border-gray-200 z-20'>
+    <header className='w-full bg-white fixed h-24 flex items-center  border-gray-200 z-20 shadow-md'>
       {/* CONTAINER */}
       <div className='flex container justify-between mx-auto items-center md:px-10 px-6'>
         {/* LOGO */}

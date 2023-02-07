@@ -1,4 +1,4 @@
-import SectionLayout from 'components/layout/SectionLayout';
+import SectionLayout from 'components/SectionLayout';
 import Content from './components/Content';
 import ProfileImage from './components/ProfileImage';
 
@@ -15,7 +15,7 @@ const About = () => {
             </h2>
           </div>
           {/* CONTENT */}
-          <div className='flex md:flex-row flex-col-reverse md:gap-x-16 gap-x-0 md:gap-y-0 gap-y-8 items-start'>
+          <div className='flex md:flex-row flex-col md:gap-x-16 gap-x-0 md:gap-y-0 gap-y-8 items-start'>
             <ProfileImage />
             <Content />
           </div>

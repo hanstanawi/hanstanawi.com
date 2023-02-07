@@ -1,5 +1,5 @@
 import Button from 'components/Button';
-import SectionLayout from 'components/layout/SectionLayout';
+import SectionLayout from 'components/SectionLayout';
 import SocialLinks from './components/SocialLinks';
 
 const SUBTITLE = `I'm a full stack engineer specializing building things for web
