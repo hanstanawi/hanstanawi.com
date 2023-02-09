@@ -8,10 +8,10 @@ type HamburgerProps = {
 const Hamburger = ({ isOpen, onToggleOpen }: HamburgerProps) => {
   return (
     <>
-      <div className='md:hidden flex items-center'>
+      <div className='md:hidden flex items-center z-50 absolute right-20'>
         <div
           className={cx(
-            'nav-icon absolute align text-3xl z-50',
+            'nav-icon absolute align text-3xl',
             !isOpen ? '' : 'open'
           )}
           onClick={onToggleOpen}

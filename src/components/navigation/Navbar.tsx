@@ -2,6 +2,8 @@ import cx from 'classnames';
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
+import { Link as SmoothScrollLink } from 'react-scroll';
+import { AnimatePresence, motion, useCycle } from 'framer-motion';
 
 import Logo from 'public/icons/ht-logo.svg';
 import Button from '../Button';
@@ -10,53 +12,68 @@ import NavItem from './NavItem';
 import SideNavbar from './SideNavbar';
 import useScrollVisible from 'hooks/use-scroll-visible';
 
-const Navbar = () => {
-  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
-  const visible = useScrollVisible();
+const sideVariants = {
+  closed: {
+    transition: {
+      staggerChildren: 0.2,
+      staggerDirection: -1,
+    },
+  },
+  open: {
+    transition: {
+      staggerChildren: 0.2,
+      staggerDirection: 1,
+    },
+  },
+};
 
-  const toggleMobileNav = () => {
-    setIsMobileNavOpen((prevState) => !prevState);
-  };
+const Navbar = () => {
+  const [open, cycleOpen] = useCycle(false, true);
+  const visible = useScrollVisible();
 
   return (
     <>
       <header
         className={cx(
-          'w-full bg-white fixed md:h-24 h-[72px] flex items-center border-b border-gray-200 z-10 transition-top duration-700',
-          {
-            '-top-[100px]': !visible,
-            'top-0 left-0': visible,
-          }
+          'w-full bg-white fixed md:h-24 h-[72px] flex items-center border-b border-gray-200 z-50 transition-top duration-700',
+          visible ? 'top-0 left-0' : '-top-[100px]'
         )}
-        style={{ transition: 'top 0.6s' }}
       >
         {/* CONTAINER */}
         <div className='flex container justify-between mx-auto items-center md:px-10 px-6 relative'>
           {/* LOGO */}
-          <div className='flex items-center gap-x-1'>
-            <div className='md:block hidden'>
-              <Logo />
+          <SmoothScrollLink
+            to={'hero'}
+            smooth={true}
+            duration={700}
+            offset={-20}
+            className='cursor-pointer'
+          >
+            <div className='flex items-center gap-x-1'>
+              <div className='md:block hidden'>
+                <Logo />
+              </div>
+              <div className='md:hidden block pt-1'>
+                <Image
+                  alt='logo'
+                  src={'/icons/ht-logo.svg'}
+                  width={36}
+                  height={36}
+                />
+              </div>
+              <div className='text-sm hidden md:block'>
+                <p>Hans Tanawi</p>
+                <p>Full Stack Engineer</p>
+              </div>
             </div>
-            <div className='md:hidden block pt-1'>
-              <Image
-                alt='logo'
-                src={'/icons/ht-logo.svg'}
-                width={36}
-                height={36}
-              />
-            </div>
-            <div className='text-sm hidden md:block'>
-              <p>Hans Tanawi</p>
-              <p>Full Stack Engineer</p>
-            </div>
-          </div>
+          </SmoothScrollLink>
           {/* NAV DESKTOP */}
           <nav className='md:flex items-center gap-x-12 hidden'>
             <ul className='flex gap-x-10 text-base'>
-              <NavItem title='About' link='#' />
-              <NavItem title='Experience' link='#' />
-              <NavItem title='Projects' link='#' />
-              <NavItem title='Contact' link='#' />
+              <NavItem title='About' link='about' />
+              <NavItem title='Experience' link='experience' />
+              <NavItem title='Projects' link='project' />
+              <NavItem title='Contact' link='contact' />
             </ul>
             <Link href={'/resume.pdf'}>
               <a target='_blank'>
@@ -65,10 +82,35 @@ const Navbar = () => {
             </Link>
           </nav>
           {/* NAV MOBILE */}
-          <Hamburger isOpen={isMobileNavOpen} onToggleOpen={toggleMobileNav} />
+          <Hamburger isOpen={open} onToggleOpen={cycleOpen} />
         </div>
       </header>
-      {isMobileNavOpen && <SideNavbar isOpen={isMobileNavOpen} />}
+      <AnimatePresence>
+        {open && (
+          <motion.aside
+            className='fixed bg-white h-full w-3/4 right-0 md:hidden flex flex-col items-center justify-center border-b border-black z-30'
+            initial={{ width: 0 }}
+            animate={{
+              width: '75%',
+            }}
+            exit={{
+              width: 0,
+              transition: { delay: 0.7, duration: 0.5 },
+            }}
+          >
+            <motion.div
+              initial='closed'
+              animate='open'
+              exit='closed'
+              variants={sideVariants}
+            >
+              <div>
+                <h1>Test</h1>
+              </div>
+            </motion.div>
+          </motion.aside>
+        )}
+      </AnimatePresence>
     </>
   );
 };
