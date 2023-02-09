@@ -11,7 +11,7 @@ const Hamburger = ({ isOpen, onToggleOpen }: HamburgerProps) => {
       <div className='md:hidden flex items-center'>
         <div
           className={cx(
-            'nav-icon z-10 absolute align text-3xl',
+            'nav-icon absolute align text-3xl z-50',
             !isOpen ? '' : 'open'
           )}
           onClick={onToggleOpen}

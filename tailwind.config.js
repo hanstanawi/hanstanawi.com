@@ -9,6 +9,9 @@ module.exports = {
       colors: {
         tealGreen: '#04A2B9',
       },
+      transitionProperty: {
+        top: 'top',
+      },
     },
   },
   plugins: [],

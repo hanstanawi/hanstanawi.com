@@ -1,4 +1,6 @@
+import cx from 'classnames';
 import Image from 'next/image';
+import Link from 'next/link';
 import { useState } from 'react';
 
 import Logo from 'public/icons/ht-logo.svg';
@@ -6,10 +8,11 @@ import Button from '../Button';
 import Hamburger from './Hamburger';
 import NavItem from './NavItem';
 import SideNavbar from './SideNavbar';
-import Link from 'next/link';
+import useScrollVisible from 'hooks/use-scroll-visible';
 
 const Navbar = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+  const visible = useScrollVisible();
 
   const toggleMobileNav = () => {
     setIsMobileNavOpen((prevState) => !prevState);
@@ -17,7 +20,16 @@ const Navbar = () => {
 
   return (
     <>
-      <header className='w-full bg-white fixed md:h-24 h-[72px] flex items-center  border-gray-200 z-10 shadow-md'>
+      <header
+        className={cx(
+          'w-full bg-white fixed md:h-24 h-[72px] flex items-center border-b border-gray-200 z-10 transition-top duration-700',
+          {
+            '-top-[100px]': !visible,
+            'top-0 left-0': visible,
+          }
+        )}
+        style={{ transition: 'top 0.6s' }}
+      >
         {/* CONTAINER */}
         <div className='flex container justify-between mx-auto items-center md:px-10 px-6 relative'>
           {/* LOGO */}
