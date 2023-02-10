@@ -1,10 +1,8 @@
-import { LINKS } from 'constants/navigation.constants';
+import Link from 'next/link';
 import { motion } from 'framer-motion';
-import NavItem from './NavItem';
 
-type SideNavbarProps = {
-  isOpen: boolean;
-};
+import Button from 'components/Button';
+import { LINKS } from 'constants/navigation.constants';
 
 const sideVariants = {
   closed: {
@@ -31,7 +29,8 @@ const itemVariants = {
 const SideNavbar = () => {
   return (
     <motion.aside
-      className='fixed bg-white max-h-screen h-screen w-3/4 right-0 top-0 flex flex-col items-center justify-center z-40'
+      className='fixed bg-white max-h-screen h-screen w-3/4 right-0 
+      top-0 flex flex-col items-center justify-center z-40 md:hidden'
       initial={{ width: 0 }}
       animate={{
         width: '75%',
@@ -42,7 +41,7 @@ const SideNavbar = () => {
       }}
     >
       <motion.ul
-        className='flex flex-col gap-y-12'
+        className='flex flex-col justify-center gap-y-12'
         initial='closed'
         animate='open'
         exit='closed'
@@ -57,6 +56,11 @@ const SideNavbar = () => {
             {link.title}
           </motion.li>
         ))}
+        <Link href={'/resume.pdf'}>
+          <a target='_blank'>
+            <Button sizeClasses='px-8 py-3 text-lg'>Resume</Button>
+          </a>
+        </Link>
       </motion.ul>
     </motion.aside>
   );
