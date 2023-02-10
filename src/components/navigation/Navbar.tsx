@@ -85,32 +85,7 @@ const Navbar = () => {
           <Hamburger isOpen={open} onToggleOpen={cycleOpen} />
         </div>
       </header>
-      <AnimatePresence>
-        {open && (
-          <motion.aside
-            className='fixed bg-white h-full w-3/4 right-0 md:hidden flex flex-col items-center justify-center border-b border-black z-30'
-            initial={{ width: 0 }}
-            animate={{
-              width: '75%',
-            }}
-            exit={{
-              width: 0,
-              transition: { delay: 0.7, duration: 0.5 },
-            }}
-          >
-            <motion.div
-              initial='closed'
-              animate='open'
-              exit='closed'
-              variants={sideVariants}
-            >
-              <div>
-                <h1>Test</h1>
-              </div>
-            </motion.div>
-          </motion.aside>
-        )}
-      </AnimatePresence>
+      <AnimatePresence>{open && <SideNavbar />}</AnimatePresence>
     </>
   );
 };

@@ -19,22 +19,22 @@ const sideVariants = {
   },
 };
 
-const SideNavbar = ({ isOpen }: SideNavbarProps) => {
+const SideNavbar = () => {
   return (
     <motion.aside
+      className='fixed bg-white h-full w-3/4 right-0 flex flex-col items-center justify-center z-10'
       initial={{ width: 0 }}
       animate={{
-        width: 300,
+        width: '75%',
       }}
       exit={{
         width: 0,
-        transition: { delay: 0.7, duration: 0.3 },
+        transition: { duration: 0.5 },
       }}
     >
       <motion.div
-        className='fixed bg-white h-full w-3/4 right-0 flex flex-col items-center justify-center border-b border-black z-30'
         initial='closed'
-        animate='isOpen'
+        animate='open'
         exit='closed'
         variants={sideVariants}
       >
