@@ -11,6 +11,7 @@ import Hamburger from './Hamburger';
 import NavItem from './NavItem';
 import SideNavbar from './SideNavbar';
 import useScrollVisible from 'hooks/use-scroll-visible';
+import { LINKS } from 'constants/navigation.constants';
 
 const sideVariants = {
   closed: {
@@ -35,7 +36,7 @@ const Navbar = () => {
     <>
       <header
         className={cx(
-          'w-full bg-white fixed md:h-24 h-[72px] flex items-center border-b border-gray-200 z-50 transition-top duration-700',
+          'w-full bg-white fixed md:h-24 h-[72px] flex items-center border-b border-gray-200 z-20 transition-top duration-700',
           visible ? 'top-0 left-0' : '-top-[100px]'
         )}
       >
@@ -70,10 +71,9 @@ const Navbar = () => {
           {/* NAV DESKTOP */}
           <nav className='md:flex items-center gap-x-12 hidden'>
             <ul className='flex gap-x-10 text-base'>
-              <NavItem title='About' link='about' />
-              <NavItem title='Experience' link='experience' />
-              <NavItem title='Projects' link='project' />
-              <NavItem title='Contact' link='contact' />
+              {LINKS.map((link) => (
+                <NavItem key={link.title} title={link.title} link={link.link} />
+              ))}
             </ul>
             <Link href={'/resume.pdf'}>
               <a target='_blank'>
@@ -81,11 +81,11 @@ const Navbar = () => {
               </a>
             </Link>
           </nav>
-          {/* NAV MOBILE */}
-          <Hamburger isOpen={open} onToggleOpen={cycleOpen} />
         </div>
+        <Hamburger isOpen={open} onToggleOpen={cycleOpen} />
+        {/* NAV MOBILE */}
+        <AnimatePresence>{open && <SideNavbar />}</AnimatePresence>
       </header>
-      <AnimatePresence>{open && <SideNavbar />}</AnimatePresence>
     </>
   );
 };

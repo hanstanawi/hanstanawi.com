@@ -8,7 +8,7 @@ type HamburgerProps = {
 const Hamburger = ({ isOpen, onToggleOpen }: HamburgerProps) => {
   return (
     <>
-      <div className='md:hidden flex items-center z-50'>
+      <div className='md:hidden flex items-center z-50 absolute right-7 top-7'>
         <div
           className={cx(
             'nav-icon absolute align text-3xl',
@@ -35,7 +35,7 @@ const Hamburger = ({ isOpen, onToggleOpen }: HamburgerProps) => {
         .nav-icon span {
           display: block;
           position: absolute;
-          height: 1.5px;
+          height: 1.7px;
           width: 100%;
           background: black;
           opacity: 1;
