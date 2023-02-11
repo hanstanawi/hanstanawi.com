@@ -39,6 +39,9 @@ const SideNavbar = ({ onClickClose }: SideNavbarProps) => {
       initial={{ width: 0 }}
       animate={{
         width: '75%',
+        transition: {
+          duration: 0.4,
+        },
       }}
       exit={{
         width: 0,
@@ -70,11 +73,13 @@ const SideNavbar = ({ onClickClose }: SideNavbarProps) => {
             </motion.li>
           </SmoothScrollLink>
         ))}
-        <Link href={'/resume.pdf'}>
-          <motion.a target='_blank' variants={itemVariants}>
-            <Button sizeClasses='px-8 py-3 text-lg'>Resume</Button>
-          </motion.a>
-        </Link>
+        <motion.div variants={itemVariants}>
+          <Link href={'/resume.pdf'}>
+            <a target='_blank'>
+              <Button sizeClasses='px-8 py-3 text-lg'>Resume</Button>
+            </a>
+          </Link>
+        </motion.div>
       </motion.ul>
     </motion.aside>
   );

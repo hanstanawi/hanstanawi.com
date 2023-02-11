@@ -23,7 +23,7 @@ const Hamburger = ({ isOpen, onToggleOpen }: HamburgerProps) => {
       </div>
       <style jsx>{`
         .nav-icon {
-          width: 25px;
+          width: 30px;
           height: 1rem;
           position: relative;
           transform: rotate(0deg);
@@ -45,12 +45,12 @@ const Hamburger = ({ isOpen, onToggleOpen }: HamburgerProps) => {
         }
 
         .nav-icon span:nth-child(3) {
-          top: 11px;
+          top: 15px;
           width: 33.3%;
         }
 
         .nav-icon span:nth-child(2) {
-          top: 6px;
+          top: 8px;
           width: 66.6%;
         }
         .nav-icon span:nth-child(1) {

@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <header
       className={cx(
-        'w-full bg-white fixed md:h-24 h-[72px] flex items-center border-b border-gray-200 z-20 transition-top duration-700',
+        'w-full bg-white fixed md:h-24 h-[80px] flex items-center border-b border-gray-200 z-20 transition-top duration-700',
         visible ? 'top-0 left-0' : '-top-[100px]'
       )}
     >
@@ -46,17 +46,7 @@ const Navbar = () => {
           className='cursor-pointer'
         >
           <div className='flex items-center gap-x-1'>
-            <div className='md:block hidden'>
-              <Logo />
-            </div>
-            <div className='md:hidden block pt-1'>
-              <Image
-                alt='logo'
-                src={'/icons/ht-logo.svg'}
-                width={36}
-                height={36}
-              />
-            </div>
+            <Logo />
             <div className='text-sm hidden md:block'>
               <p>Hans Tanawi</p>
               <p>Full Stack Engineer</p>
