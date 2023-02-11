@@ -11,7 +11,7 @@ const Button = ({ children, sizeClasses }: ButtonProps) => {
     <button
       className={cx(
         `bg-transparent rounded-lg font-medium text-black 
-        border border-gray-700 hover:text-white hover:bg-black`,
+        border border-gray-700 md:hover:text-white md:hover:bg-black transition duration-300`,
         sizeClasses
       )}
     >
