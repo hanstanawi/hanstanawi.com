@@ -1,8 +1,13 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { Link as SmoothScrollLink } from 'react-scroll';
 
 import Button from 'components/Button';
 import { LINKS } from 'constants/navigation.constants';
+
+type SideNavbarProps = {
+  onClickClose: () => void;
+};
 
 const sideVariants = {
   closed: {
@@ -26,7 +31,7 @@ const itemVariants = {
   open: { opacity: 1 },
 };
 
-const SideNavbar = () => {
+const SideNavbar = ({ onClickClose }: SideNavbarProps) => {
   return (
     <motion.aside
       className='fixed bg-white max-h-screen h-screen w-3/4 right-0 
@@ -48,18 +53,27 @@ const SideNavbar = () => {
         variants={sideVariants}
       >
         {LINKS.map((link) => (
-          <motion.li
+          <SmoothScrollLink
+            to={link.link}
+            smooth={true}
+            duration={700}
+            offset={-20}
+            delay={800}
             key={link.title}
-            className='text-2xl text-black'
-            variants={itemVariants}
           >
-            {link.title}
-          </motion.li>
+            <motion.li
+              className='text-2xl text-black cursor-pointer'
+              variants={itemVariants}
+              onClick={onClickClose}
+            >
+              {link.title}
+            </motion.li>
+          </SmoothScrollLink>
         ))}
         <Link href={'/resume.pdf'}>
-          <a target='_blank'>
+          <motion.a target='_blank' variants={itemVariants}>
             <Button sizeClasses='px-8 py-3 text-lg'>Resume</Button>
-          </a>
+          </motion.a>
         </Link>
       </motion.ul>
     </motion.aside>

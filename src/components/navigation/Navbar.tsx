@@ -1,10 +1,10 @@
 import cx from 'classnames';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState } from 'react';
 import { Link as SmoothScrollLink } from 'react-scroll';
-import { AnimatePresence, motion, useCycle } from 'framer-motion';
+import { AnimatePresence, useCycle } from 'framer-motion';
 
+import Overlay from 'components/Overlay';
 import Logo from 'public/icons/ht-logo.svg';
 import Button from '../Button';
 import Hamburger from './Hamburger';
@@ -12,7 +12,6 @@ import NavItem from './NavItem';
 import SideNavbar from './SideNavbar';
 import useScrollVisible from 'hooks/use-scroll-visible';
 import { LINKS } from 'constants/navigation.constants';
-import Overlay from 'components/Overlay';
 
 const Navbar = () => {
   const [open, cycleOpen] = useCycle(false, true);
@@ -70,7 +69,9 @@ const Navbar = () => {
       <Hamburger isOpen={open} onToggleOpen={cycleOpen} />
       {/* NAV MOBILE */}
       {open && <Overlay onClickClose={cycleOpen} />}
-      <AnimatePresence>{open && <SideNavbar />}</AnimatePresence>
+      <AnimatePresence>
+        {open && <SideNavbar onClickClose={cycleOpen} />}
+      </AnimatePresence>
     </header>
   );
 };
