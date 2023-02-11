@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 
 export default function useScrollVisible(): boolean {
-  const [yOffset, setYOffset] = useState(window.pageYOffset);
+  const [yOffset, setYOffset] = useState(0);
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {

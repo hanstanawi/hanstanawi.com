@@ -1,3 +1,4 @@
+import { Link as SmoothScrollLink } from 'react-scroll';
 import Button from 'components/Button';
 import SectionLayout from 'components/SectionLayout';
 import SocialLinks from 'components/SocialLinks';
@@ -18,9 +19,16 @@ const Hero = () => {
             {SUBTITLE}
           </h3>
           <SocialLinks />
-          <Button sizeClasses='md:px-8 px-7 md:py-4 py-3 md:text-base text-sm'>
-            Check out my projects
-          </Button>
+          <SmoothScrollLink
+            to={'hero'}
+            smooth={true}
+            duration={700}
+            offset={-20}
+          >
+            <Button sizeClasses='md:px-8 px-7 md:py-4 py-3 md:text-base text-sm'>
+              Check out my projects
+            </Button>
+          </SmoothScrollLink>
         </div>
       </SectionLayout>
     </section>
