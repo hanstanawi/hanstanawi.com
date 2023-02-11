@@ -10,12 +10,23 @@ import Button from '../Button';
 import Hamburger from './Hamburger';
 import NavItem from './NavItem';
 import SideNavbar from './SideNavbar';
+import useScrollLock from 'hooks/use-scroll-lock';
 import useScrollVisible from 'hooks/use-scroll-visible';
 import { LINKS } from 'constants/navigation.constants';
+import { useEffect } from 'react';
 
 const Navbar = () => {
   const [open, cycleOpen] = useCycle(false, true);
   const visible = useScrollVisible();
+  const { lockScroll, unlockScroll } = useScrollLock();
+
+  useEffect(() => {
+    if (open) {
+      lockScroll();
+    } else {
+      unlockScroll();
+    }
+  }, [open, lockScroll, unlockScroll]);
 
   return (
     <header
