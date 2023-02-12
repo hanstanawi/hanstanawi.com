@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { Link as SmoothScrollLink } from 'react-scroll';
 
 import Button from 'components/Button';
-import { LINKS } from 'constants/navigation.constants';
+import { LINKS } from 'constants/navigation.constant';
 
 type SideNavbarProps = {
   onClickClose: () => void;

@@ -1,5 +1,4 @@
 import cx from 'classnames';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Link as SmoothScrollLink } from 'react-scroll';
 import { AnimatePresence, useCycle } from 'framer-motion';
@@ -13,7 +12,7 @@ import NavItem from './NavItem';
 import SideNavbar from './SideNavbar';
 import useScrollLock from 'hooks/use-scroll-lock';
 import useScrollVisible from 'hooks/use-scroll-visible';
-import { LINKS } from 'constants/navigation.constants';
+import { LINKS } from 'constants/navigation.constant';
 
 const Navbar = () => {
   const [open, cycleOpen] = useCycle(false, true);

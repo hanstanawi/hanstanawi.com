@@ -1,6 +1,4 @@
 import type { NextPage } from 'next';
-import Head from 'next/head';
-import dynamic from 'next/dynamic';
 
 import Navbar from 'components/navigation/Navbar';
 import Footer from 'components/navigation/Footer';
@@ -17,9 +15,9 @@ const Home: NextPage = () => {
       <main>
         <Hero />
         <About />
-        {/* <Experience />
-        <Projects />
-        <Contact /> */}
+        <Experience />
+        {/* <Projects /> */}
+        {/* <Contact /> */}
       </main>
       <Footer />
     </div>
