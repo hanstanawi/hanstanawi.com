@@ -1,5 +1,6 @@
 import cx from 'classnames';
 import { format } from 'date-fns';
+import Link from 'next/link';
 import { Experience } from '../experience.type';
 
 type JobDescriptionProps = {
@@ -30,15 +31,19 @@ const JobDescription = ({ experience, isSelected }: JobDescriptionProps) => {
       )}
     >
       <h3 className='text-3xl'>
-        <span className='font-medium'>{experience.role}</span>{' '}
-        <span className='text-gray-600'>@ {experience.company}</span>
+        <span className='font-semibold'>{experience.role}</span>{' '}
+        <span className='text-tealGreen font-medium'>
+          <Link href={experience.url}>
+            <a target={'_blank'}>@ {experience.company}</a>
+          </Link>
+        </span>
       </h3>
-      <p>
+      <p className='text-gray-500 text-base'>
         {formattedStartDate} - {formattedEndDate}
       </p>
-      <p>{experience.description}</p>
+      <p className='text-lg'>{experience.description}</p>
 
-      <ul className='flex flex-col gap-y-2 list-disc text-gray-500'>
+      <ul className='flex flex-col gap-y-2 list-disc text-gray-500 pl-4'>
         {experience.responsibilities.map((r) => (
           <li key={r}>{r}</li>
         ))}

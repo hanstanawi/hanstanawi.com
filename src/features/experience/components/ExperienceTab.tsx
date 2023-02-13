@@ -6,7 +6,7 @@ import JobDescription from './JobDescription';
 const ExperienceTab = () => {
   const [id, setId] = useState<string>(EXPERIENCES[0].id);
 
-  const selectedTabClass = `bg-gray-200 text-black`;
+  const selectedTabClass = `bg-gray-200 text-black bg-opacity-50`;
 
   const handleSelectTab = (selectedId: string) => {
     if (id !== selectedId) {
@@ -26,7 +26,7 @@ const ExperienceTab = () => {
               text-gray-500 cursor-pointer`,
               id === experience.id
                 ? selectedTabClass
-                : 'hover:bg-gray-200 hover:text-black'
+                : 'hover:bg-gray-200 hover:bg-opacity-50 hover:text-black'
             )}
             onClick={() => handleSelectTab(experience.id)}
           >

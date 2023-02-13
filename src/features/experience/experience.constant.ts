@@ -31,6 +31,10 @@ export const EXPERIENCES: Experience[] = [
     responsibilities: [
       `Write and maintain modern, performant, and robust code of Molteo
     Vue.js web application.`,
+      `Implement thorough web application end-to-end tests using Cypress.`,
+      `Collaborate with and assist the back-end team developing and maintaining APIs using Express/Feather.js and PostgreSQL`,
+      `Assist the migration of the whole front-end codebase from JavaScript to
+    TypeScript`,
     ],
   },
 ];
