@@ -13,7 +13,7 @@ const NavItem = ({ title, link }: NavItemProps) => {
         smooth={true}
         duration={700}
         offset={-20}
-        className='border-b-[1.5px] hover:border-tealGreen border-transparent pb-1 transition duration-300'
+        className='border-b-[1.5px] hover:border-black border-transparent pb-1 transition duration-300'
       >
         {title}
       </SmoothScrollLink>

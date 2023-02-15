@@ -30,20 +30,25 @@ const JobDescription = ({ experience, isSelected }: JobDescriptionProps) => {
         'flex-col gap-y-4 transition-opacity duration-100 top-0 left-0'
       )}
     >
-      <h3 className='text-3xl'>
+      <h3 className='md:text-3xl text-xl'>
         <span className='font-semibold'>{experience.role}</span>{' '}
         <span className='text-tealGreen font-medium'>
           <Link href={experience.url}>
-            <a target={'_blank'}>@ {experience.company}</a>
+            <a
+              target={'_blank'}
+              className='border-b-2 md:hover:border-tealGreen border-transparent transition duration-300'
+            >
+              @ {experience.company}
+            </a>
           </Link>
         </span>
       </h3>
-      <p className='text-gray-500 text-base'>
+      <p className='text-gray-500 md:text-base text-sm'>
         {formattedStartDate} - {formattedEndDate}
       </p>
-      <p className='text-lg'>{experience.description}</p>
+      <p className='md:text-lg text-base'>{experience.description}</p>
 
-      <ul className='flex flex-col gap-y-2 list-disc text-gray-500 pl-4'>
+      <ul className='flex flex-col gap-y-2 list-disc text-gray-500 md:text-base text-sm pl-4'>
         {experience.responsibilities.map((r) => (
           <li key={r}>{r}</li>
         ))}
