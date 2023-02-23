@@ -1,14 +1,14 @@
 import { projects } from 'features/projects/projects.constant';
-import MainProjectItem from './MainProject';
+import FeaturedProject from './FeaturedProject';
 
-const MainProjectsList = () => {
+const FeaturedProjectsList = () => {
   return (
     <div className='w-full flex flex-col items-center justify-center gap-y-24'>
       {projects.map((project, idx) => (
-        <MainProjectItem key={project.id} index={idx} project={project} />
+        <FeaturedProject key={project.id} index={idx} project={project} />
       ))}
     </div>
   );
 };
 
-export default MainProjectsList;
+export default FeaturedProjectsList;

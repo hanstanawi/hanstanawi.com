@@ -5,12 +5,12 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 import { Project } from 'features/projects/projects.type';
 
-type MainProjectItemProps = {
+type FeaturedProjectProps = {
   project: Project;
   index: number;
 };
 
-const MainProjectItem = ({ project, index }: MainProjectItemProps) => {
+const FeaturedProject = ({ project, index }: FeaturedProjectProps) => {
   const isOdd = index % 2 !== 0;
 
   return (
@@ -21,13 +21,17 @@ const MainProjectItem = ({ project, index }: MainProjectItemProps) => {
       )}
     >
       <div className='w-8/12'>
-        <Image
-          src={project.imageSrc}
-          alt={project.id}
-          width={1000}
-          height={600}
-          objectFit='cover'
-        />
+        <Link href={project.demoUrl}>
+          <a className='cursor-pointer'>
+            <Image
+              src={project.imageSrc}
+              alt={project.id}
+              width={1000}
+              height={600}
+              objectFit='cover'
+            />
+          </a>
+        </Link>
       </div>
       <div
         className={cx(
@@ -41,7 +45,7 @@ const MainProjectItem = ({ project, index }: MainProjectItemProps) => {
             {project.title}
           </a>
         </Link>
-        <div className='shadow-lg bg-white p-4 rounded-sm  border border-gray-100 w-10/12 mb-3'>
+        <div className='shadow-lg bg-white p-4 rounded-sm  border border-gray-100 w-10/12 mb-5'>
           <p>{project.description}</p>
         </div>
         <div className='flex gap-x-4 mb-5'>
@@ -55,7 +59,7 @@ const MainProjectItem = ({ project, index }: MainProjectItemProps) => {
           <Link href={project.githubUrl}>
             <a target='_blank' className='cursor-pointer'>
               <FaGithub
-                className='text-black transition duration-500'
+                className='text-black md:hover:text-tealGreen transition duration-500'
                 size={23}
               />
             </a>
@@ -63,7 +67,7 @@ const MainProjectItem = ({ project, index }: MainProjectItemProps) => {
           <Link href={project.demoUrl}>
             <a target='_blank' className='cursor-pointer pt-0.5'>
               <FaExternalLinkAlt
-                className='text-black transition duration-500'
+                className='text-black md:hover:text-tealGreen transition duration-500'
                 size={20}
               />
             </a>
@@ -74,4 +78,4 @@ const MainProjectItem = ({ project, index }: MainProjectItemProps) => {
   );
 };
 
-export default MainProjectItem;
+export default FeaturedProject;

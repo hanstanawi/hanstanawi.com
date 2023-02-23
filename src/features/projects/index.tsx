@@ -1,5 +1,5 @@
 import SectionLayout from 'components/SectionLayout';
-import MainProjectsList from './components/main/MainProjectsList';
+import FeaturedProjectsList from './components/featured/FeaturedProjectsList';
 
 const Projects = () => {
   return (
@@ -13,8 +13,7 @@ const Projects = () => {
               Projects
             </h2>
           </div>
-          <MainProjectsList />
-          {/* CONTENT */}
+          <FeaturedProjectsList />
         </div>
       </SectionLayout>
     </section>
