@@ -2,7 +2,6 @@ import cx from 'classnames';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-
 import { Project } from 'features/projects/projects.type';
 
 type FeaturedProjectProps = {
@@ -16,27 +15,35 @@ const FeaturedProject = ({ project, index }: FeaturedProjectProps) => {
   return (
     <div
       className={cx(
-        'flex items-center relative h-full',
-        isOdd ? 'flex-row-reverse' : 'flex-row'
+        'flex items-center h-full w-11/12 gap-x-16',
+        isOdd ? 'flex-row' : 'flex-row-reverse'
       )}
     >
-      <div className='w-8/12'>
-        <Link href={project.demoUrl}>
-          <a className='cursor-pointer'>
-            <Image
-              src={project.imageSrc}
-              alt={project.id}
-              width={1000}
-              height={600}
-              objectFit='cover'
-            />
-          </a>
-        </Link>
-      </div>
+      <Link href={project.demoUrl}>
+        <a
+          className='cursor-pointer w-8/12 relative flex items-center h-full'
+          target={'_blank'}
+        >
+          <div
+            className={cx(
+              'absolute hover:opacity-0 opacity-20 from-black to-transparent transition duration-500 left-0 top-0 w-full z-10 h-full',
+              isOdd ? 'bg-gradient-to-l' : 'bg-gradient-to-r'
+            )}
+          ></div>
+          <Image
+            src={project.imageSrc}
+            alt={project.id}
+            width={1280}
+            height={720}
+            objectFit='cover'
+            className='h-full'
+          />
+        </a>
+      </Link>
       <div
         className={cx(
-          'absolute z-10 w-1/2 flex flex-col justify-start',
-          isOdd ? 'left-7 items-start' : 'right-7 items-end'
+          'w-1/2 flex flex-col justify-start items-start'
+          // isOdd ? 'items-start' : 'items-end'
         )}
       >
         <p className='text-tealGreen text-lg'>Featured Project</p>
@@ -45,7 +52,7 @@ const FeaturedProject = ({ project, index }: FeaturedProjectProps) => {
             {project.title}
           </a>
         </Link>
-        <div className='shadow-lg bg-white p-4 rounded-sm  border border-gray-100 w-10/12 mb-5'>
+        <div className='rounded-sm w-11/12 mb-5'>
           <p>{project.description}</p>
         </div>
         <div className='flex gap-x-4 mb-5'>
