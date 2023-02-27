@@ -15,18 +15,18 @@ const FeaturedProject = ({ project, index }: FeaturedProjectProps) => {
   return (
     <div
       className={cx(
-        'flex items-center h-full w-11/12 gap-x-16',
-        isOdd ? 'flex-row' : 'flex-row-reverse'
+        'flex items-center h-full md:w-11/12 w-full gap-x-16 flex-col md:gap-y-0 gap-y-6',
+        isOdd ? 'md:flex-row' : 'md:flex-row-reverse'
       )}
     >
       <Link href={project.demoUrl}>
         <a
-          className='cursor-pointer w-8/12 relative flex items-center h-full'
+          className='cursor-pointer md:w-8/12 w-full relative flex items-center h-full'
           target={'_blank'}
         >
           <div
             className={cx(
-              'absolute hover:opacity-0 opacity-20 from-black to-transparent transition duration-500 left-0 top-0 w-full z-10 h-full',
+              'absolute md:hover:opacity-0 opacity-20 from-black to-transparent transition rounded-md duration-500 left-0 top-0 w-full z-10 h-full',
               isOdd ? 'bg-gradient-to-l' : 'bg-gradient-to-r'
             )}
           ></div>
@@ -36,26 +36,24 @@ const FeaturedProject = ({ project, index }: FeaturedProjectProps) => {
             width={1280}
             height={720}
             objectFit='cover'
-            className='h-full'
+            className='h-full rounded-md'
           />
         </a>
       </Link>
-      <div
-        className={cx(
-          'w-1/2 flex flex-col justify-start items-start'
-          // isOdd ? 'items-start' : 'items-end'
-        )}
-      >
-        <p className='text-tealGreen text-lg'>Featured Project</p>
+      <div className='md:w-1/2 w-full flex flex-col justify-start items-start'>
+        <p className='text-tealGreen md:text-lg text-sm'>Featured Project</p>
         <Link href={project.demoUrl}>
-          <a className='font-semibold text-black text-2xl mb-5' target='_blank'>
+          <a
+            className='font-semibold text-black md:text-2xl text-xl md:mb-5 mb-3'
+            target='_blank'
+          >
             {project.title}
           </a>
         </Link>
-        <div className='rounded-sm w-11/12 mb-5'>
+        <div className='rounded-sm md:mb-3 mb-5 break-words md:text-base text-sm'>
           <p>{project.description}</p>
         </div>
-        <div className='flex gap-x-4 mb-5'>
+        <div className='flex gap-x-4 md:mb-3 mb-5 md:text-base text-sm flex-wrap'>
           {project.technologies.map((tech) => (
             <p key={tech} className='text-sm text-gray-400'>
               {tech}
