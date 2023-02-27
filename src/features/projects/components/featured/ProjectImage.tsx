@@ -30,7 +30,7 @@ const ProjectImage = ({ isOdd, project }: ProjectImageProps) => {
         className='cursor-pointer md:w-8/12 w-full relative flex items-center h-full'
         target={'_blank'}
       >
-        <Overlay isOdd={isOdd} />
+        {/* <Overlay isOdd={isOdd} /> */}
         <Image
           src={project.imageSrc}
           alt={project.id}
