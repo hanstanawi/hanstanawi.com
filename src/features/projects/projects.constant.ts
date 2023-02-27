@@ -19,4 +19,13 @@ export const projects = [
     technologies: ['React', 'JavaScript', 'TailwindCSS'],
     imageSrc: '/images/crypto_tracker.png',
   },
+  {
+    id: 'linkedout-app',
+    title: 'LinkedOut',
+    description: `LinkedOut is a simple fictional app that mimics LinkedIn functionalities, built using React.js, TypeScript, and TailwindCSS to view, add, update users' work experiences profile.`,
+    githubUrl: 'https://github.com/hanstanawi/linkedout-app',
+    demoUrl: 'https://work-experience-app.vercel.app',
+    technologies: ['React', 'TypeScript', 'Redux', 'TailwindCSS', 'Vite'],
+    imageSrc: '/images/linkedout_app.png',
+  },
 ];
