@@ -20,7 +20,7 @@ const Hero = () => {
           </h3>
           <SocialLinks />
           <SmoothScrollLink
-            to={'hero'}
+            to={'project'}
             smooth={true}
             duration={700}
             offset={-20}

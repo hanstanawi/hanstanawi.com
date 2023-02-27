@@ -48,7 +48,7 @@ const JobDescription = ({ experience, isSelected }: JobDescriptionProps) => {
       </p>
       <p className='md:text-lg text-base'>{experience.description}</p>
 
-      <ul className='flex flex-col gap-y-2 list-disc text-gray-500 md:text-base text-sm pl-4'>
+      <ul className='flex flex-col gap-y-4 list-disc text-gray-500 md:text-base text-[13px] pl-4'>
         {experience.responsibilities.map((r) => (
           <li key={r}>{r}</li>
         ))}
