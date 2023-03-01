@@ -1,7 +1,7 @@
 import cx from 'classnames';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Project } from 'features/projects/projects.type';
+import { Project } from 'types/projects.type';
 
 type ProjectImageProps = {
   isOdd: boolean;
@@ -23,20 +23,19 @@ const Overlay = ({ isOdd }: OverlayProps) => {
   );
 };
 
-const ProjectImage = ({ isOdd, project }: ProjectImageProps) => {
+const ProjectImage = ({ project }: ProjectImageProps) => {
   return (
     <Link href={project.demoUrl}>
       <a
         className='cursor-pointer md:w-8/12 w-full relative flex items-center h-full'
         target={'_blank'}
       >
-        {/* <Overlay isOdd={isOdd} /> */}
         <Image
           src={project.imageSrc}
           alt={project.id}
-          width={1280}
+          width={1440}
           height={720}
-          objectFit='cover'
+          objectFit='inherit'
           className='h-full rounded-md'
         />
       </a>

@@ -10,9 +10,9 @@ const About = () => {
           {/* TITLE */}
           <div className='flex items-center md:gap-x-16 gap-x-4 mb-6'>
             <div className='h-[1px] bg-[#E5E5E5] md:w-1/2 w-3/4'></div>
-            <h2 className='md:text-5xl text-3xl text-black md:w-1/2 w-1/4'>
+            <h1 className='md:text-5xl text-3xl text-black md:w-1/2 w-1/4'>
               About
-            </h2>
+            </h1>
           </div>
           {/* CONTENT */}
           <div className='flex md:flex-row flex-col md:gap-x-16 gap-x-0 md:gap-y-0 gap-y-8 items-start'>

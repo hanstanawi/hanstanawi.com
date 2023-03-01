@@ -5,8 +5,9 @@ import Footer from 'components/navigation/Footer';
 import Hero from 'features/hero';
 import About from 'features/about';
 import Experience from 'features/experience';
-import Projects from 'features/projects';
+import Featured from 'features/featured';
 import Contact from 'features/contact';
+import Projects from 'features/projects';
 
 const Home: NextPage = () => {
   return (
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
         <Hero />
         <About />
         <Experience />
+        <Featured />
         <Projects />
         {/* <Contact /> */}
       </main>

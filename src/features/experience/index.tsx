@@ -9,9 +9,9 @@ const Experience = () => {
         <div className='h-[1100px] md:h-[900px] w-full'>
           <div className='h-full flex flex-col justify-center'>
             <div className='flex items-center md:gap-x-1 md:mb-6 mb-2'>
-              <h2 className='md:text-5xl text-2xl text-black w-8/12 md:w-5/12'>
+              <h1 className='md:text-5xl text-2xl text-black w-8/12 md:w-5/12'>
                 Where I&apos;ve Worked
-              </h2>
+              </h1>
               <div className='h-[1px] bg-[#E5E5E5] w-4/12 md:w-7/12'></div>
             </div>
             <div className='flex justify-center pt-10'>

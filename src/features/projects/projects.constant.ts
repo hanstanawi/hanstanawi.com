@@ -1,14 +1,6 @@
-export const projects = [
-  {
-    id: 'order-book-app',
-    title: 'Order Book App',
-    description:
-      'Order Book web application using Websocket built with React, TypeScript, and Redux Toolkit to view realtime orderbook bid and ask price data.',
-    githubUrl: 'https://github.com/hanstanawi/order-book-app',
-    demoUrl: 'https://order-book-app.vercel.app/',
-    technologies: ['React', 'Redux', 'TypeScript', 'Websocket', 'TailwindCSS'],
-    imageSrc: '/images/order_book_app.png',
-  },
+import { Project } from 'types/projects.type';
+
+export const otherProjects: Omit<Project, 'imageSrc'>[] = [
   {
     id: 'crypto-tracker',
     title: 'Crypto Tracker',
@@ -17,15 +9,50 @@ export const projects = [
     githubUrl: 'https://github.com/hanstanawi/crypto-tracker',
     demoUrl: 'https://crypto-tracker-beta-three.vercel.app/',
     technologies: ['React', 'JavaScript', 'TailwindCSS'],
-    imageSrc: '/images/crypto_tracker.png',
   },
   {
-    id: 'linkedout-app',
-    title: 'LinkedOut',
-    description: `LinkedOut is a simple fictional app that mimics LinkedIn functionalities, built using React.js, TypeScript, and TailwindCSS to view, add, update users' work experiences profile.`,
-    githubUrl: 'https://github.com/hanstanawi/linkedout-app',
-    demoUrl: 'https://work-experience-app.vercel.app',
-    technologies: ['React', 'TypeScript', 'Redux', 'TailwindCSS', 'Vite'],
-    imageSrc: '/images/linkedout_app.png',
+    id: 'linkedout-backend',
+    title: 'LinkedOut Backend API',
+    description:
+      'REST API built with Node.js, Express.js, Typescript and PostgreSQL to allow users to create, update profile as well as their work experiences deployed on Render.com',
+    githubUrl: 'https://github.com/hanstanawi/linkedout-backend',
+    demoUrl: 'https://crypto-tracker-beta-three.vercel.app/',
+    technologies: ['Node.js', 'Express', 'TypeScript', 'PostgreSQL'],
+  },
+  {
+    id: 'splitter-app',
+    title: 'Splitter',
+    description:
+      'Simple web app to split bills and calculate tip built with React, TypeScript and Styled Components',
+    githubUrl: 'https://github.com/hanstanawi/splitter-app',
+    demoUrl: 'http://splitter-app-mu.vercel.app',
+    technologies: ['React', 'TypeScript', 'Styled Components', 'Vite'],
+  },
+  {
+    id: 'splitter-app',
+    title: 'Splitter',
+    description:
+      'Simple web app to split bills and calculate tip built with React, TypeScript and Styled Components',
+    githubUrl: 'https://github.com/hanstanawi/splitter-app',
+    demoUrl: 'http://splitter-app-mu.vercel.app',
+    technologies: ['React', 'TypeScript', 'Styled Components', 'Vite'],
+  },
+  {
+    id: 'splitter-app',
+    title: 'Splitter',
+    description:
+      'Simple web app to split bills and calculate tip built with React, TypeScript and Styled Components',
+    githubUrl: 'https://github.com/hanstanawi/splitter-app',
+    demoUrl: 'http://splitter-app-mu.vercel.app',
+    technologies: ['React', 'TypeScript', 'Styled Components', 'Vite'],
+  },
+  {
+    id: 'splitter-app',
+    title: 'Splitter',
+    description:
+      'Simple web app to split bills and calculate tip built with React, TypeScript and Styled Components',
+    githubUrl: 'https://github.com/hanstanawi/splitter-app',
+    demoUrl: 'http://splitter-app-mu.vercel.app',
+    technologies: ['React', 'TypeScript', 'Styled Components', 'Vite'],
   },
 ];

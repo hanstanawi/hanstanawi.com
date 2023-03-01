@@ -1,5 +1,5 @@
 import SectionLayout from 'components/SectionLayout';
-import FeaturedProjectsList from './components/featured/FeaturedProjectsList';
+import ProjectsList from './components/ProjectsList';
 
 const Projects = () => {
   return (
@@ -7,13 +7,14 @@ const Projects = () => {
       <SectionLayout>
         <div className='h-full w-full'>
           {/* TITLE */}
-          <div className='flex items-center md:gap-x-16 gap-x-4 md:mb-20 mb-10'>
-            <div className='h-[1px] bg-[#E5E5E5] md:w-10/12 w-8/12'></div>
-            <h2 className='md:text-5xl text-3xl text-black text-right md:w-2/12 w-4/12'>
-              Projects
-            </h2>
+          <div className='flex items-center justify-center md:mb-10 mb-5'>
+            <h1 className='text-2xl font-semibold text-center'>
+              Other Noteworthy Projects
+            </h1>
           </div>
-          <FeaturedProjectsList />
+          <div className='flex justify-center'>
+            <ProjectsList />
+          </div>
         </div>
       </SectionLayout>
     </section>
