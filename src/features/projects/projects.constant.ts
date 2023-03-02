@@ -5,10 +5,18 @@ export const otherProjects: Omit<Project, 'imageSrc'>[] = [
     id: 'contact-keeper',
     title: 'Contact Keeper',
     description:
-      'Recreate Contact Keeper app from Brad Traversy course project. All code are re-written in TypeScript and dockerized as Docker containers. Deployed and hosted in AWS S3 and EC2.',
-    githubUrl: 'https://github.com/hanstanawi/splitter-app',
+      'Simple web app to manage personal contacts information. All apps are dockerized as Docker containers. Deployed and hosted in AWS S3 and EC2.',
+    githubUrl: 'https://github.com/hanstanawi/contact-keeper-docker',
     demoUrl: 'http://splitter-app-mu.vercel.app',
-    technologies: ['React', 'TypeScript', 'Styled Components', 'Vite'],
+    technologies: [
+      'React',
+      'JavaScript',
+      'Node.js',
+      'Express',
+      'Docker',
+      'AWS',
+      'MongoDB',
+    ],
   },
   {
     id: 'linkedout-backend',
@@ -16,14 +24,14 @@ export const otherProjects: Omit<Project, 'imageSrc'>[] = [
     description:
       'REST API built with Node.js, Express.js, Typescript and PostgreSQL to allow users to create, update profile as well as their work experiences deployed on Render.com',
     githubUrl: 'https://github.com/hanstanawi/linkedout-backend',
-    demoUrl: 'https://crypto-tracker-beta-three.vercel.app/',
+    demoUrl: 'https://filmseeker-api.onrender.com',
     technologies: ['Node.js', 'Express', 'TypeScript', 'PostgreSQL'],
   },
   {
     id: 'crypto-tracker',
     title: 'Crypto Tracker',
     description:
-      'Crypto Tracker is a simple app to view and track Cryptocurrencies data',
+      'A web app to track real-time cryptocurrencies prices. Cryptocurrencies data is supported by CryptoGecko API. Built with React, JavaScript, and Tailwind.',
     githubUrl: 'https://github.com/hanstanawi/crypto-tracker',
     demoUrl: 'https://crypto-tracker-beta-three.vercel.app/',
     technologies: ['React', 'JavaScript', 'TailwindCSS'],
@@ -32,9 +40,9 @@ export const otherProjects: Omit<Project, 'imageSrc'>[] = [
     id: 'filmseeker-backend',
     title: 'FilmSeeker Backend API',
     description:
-      'Simple web app to split bills and calculate tip built with React, TypeScript and Styled Components',
+      'Backend REST API for FilmSeeker web app. Built with Node.js, Express, and MongoDB with authentication. All movies data is supported by TMDB API.',
     githubUrl: 'https://github.com/hanstanawi/filmseeker-api',
-    demoUrl: 'http://splitter-app-mu.vercel.app',
+    demoUrl: 'https://filmseeker-api.onrender.com',
     technologies: ['Node.js', 'Express', 'JavaScript', 'MongoDB'],
   },
   {

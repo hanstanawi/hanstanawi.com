@@ -3,7 +3,7 @@ import ProjectItem from './ProjectItem';
 
 const ProjectsList = () => {
   return (
-    <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 w-11/12'>
+    <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 md:w-11/12 w-full'>
       {otherProjects.map((project) => (
         <ProjectItem key={project.id} project={project} />
       ))}
