@@ -5,6 +5,7 @@ import Footer from 'components/navigation/Footer';
 import Hero from 'features/hero';
 import About from 'features/about';
 import Experience from 'features/experience';
+import Featured from 'features/featured';
 import Projects from 'features/projects';
 import Contact from 'features/contact';
 
@@ -16,6 +17,7 @@ const Home: NextPage = () => {
         <Hero />
         <About />
         <Experience />
+        <Featured />
         <Projects />
         {/* <Contact /> */}
       </main>

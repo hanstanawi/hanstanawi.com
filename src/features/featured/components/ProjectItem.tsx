@@ -1,14 +1,14 @@
 import cx from 'classnames';
-import { Project } from 'features/projects/projects.type';
-import ProjectContent from './ProjectContent';
+import ProjectContent from './Content';
 import ProjectImage from './ProjectImage';
+import { Project } from 'types/projects.type';
 
-type FeaturedProjectProps = {
+type ProjectItemProps = {
   project: Project;
   index: number;
 };
 
-const FeaturedProject = ({ project, index }: FeaturedProjectProps) => {
+const ProjectItem = ({ project, index }: ProjectItemProps) => {
   const isOdd = index % 2 !== 0;
 
   return (
@@ -24,4 +24,4 @@ const FeaturedProject = ({ project, index }: FeaturedProjectProps) => {
   );
 };
 
-export default FeaturedProject;
+export default ProjectItem;
