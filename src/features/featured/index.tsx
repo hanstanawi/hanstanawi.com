@@ -5,7 +5,7 @@ const FeaturedSection = () => {
   return (
     <section id='featured'>
       <SectionLayout>
-        <div className='h-[2600px] md:h-[2000px] w-full'>
+        <div className='h-[2000px] md:h-[1900px] w-full'>
           <div className='flex flex-col justify-center h-full'>
             {/* TITLE */}
             <div className='flex items-center md:gap-x-16 gap-x-4 md:mb-14 mb-10'>

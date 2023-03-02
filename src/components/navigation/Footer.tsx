@@ -1,5 +1,9 @@
+import { motion } from 'framer-motion';
 import Link from 'next/link';
 import SocialLinks from '../SocialLinks';
+
+const REPO_LINK = 'https://github.com/hanstanawi/hanstanawi.com';
+const EMAIL = 'hanstanawi@gmail.com';
 
 const Footer = () => {
   return (
@@ -7,9 +11,24 @@ const Footer = () => {
       <SocialLinks small />
       <div className='text-gray-400 text-xs pt-1.5 text-center'>
         <Link href={'mailto:hanstanawi@gmail.com'}>
-          <a>hanstanawi@gmail.com</a>
+          <a className='hover:text-black transition duration-100'>
+            <motion.p whileHover={{ y: '-1px', scale: 1.01 }}>
+              hanstanawi@gmail.com
+            </motion.p>
+          </a>
         </Link>
-        <p className='pt-1'>Designed & Built by Hans Tanawi</p>
+        <div className='pt-1'>
+          <Link href={REPO_LINK}>
+            <a
+              className='hover:text-black transition duration-100'
+              target='_blank'
+            >
+              <motion.p whileHover={{ y: '-1px', scale: 1.01 }}>
+                Designed & Built by Hans Tanawi
+              </motion.p>
+            </a>
+          </Link>
+        </div>
       </div>
     </footer>
   );

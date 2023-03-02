@@ -10,7 +10,7 @@ const Hero = () => {
   return (
     <section id='hero'>
       <SectionLayout>
-        <div className='md:h-[700px] h-[630px] flex flex-col justify-center items-start gap-y-2 pt-14'>
+        <div className='md:h-[100vh] h-[630px] flex flex-col justify-center items-start gap-y-2 pt-14'>
           <p className='text-gray-500 md:text-xl text-lg font-light pb-2'>
             Hi, my name is
           </p>
