@@ -1,3 +1,4 @@
+import { NextSeo } from 'next-seo';
 import type { NextPage } from 'next';
 
 import Navbar from 'components/navigation/Navbar';
@@ -9,20 +10,27 @@ import Featured from 'features/featured';
 import Projects from 'features/projects';
 import Contact from 'features/contact';
 
+import { createSeoConfig } from 'lib/seo.lib';
+import { homepageSeo } from 'constants/seo.constant';
+
 const Home: NextPage = () => {
+  const homeSeoConfig = createSeoConfig({ ...homepageSeo });
   return (
-    <div className='bg-white font-basic'>
-      <Navbar />
-      <main>
-        <Hero />
-        <About />
-        <Experience />
-        <Featured />
-        <Projects />
-        {/* <Contact /> */}
-      </main>
-      <Footer />
-    </div>
+    <>
+      <NextSeo {...homeSeoConfig} />
+      <div className='bg-white font-basic'>
+        <Navbar />
+        <main>
+          <Hero />
+          <About />
+          <Experience />
+          <Featured />
+          <Projects />
+          {/* <Contact /> */}
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 };
 

@@ -20,6 +20,7 @@
       "features/*": ["src/features/*"],
       "hooks/*": ["src/hooks/*"],
       "constants/*": ["src/constants/*"],
+      "lib/*": ["src/lib/*"],
       "types/*": ["src/types/*"]
     }
   },
