@@ -2,9 +2,10 @@ import cx from 'classnames';
 import { useState } from 'react';
 import { GoKeyboard } from 'react-icons/go';
 import { motion } from 'framer-motion';
+
+import useMediaQuery from 'hooks/use-media-query';
 import ProjectLinks from 'components/ProjectLinks';
 import { Project } from 'types/projects.type';
-import Link from 'next/link';
 
 type ProjectItemProps = {
   project: Omit<Project, 'imageSrc'>;
@@ -12,13 +13,23 @@ type ProjectItemProps = {
 
 const ProjectItem = ({ project }: ProjectItemProps) => {
   const [isHovered, setIsHovered] = useState(false);
+  const isMobile = useMediaQuery('(max-width: 768px)');
+
+  const handleSetHover = (state: boolean) => {
+    if (!isMobile) setIsHovered(state);
+  };
+
+  const handleRedirectToDemoApp = () => {
+    window.open(project.demoUrl, '_blank');
+  };
 
   return (
     <motion.div
       className='flex flex-col justify-start items-center p-8 border border-gray-200 rounded-md shadow-lg cursor-pointer'
       whileHover={{ y: '-10px' }}
-      onHoverStart={() => setIsHovered(true)}
-      onHoverEnd={() => setIsHovered(false)}
+      onHoverStart={() => handleSetHover(true)}
+      onHoverEnd={() => handleSetHover(false)}
+      onClick={handleRedirectToDemoApp}
     >
       <div className='flex justify-between w-full md:mb-8 mb-5 items-center'>
         <GoKeyboard size={40} className='text-tealGreen md:block hidden' />
