@@ -3,7 +3,7 @@ export const homepageSeo = {
   description: `Hans Tanawi Personal Website & Portfolio`,
   canonical: 'https://hanstanawi.com',
   ogImage:
-    'https://res.cloudinary.com/dsjmv5jvb/image/upload/v1625582592/buy-samples/lumina-gallery-1.png',
+    'https://res.cloudinary.com/dbuvuwofy/image/upload/v1677857831/hanstanawi.com/hanstanawi-logo_smcpsu.png',
   ogImageAlt: 'Hans Tanawi Logo',
   ogLocale: 'en_US',
 };
