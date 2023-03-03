@@ -35,7 +35,7 @@ const Navbar = () => {
       )}
     >
       {/* CONTAINER */}
-      <div className='flex container justify-between mx-auto items-center md:px-10 px-6 relative'>
+      <div className='flex container justify-between mx-auto items-center md:px-10 px-4 relative'>
         {/* LOGO */}
         <SmoothScrollLink
           to={'hero'}
