@@ -5,7 +5,7 @@ const Projects = () => {
   return (
     <section id='project'>
       <SectionLayout>
-        <div className='md:h-[800px] h-[2200px] w-full flex flex-col justify-center'>
+        <div className='md:h-[800px] h-[2080px] w-full flex flex-col justify-center'>
           {/* TITLE */}
           <div className='flex items-center justify-center mb-10'>
             <h1 className='md:text-2xl text-xl font-semibold text-center'>

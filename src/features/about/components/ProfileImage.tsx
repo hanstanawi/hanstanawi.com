@@ -9,6 +9,8 @@ const ProfileImage = () => {
         width='600'
         objectFit='cover'
         alt='profile'
+        placeholder='blur'
+        blurDataURL={`/_next/image?url=/images/profile.jpg&w=16&q=1`}
       />
     </div>
   );

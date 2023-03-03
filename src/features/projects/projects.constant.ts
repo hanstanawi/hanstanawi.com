@@ -7,7 +7,7 @@ export const otherProjects: Omit<Project, 'imageSrc'>[] = [
     description:
       'Simple web app to manage personal contacts information. All apps are dockerized as Docker containers. Deployed and hosted in AWS S3 and EC2.',
     githubUrl: 'https://github.com/hanstanawi/contact-keeper-docker',
-    demoUrl: 'http://splitter-app-mu.vercel.app',
+    demoUrl: 'http://contact-keeper-react.s3-website-us-west-2.amazonaws.com',
     technologies: [
       'React',
       'JavaScript',
