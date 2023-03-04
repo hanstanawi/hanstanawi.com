@@ -10,11 +10,11 @@ const Contact = () => {
             <h1 className='md:text-5xl text-3xl text-center font-semibold text-black'>
               Get In Touch
             </h1>
-            <div className='md:text-lg text-sm text-center text-gray-500 md:w-7/12 w-full font-light mb-3'>
+            <div className='md:text-xl text-sm text-center text-gray-500 md:w-7/12 w-full font-light mb-3'>
               <h4 className='mb-1'>
-                I&apos;m currently open to new opportunities for both frontend
-                and backend engineer position globally, as well as freelance and
-                open-source collaborations. <br></br>
+                I&apos;m currently open to new exciting opportunities globally
+                and open-source projects collaboration. Don&apos;t hesitate to
+                reach me or just say hi.<br></br>
               </h4>
               <h4>My inbox is always open!</h4>
             </div>
