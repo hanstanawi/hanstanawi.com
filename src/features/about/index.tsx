@@ -17,7 +17,7 @@ const About = () => {
           <div
             className='flex items-center md:gap-x-16 gap-x-4 mb-6'
             style={animateInViewElement(isInView, {
-              direction: 'translateX(-200px)',
+              direction: 'translateX(-150px)',
               speed: 0.8,
               delay: 0.6,
             })}
@@ -31,7 +31,7 @@ const About = () => {
           <div
             className='flex md:flex-row flex-col md:gap-x-16 gap-x-0 md:gap-y-0 gap-y-8 items-start'
             style={animateInViewElement(isInView, {
-              direction: 'translateY(200px)',
+              direction: 'translateY(150px)',
               speed: 0.8,
               delay: 0.9,
             })}

@@ -10,16 +10,15 @@ const FeaturedSection = () => {
   const isInView = useInView(ref, { once: true, amount: 0 });
 
   return (
-    <section id='featured'>
+    <section id='featured' ref={ref}>
       <SectionLayout>
         <div className='h-[2000px] md:h-[1900px] w-full'>
           <div className='flex flex-col justify-center h-full'>
             {/* TITLE */}
             <div
               className='flex items-center md:gap-x-16 gap-x-4 md:mb-14 mb-10'
-              ref={ref}
               style={animateInViewElement(isInView, {
-                direction: 'translateX(200px)',
+                direction: 'translateX(-150px)',
                 speed: 0.8,
                 delay: 0.4,
               })}
