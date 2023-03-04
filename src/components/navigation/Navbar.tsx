@@ -1,8 +1,9 @@
 import cx from 'classnames';
 import Link from 'next/link';
 import { Link as SmoothScrollLink } from 'react-scroll';
-import { AnimatePresence, useCycle } from 'framer-motion';
-import { useEffect } from 'react';
+import { AnimatePresence, motion, useCycle } from 'framer-motion';
+import { useEffect, useRef } from 'react';
+import { useInView } from 'framer-motion';
 
 import Overlay from 'components/Overlay';
 import Logo from 'public/icons/ht-logo.svg';
@@ -18,6 +19,8 @@ const Navbar = () => {
   const [open, cycleOpen] = useCycle(false, true);
   const visible = useScrollVisible();
   const { lockScroll, unlockScroll } = useScrollLock();
+  const navbarRef = useRef<HTMLHeadingElement>(null);
+  const isVisible = useInView(navbarRef, { once: true });
 
   useEffect(() => {
     if (open) {
@@ -33,6 +36,7 @@ const Navbar = () => {
         'w-full bg-white fixed md:h-24 h-[80px] flex items-center border-b border-gray-200 z-20 transition-top duration-700',
         visible ? 'top-0 left-0' : '-top-[100px]'
       )}
+      ref={navbarRef}
     >
       {/* CONTAINER */}
       <div className='flex container justify-between mx-auto items-center md:px-10 px-4 relative'>
@@ -54,11 +58,13 @@ const Navbar = () => {
         </SmoothScrollLink>
         {/* NAV DESKTOP */}
         <nav className='md:flex items-center gap-x-12 hidden'>
-          <ul className='flex gap-x-12 text-base'>
-            {LINKS.map((link) => (
-              <NavItem key={link.title} title={link.title} link={link.link} />
-            ))}
-          </ul>
+          <AnimatePresence>
+            <motion.ul className='flex gap-x-12 text-base' animate>
+              {LINKS.map((link) => (
+                <NavItem key={link.title} title={link.title} link={link.link} />
+              ))}
+            </motion.ul>
+          </AnimatePresence>
           <Link href={'/resume.pdf'}>
             <a target='_blank'>
               <Button sizeClasses='px-4 py-2.5 text-sm'>Resume</Button>
