@@ -5,7 +5,7 @@
   hanstanawi.com
 </h1>
 <p align="center">
-  The first iteration of <a href="https://www.hanstanawi.com" target="_blank">hanstanawi.com</a> built with <a href="https://www.nextjs.org/" target="_blank">Next.js</a>,  <a href="https://www.nextjs.org/" target="_blank">TypeScript</a>, <a href="" target="_blank">Tailwind CSS</a> and hosted on <a href="https://www.vercel.com" target="_blank">Vercel</a>
+  The first iteration of <a href="https://www.hanstanawi.com" target="_blank">hanstanawi.com</a> built with <a href="https://www.nextjs.org/" target="_blank">Next.js</a>,  <a href="https://www.typescriptlang.org/" target="_blank">TypeScript</a>, <a href="https://www.tailwindcss.com" target="_blank">Tailwind CSS</a> and hosted on <a href="https://www.vercel.com" target="_blank">Vercel</a>
 </p>
 <br>
 
