@@ -1,21 +1,39 @@
 import SectionLayout from 'components/SectionLayout';
+import { useInView } from 'framer-motion';
+import { useRef } from 'react';
 import Content from './components/Content';
 import ProfileImage from './components/ProfileImage';
 
 const About = () => {
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { once: true });
   return (
-    <section id='about'>
+    <section id='about' ref={ref}>
       <SectionLayout>
         <div className='h-[900px] md:h-[650px] w-full'>
           {/* TITLE */}
-          <div className='flex items-center md:gap-x-16 gap-x-4 mb-6'>
+          <div
+            className='flex items-center md:gap-x-16 gap-x-4 mb-6'
+            style={{
+              transform: isInView ? 'none' : 'translateX(-200px)',
+              opacity: isInView ? 1 : 0,
+              transition: 'all 0.8s cubic-bezier(0.17, 0.55, 0.55, 1) 0.8s',
+            }}
+          >
             <div className='h-[1px] bg-[#E5E5E5] md:w-1/2 w-3/4'></div>
             <h1 className='md:text-5xl text-3xl text-black md:w-1/2 w-1/4'>
               About
             </h1>
           </div>
           {/* CONTENT */}
-          <div className='flex md:flex-row flex-col md:gap-x-16 gap-x-0 md:gap-y-0 gap-y-8 items-start'>
+          <div
+            className='flex md:flex-row flex-col md:gap-x-16 gap-x-0 md:gap-y-0 gap-y-8 items-start'
+            style={{
+              transform: isInView ? 'none' : 'translateY(200px)',
+              opacity: isInView ? 1 : 0,
+              transition: 'all 0.8s cubic-bezier(0.17, 0.55, 0.55, 1) 1.3s',
+            }}
+          >
             <ProfileImage />
             <Content />
           </div>
