@@ -18,8 +18,8 @@ const FeaturedSection = () => {
             <div
               className='flex items-center md:gap-x-16 gap-x-4 md:mb-14 mb-10'
               style={animateInViewElement(isInView, {
-                direction: 'translateY(50px)',
-                speed: 0.6,
+                direction: 'translateY(30px)',
+                speed: 0.3,
               })}
             >
               <div className='h-[1px] bg-[#E5E5E5] md:w-10/12 w-8/12'></div>

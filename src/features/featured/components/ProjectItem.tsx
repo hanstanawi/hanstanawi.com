@@ -24,8 +24,8 @@ const ProjectItem = ({ project, index }: ProjectItemProps) => {
       )}
       ref={ref}
       style={animateInViewElement(isInView, {
-        direction: 'translateY(50px)',
-        speed: 0.6,
+        direction: 'translateY(30px)',
+        speed: 0.3,
         delay: 0.05,
       })}
     >

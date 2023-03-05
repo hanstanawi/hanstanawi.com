@@ -15,8 +15,8 @@ const Experience = () => {
             <div
               className='flex items-center md:gap-x-1 md:mb-6 mb-2'
               style={animateInViewElement(isInView, {
-                direction: 'translateY(50px)',
-                speed: 0.6,
+                direction: 'translateY(30px)',
+                speed: 0.3,
               })}
             >
               <h1 className='md:text-5xl text-2xl text-black w-8/12 md:w-5/12'>
@@ -27,9 +27,9 @@ const Experience = () => {
             <div
               className='flex justify-center pt-10'
               style={animateInViewElement(isInView, {
-                direction: 'translateY(50px)',
-                speed: 0.6,
-                delay: 0.3,
+                direction: 'translateY(30px)',
+                speed: 0.3,
+                delay: 0.2,
               })}
             >
               {/* TABS */}

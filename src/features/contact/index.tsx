@@ -15,8 +15,8 @@ const Contact = () => {
           <div
             className='flex flex-col h-full justify-center items-center md:gap-y-7 gap-y-4'
             style={animateInViewElement(isInView, {
-              direction: 'translateY(50px)',
-              speed: 0.6,
+              direction: 'translateY(30px)',
+              speed: 0.3,
             })}
           >
             <h1 className='md:text-5xl text-3xl text-center font-semibold text-black'>
