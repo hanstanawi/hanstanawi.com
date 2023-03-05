@@ -20,7 +20,6 @@ const FeaturedSection = () => {
               style={animateInViewElement(isInView, {
                 direction: 'translateY(50px)',
                 speed: 0.6,
-                delay: 0.1,
               })}
             >
               <div className='h-[1px] bg-[#E5E5E5] md:w-10/12 w-8/12'></div>

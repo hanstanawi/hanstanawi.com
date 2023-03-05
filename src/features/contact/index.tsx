@@ -1,12 +1,24 @@
+import { useRef } from 'react';
 import SectionLayout from 'components/SectionLayout';
 import Link from 'next/link';
+import { useInView } from 'framer-motion';
+import { animateInViewElement } from 'lib/animation.lib';
 
 const Contact = () => {
+  const ref = useRef<HTMLDivElement | null>(null);
+  const isInView = useInView(ref, { amount: 0.5, once: true });
+
   return (
-    <section id='about'>
+    <section id='contact' ref={ref}>
       <SectionLayout>
-        <div className='h-[400px] md:h-[550px] w-full'>
-          <div className='flex flex-col h-full justify-center items-center md:gap-y-7 gap-y-4'>
+        <div className='h-[450px] md:h-[600px] w-full'>
+          <div
+            className='flex flex-col h-full justify-center items-center md:gap-y-7 gap-y-4'
+            style={animateInViewElement(isInView, {
+              direction: 'translateY(50px)',
+              speed: 0.6,
+            })}
+          >
             <h1 className='md:text-5xl text-3xl text-center font-semibold text-black'>
               Get In Touch
             </h1>

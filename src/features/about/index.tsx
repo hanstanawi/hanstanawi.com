@@ -7,7 +7,7 @@ import ProfileImage from './components/ProfileImage';
 
 const About = () => {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true, amount: 0.1 });
+  const isInView = useInView(ref, { once: true, amount: 0.2 });
 
   return (
     <section id='about' ref={ref}>
@@ -19,7 +19,6 @@ const About = () => {
             style={animateInViewElement(isInView, {
               direction: 'translateY(50px)',
               speed: 0.6,
-              delay: 0.1,
             })}
           >
             <div className='h-[1px] bg-[#E5E5E5] md:w-1/2 w-3/4'></div>
@@ -33,7 +32,7 @@ const About = () => {
             style={animateInViewElement(isInView, {
               direction: 'translateY(50px)',
               speed: 0.6,
-              delay: 0.5,
+              delay: 0.2,
             })}
           >
             <ProfileImage />
