@@ -7,7 +7,7 @@ import { animateInViewElement } from 'lib/animation.lib';
 
 const FeaturedSection = () => {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true, amount: 0 });
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
 
   return (
     <section id='featured' ref={ref}>
@@ -18,9 +18,9 @@ const FeaturedSection = () => {
             <div
               className='flex items-center md:gap-x-16 gap-x-4 md:mb-14 mb-10'
               style={animateInViewElement(isInView, {
-                direction: 'translateX(-150px)',
-                speed: 0.8,
-                delay: 0.4,
+                direction: 'translateY(50px)',
+                speed: 0.6,
+                delay: 0.1,
               })}
             >
               <div className='h-[1px] bg-[#E5E5E5] md:w-10/12 w-8/12'></div>

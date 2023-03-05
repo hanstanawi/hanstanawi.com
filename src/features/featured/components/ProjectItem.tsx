@@ -13,7 +13,7 @@ type ProjectItemProps = {
 
 const ProjectItem = ({ project, index }: ProjectItemProps) => {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true, amount: 0.1 });
+  const isInView = useInView(ref, { once: true, amount: 0.3 });
   const isOdd = index % 2 !== 0;
 
   return (
@@ -24,9 +24,9 @@ const ProjectItem = ({ project, index }: ProjectItemProps) => {
       )}
       ref={ref}
       style={animateInViewElement(isInView, {
-        direction: 'translateY(100px)',
-        speed: 0.8,
-        delay: 0.25,
+        direction: 'translateY(50px)',
+        speed: 0.6,
+        delay: 0.4,
       })}
     >
       <ProjectImage isOdd={isOdd} project={project} />

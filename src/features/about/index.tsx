@@ -7,7 +7,7 @@ import ProfileImage from './components/ProfileImage';
 
 const About = () => {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { once: true, amount: 0 });
+  const isInView = useInView(ref, { once: true, amount: 0.1 });
 
   return (
     <section id='about' ref={ref}>
@@ -17,9 +17,9 @@ const About = () => {
           <div
             className='flex items-center md:gap-x-16 gap-x-4 mb-6'
             style={animateInViewElement(isInView, {
-              direction: 'translateX(-150px)',
-              speed: 0.8,
-              delay: 0.6,
+              direction: 'translateY(50px)',
+              speed: 0.6,
+              delay: 0.1,
             })}
           >
             <div className='h-[1px] bg-[#E5E5E5] md:w-1/2 w-3/4'></div>
@@ -31,9 +31,9 @@ const About = () => {
           <div
             className='flex md:flex-row flex-col md:gap-x-16 gap-x-0 md:gap-y-0 gap-y-8 items-start'
             style={animateInViewElement(isInView, {
-              direction: 'translateY(150px)',
-              speed: 0.8,
-              delay: 0.9,
+              direction: 'translateY(50px)',
+              speed: 0.6,
+              delay: 0.5,
             })}
           >
             <ProfileImage />

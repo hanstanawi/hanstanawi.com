@@ -19,7 +19,7 @@ const Contact = () => {
               <h4>My inbox is always open!</h4>
             </div>
             <Link href={'mailto:hanstanawi@gmail.com'}>
-              <a className='border-black border md:p-4 p-3 md:text-lg text-sm rounded-md md:hover:text-white md:hover:bg-black transition delay-200'>
+              <a className='border-black border md:p-4 p-3 md:text-lg text-sm rounded-md md:hover:text-white md:hover:bg-black transition duration-300'>
                 Contact Me
               </a>
             </Link>
