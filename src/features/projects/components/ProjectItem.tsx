@@ -1,19 +1,23 @@
 import cx from 'classnames';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { GoKeyboard } from 'react-icons/go';
-import { motion } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 
 import useMediaQuery from 'hooks/use-media-query';
 import ProjectLinks from 'components/ProjectLinks';
 import { Project } from 'types/projects.type';
+import { animateInViewElement } from 'lib/animation.lib';
 
 type ProjectItemProps = {
   project: Omit<Project, 'imageSrc'>;
+  delay: number;
 };
 
-const ProjectItem = ({ project }: ProjectItemProps) => {
+const ProjectItem = ({ project, delay }: ProjectItemProps) => {
   const [isHovered, setIsHovered] = useState(false);
   const isMobile = useMediaQuery('(max-width: 768px)');
+  const ref = useRef<HTMLDivElement | null>(null);
+  const isInView = useInView(ref, { once: true, amount: 0.05 });
 
   const handleSetHover = (state: boolean) => {
     if (!isMobile) setIsHovered(state);
@@ -23,13 +27,20 @@ const ProjectItem = ({ project }: ProjectItemProps) => {
     window.open(project.demoUrl, '_blank');
   };
 
+  // TODO: fix hover effect
   return (
     <motion.div
       className='flex flex-col justify-start items-center p-8 border border-gray-200 rounded-md shadow-lg cursor-pointer'
-      whileHover={{ y: isMobile ? '0px' : '-10px' }}
-      onHoverStart={() => handleSetHover(true)}
-      onHoverEnd={() => handleSetHover(false)}
+      // whileHover={{ y: isMobile ? '0px' : '-10px' }}
+      // onHoverStart={() => handleSetHover(true)}
+      // onHoverEnd={() => handleSetHover(false)}
       onClick={handleRedirectToDemoApp}
+      ref={ref}
+      style={animateInViewElement(isInView, {
+        direction: 'translateY(50px)',
+        speed: 0.6,
+        delay,
+      })}
     >
       <div className='flex justify-between w-full md:mb-8 mb-5 items-center'>
         <GoKeyboard size={40} className='text-tealGreen md:block hidden' />
