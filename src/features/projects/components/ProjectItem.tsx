@@ -27,6 +27,7 @@ const ProjectItem = ({ project, delay }: ProjectItemProps) => {
     window.open(project.demoUrl, '_blank');
   };
 
+  // TODO: fix hover effect
   return (
     <motion.div
       className='flex flex-col justify-start items-center p-8 border border-gray-200 rounded-md shadow-lg cursor-pointer'

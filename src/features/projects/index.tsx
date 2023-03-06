@@ -6,7 +6,7 @@ import ProjectsList from './components/ProjectsList';
 
 const Projects = () => {
   const ref = useRef<HTMLDivElement | null>(null);
-  const isInView = useInView(ref, { amount: 0.3, once: true });
+  const isInView = useInView(ref, { amount: 0.1, once: true });
 
   return (
     <section id='project' ref={ref}>
