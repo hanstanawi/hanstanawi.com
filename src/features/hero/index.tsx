@@ -1,9 +1,9 @@
+import { useRef } from 'react';
+import { useInView } from 'framer-motion';
 import { Link as SmoothScrollLink } from 'react-scroll';
 import Button from 'components/Button';
 import SectionLayout from 'components/SectionLayout';
 import SocialLinks from 'components/SocialLinks';
-import { useInView } from 'framer-motion';
-import { useRef } from 'react';
 import { animateInViewElement } from 'lib/animation.lib';
 
 const SUBTITLE = `I'm a full stack engineer specializing building things for web
@@ -47,22 +47,26 @@ const Hero = () => {
           >
             {SUBTITLE}
           </h3>
-          <SocialLinks isInView={isInView} delay={0.6} />
-          <SmoothScrollLink
-            to={'featured'}
-            smooth={true}
-            duration={700}
-            offset={-20}
+          <div
+            className='flex flex-col gap-y-2'
             style={animateInViewElement(isInView, {
               direction: 'translateY(20px)',
               speed: 0.3,
-              delay: 0.8,
+              delay: 0.6,
             })}
           >
-            <Button sizeClasses='md:px-8 px-7 md:py-4 py-3 md:text-base text-sm'>
-              Check out my projects
-            </Button>
-          </SmoothScrollLink>
+            <SocialLinks />
+            <SmoothScrollLink
+              to={'featured'}
+              smooth={true}
+              duration={700}
+              offset={-20}
+            >
+              <Button sizeClasses='md:px-8 px-7 md:py-4 py-3 md:text-base text-sm'>
+                Check out my projects
+              </Button>
+            </SmoothScrollLink>
+          </div>
         </div>
       </SectionLayout>
     </section>

@@ -32,7 +32,7 @@ const About = () => {
             style={animateInViewElement(isInView, {
               direction: 'translateY(30px)',
               speed: 0.3,
-              delay: 0.2,
+              delay: 0.3,
             })}
           >
             <ProfileImage />

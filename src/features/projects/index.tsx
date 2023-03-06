@@ -1,8 +1,8 @@
-import SectionLayout from 'components/SectionLayout';
-import { useInView } from 'framer-motion';
-import { animateInViewElement } from 'lib/animation.lib';
 import { useRef } from 'react';
+import { useInView } from 'framer-motion';
 import ProjectsList from './components/ProjectsList';
+import SectionLayout from 'components/SectionLayout';
+import { animateInViewElement } from 'lib/animation.lib';
 
 const Projects = () => {
   const ref = useRef<HTMLDivElement | null>(null);
