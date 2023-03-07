@@ -26,7 +26,7 @@ const ProjectItem = ({ project, index }: ProjectItemProps) => {
       style={animateInViewElement(isInView, {
         direction: 'translateY(30px)',
         speed: 0.3,
-        delay: 0.05,
+        delay: 50,
       })}
     >
       <ProjectImage isOdd={isOdd} project={project} />

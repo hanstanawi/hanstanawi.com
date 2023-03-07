@@ -28,6 +28,6 @@ export function animateInViewElement(
   return {
     transform: isInView ? 'none' : direction,
     opacity: isInView ? 1 : 0.01,
-    transition: `opacity ${speed}s cubic-bezier(0.645, 0.045, 0.355, 1) ${delay}s, transform ${speed}s cubic-bezier(0.645, 0.045, 0.355, 1) ${delay}s`,
+    transition: `opacity ${speed}s cubic-bezier(0.645, 0.045, 0.355, 1) ${delay}ms, transform ${speed}s cubic-bezier(0.645, 0.045, 0.355, 1) ${delay}ms`,
   };
 }

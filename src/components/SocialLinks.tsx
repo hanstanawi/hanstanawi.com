@@ -1,4 +1,3 @@
-import { animateInViewElement } from 'lib/animation.lib';
 import Link from 'next/link';
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
@@ -10,29 +9,16 @@ const SOCIAL_LINKS = {
 
 type SocialLinksProps = {
   small?: boolean;
-  isInView?: boolean;
-  delay?: number;
 };
 
-const SocialLinks = ({
-  small = false,
-  isInView = true,
-  delay = 0,
-}: SocialLinksProps) => {
+const SocialLinks = ({ small = false }: SocialLinksProps) => {
   const desktopSize = small ? 22 : 27;
   const mobileSize = small ? 16 : 20;
 
   return (
     <>
       {/* DESKTOP */}
-      <div
-        className='md:flex gap-x-4 my-4 hidden'
-        style={animateInViewElement(isInView, {
-          direction: 'translateY(20px)',
-          speed: 0.3,
-          delay,
-        })}
-      >
+      <div className='md:flex gap-x-4 my-4 hidden'>
         <Link href={SOCIAL_LINKS.GITHUB}>
           <a target='_blank' className='cursor-pointer'>
             <FaGithub
@@ -59,14 +45,7 @@ const SocialLinks = ({
         </Link>
       </div>
       {/* MOBILE */}
-      <div
-        className='flex gap-x-4 my-4 md:hidden'
-        style={animateInViewElement(isInView, {
-          direction: 'translateY(20px)',
-          speed: 0.3,
-          delay,
-        })}
-      >
+      <div className='flex gap-x-4 my-4 md:hidden'>
         <Link href={SOCIAL_LINKS.GITHUB}>
           <a target='_blank' className='cursor-pointer'>
             <FaGithub className='text-gray-500' size={mobileSize} />

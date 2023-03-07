@@ -1,8 +1,8 @@
-import SectionLayout from 'components/SectionLayout';
-import { useInView } from 'framer-motion';
-import { animateInViewElement } from 'lib/animation.lib';
 import { useRef } from 'react';
+import { useInView } from 'framer-motion';
 import ProjectsList from './components/ProjectsList';
+import SectionLayout from 'components/SectionLayout';
+import { animateInViewElement } from 'lib/animation.lib';
 
 const Projects = () => {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -16,8 +16,8 @@ const Projects = () => {
           <div
             className='flex items-center justify-center mb-10'
             style={animateInViewElement(isInView, {
-              speed: 0.3,
               direction: 'transformY(30px)',
+              speed: 0.3,
             })}
           >
             <h1 className='md:text-2xl text-xl font-semibold text-center'>

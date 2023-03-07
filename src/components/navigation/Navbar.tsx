@@ -14,13 +14,14 @@ import SideNavbar from './SideNavbar';
 import useScrollLock from 'hooks/use-scroll-lock';
 import useScrollVisible from 'hooks/use-scroll-visible';
 import { LINKS } from 'constants/navigation.constant';
+import { animateInViewElement } from 'lib/animation.lib';
 
 const Navbar = () => {
   const [open, cycleOpen] = useCycle(false, true);
   const visible = useScrollVisible();
   const { lockScroll, unlockScroll } = useScrollLock();
   const navbarRef = useRef<HTMLHeadingElement>(null);
-  const isVisible = useInView(navbarRef, { once: true });
+  const isInView = useInView(navbarRef, { once: true, amount: 0 });
 
   useEffect(() => {
     if (open) {
@@ -48,7 +49,13 @@ const Navbar = () => {
           offset={-20}
           className='cursor-pointer'
         >
-          <div className='flex items-center gap-x-1'>
+          <div
+            className='flex items-center gap-x-1'
+            style={animateInViewElement(isInView, {
+              direction: 'translateY(-1px)',
+              speed: 0.3,
+            })}
+          >
             <Logo />
             <div className='text-sm hidden md:block'>
               <p>Hans Tanawi</p>
@@ -58,21 +65,32 @@ const Navbar = () => {
         </SmoothScrollLink>
         {/* NAV DESKTOP */}
         <nav className='md:flex items-center gap-x-12 hidden'>
-          <AnimatePresence>
-            <motion.ul className='flex gap-x-12 text-base' animate>
-              {LINKS.map((link) => (
-                <NavItem key={link.title} title={link.title} link={link.link} />
-              ))}
-            </motion.ul>
-          </AnimatePresence>
+          <ul className='flex gap-x-12 text-base'>
+            {LINKS.map((link, i) => (
+              <NavItem
+                key={link.title}
+                title={link.title}
+                link={link.link}
+                isInView={isInView}
+                delay={(i + 1) * 100}
+              />
+            ))}
+          </ul>
           <Link href={'/resume.pdf'}>
-            <a target='_blank'>
+            <a
+              target='_blank'
+              style={animateInViewElement(isInView, {
+                direction: 'translateY(-20px)',
+                speed: 0.3,
+                delay: 500,
+              })}
+            >
               <Button sizeClasses='px-4 py-2.5 text-sm'>Resume</Button>
             </a>
           </Link>
         </nav>
       </div>
-      <Hamburger isOpen={open} onToggleOpen={cycleOpen} />
+      <Hamburger isOpen={open} onToggleOpen={cycleOpen} isInView={isInView} />
       {/* NAV MOBILE */}
       {open && <Overlay onClickClose={cycleOpen} />}
       <AnimatePresence>
