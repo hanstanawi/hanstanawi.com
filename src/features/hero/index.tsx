@@ -57,7 +57,7 @@ const Hero = () => {
               style={animateInViewElement(isInView, {
                 direction: 'translateY(20px)',
                 speed: 0.3,
-                delay: i * 200,
+                delay: (i + 4) * 200,
               })}
             >
               {item}
