@@ -1,14 +1,23 @@
 import cx from 'classnames';
+import { animateInViewElement } from 'lib/animation.lib';
 
 type HamburgerProps = {
   isOpen: boolean;
   onToggleOpen: () => void;
+  isInView: boolean;
 };
 
-const Hamburger = ({ isOpen, onToggleOpen }: HamburgerProps) => {
+const Hamburger = ({ isOpen, onToggleOpen, isInView }: HamburgerProps) => {
   return (
     <>
-      <div className='md:hidden flex items-center z-50 absolute right-7 top-8'>
+      <div
+        className='md:hidden flex items-center z-50 absolute right-7 top-8'
+        style={animateInViewElement(isInView, {
+          direction: 'translateY(-20px)',
+          speed: 0.3,
+          delay: 100,
+        })}
+      >
         <div
           className={cx(
             'nav-icon absolute align text-3xl',

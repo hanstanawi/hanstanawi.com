@@ -5,6 +5,7 @@ import Button from 'components/Button';
 import SectionLayout from 'components/SectionLayout';
 import SocialLinks from 'components/SocialLinks';
 import { animateInViewElement } from 'lib/animation.lib';
+import useMediaQuery from 'hooks/use-media-query';
 
 const SUBTITLE = `I'm a full stack engineer specializing building things for web
 and based in Taipei, Taiwan`;
@@ -12,6 +13,9 @@ and based in Taipei, Taiwan`;
 const Hero = () => {
   const ref = useRef<HTMLDivElement | null>(null);
   const isInView = useInView(ref, { once: true });
+  const isMobile = useMediaQuery('(max-width: 768px)');
+
+  const initialDelay = isMobile ? 0 : 4;
 
   const firstTitle = (
     <p className='text-gray-500 md:text-xl text-lg font-light pb-2'>
@@ -57,7 +61,7 @@ const Hero = () => {
               style={animateInViewElement(isInView, {
                 direction: 'translateY(20px)',
                 speed: 0.3,
-                delay: (i + 4) * 200,
+                delay: (i + initialDelay) * 200,
               })}
             >
               {item}
