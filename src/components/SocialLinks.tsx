@@ -1,4 +1,3 @@
-import { animateInViewElement } from 'lib/animation.lib';
 import Link from 'next/link';
 import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 

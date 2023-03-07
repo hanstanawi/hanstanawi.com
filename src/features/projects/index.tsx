@@ -16,8 +16,8 @@ const Projects = () => {
           <div
             className='flex items-center justify-center mb-10'
             style={animateInViewElement(isInView, {
-              speed: 0.3,
               direction: 'transformY(30px)',
+              speed: 0.3,
             })}
           >
             <h1 className='md:text-2xl text-xl font-semibold text-center'>
