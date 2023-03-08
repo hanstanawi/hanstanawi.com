@@ -53,7 +53,7 @@ const Navbar = () => {
             className='flex items-center gap-x-1'
             style={animateInViewElement(isInView, {
               direction: 'translateY(-1px)',
-              speed: 0.3,
+              speed: 0.8,
             })}
           >
             <Logo />
