@@ -5,16 +5,15 @@ const Content = () => {
     <div className='md:w-1/2 w-full'>
       <div className='flex flex-col gap-y-5 text-gray-500 text-justify md:text-lg text-base'>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.{' '}
+          Hey! I&apos;m Hans, a full-stack software engineer who enjoys building
+          things that live on the internet. Currently building cool user
+          interfaces and performant server code at Lumina.
         </p>
+        <p>I love</p>
         <p className=''>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.
+          Fast forward to today, I have the privilege of working at one of most
+          growing construction software start-ups in Germany and currently
+          building cool stuff at Lumina. My main focus these
         </p>
         <SkillSection />
       </div>
