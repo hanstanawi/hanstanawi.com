@@ -43,9 +43,14 @@ const JobDescription = ({ experience, isSelected }: JobDescriptionProps) => {
           </Link>
         </span>
       </h3>
-      <p className='text-gray-500 md:text-base text-sm'>
-        {formattedStartDate} - {formattedEndDate}
-      </p>
+      <div>
+        <p className='text-gray-800 md:text-lg text-base pb-1'>
+          {experience.location}
+        </p>
+        <p className='text-gray-500 md:text-base text-sm'>
+          {formattedStartDate} - {formattedEndDate}
+        </p>
+      </div>
       <p className='md:text-lg text-base'>{experience.description}</p>
 
       <ul className='flex flex-col gap-y-4 list-disc text-gray-500 md:text-base text-[13px] pl-4'>

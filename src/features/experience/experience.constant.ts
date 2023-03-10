@@ -5,17 +5,19 @@ export const EXPERIENCES: Experience[] = [
     id: 'lumina',
     company: 'Lumina',
     role: 'Full Stack Engineer',
+    location: 'Taipei, Taiwan',
     url: 'https://getlumina.com',
     startDate: '2021-11-15',
     endDate: null,
     description: `Lumina is a software and hardware technology company that builds beautifully
-    integrated hardware to make remote work better.`,
+    integrated hardware to make remote work better. 
+    As the web team lead in Lumina, I responsible for Lumina e-commerce landing page and backend API services.`,
     responsibilities: [
-      `Lead, develop, and maintain Lumina Next.js landing page development,
-    such as implement AB tests, analytics, and website performance.`,
-      `Implement and maintain backend Lambda functions and webhooks
-    using TypeScript.`,
-      `Lead, develop, and maintain Lumina REST API using Node.js, NestJS,
+      `Lead, develop, and maintain Lumina Next.js e-commerce landing page development.`,
+      `Implement AB tests periodically to enhance landing page conversion rate.`,
+      `Increase the website performance by 30%.`,
+      `Lead and implement the migration process from serverless services to full backend API service.`,
+      `Architect, develop, and maintain Lumina backend APIs with Node.js, NestJS,
     and PostgreSQL as backend API for Lumina Studio native application.`,
     ],
   },
@@ -23,18 +25,20 @@ export const EXPERIENCES: Experience[] = [
     id: 'molteo',
     company: 'Molteo',
     role: 'Frontend Engineer',
+    location: 'Schleswig, Germany (Remote)',
     url: 'https://molteo.com',
     startDate: '2020-05-31',
     endDate: '2021-11-01',
     description: `Molteo is a digital workspace, which provides real-time overview of projects
-    and construction sites, flexible resource capturing, and paperless billing`,
+    and construction sites, flexible resource capturing, and paperless billing. As a frontend engineer, I responsible for the development and stability of the Molteo web platform, as well as collaborate with backend team to develop performant platform and APIs.`,
     responsibilities: [
-      `Write and maintain modern, performant, and robust code of Molteo
+      `Develop and maintain modern, performant, and robust code of Molteo
     Vue.js web application.`,
-      `Implement thorough web application end-to-end tests using Cypress.`,
-      `Collaborate with and assist the back-end team developing and maintaining APIs using Express/Feather.js and PostgreSQL`,
-      `Assist the migration of the whole front-end codebase from JavaScript to
-    TypeScript`,
+      `Revamp the overall web app UI design to enchance user experience.`,
+      `Implement frontend codebase refactoring to enhance performance by 25% and code readibility, such as migrate whole codebase from JavaScript to
+      TypeScript for type safety.`,
+      `Write thorough web application end-to-end tests using Cypress.`,
+      `Assist and collaborate with backend team developing and maintaining APIs with Node.js, Express and PostgreSQL.`,
     ],
   },
 ];

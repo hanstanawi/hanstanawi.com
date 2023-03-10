@@ -31,7 +31,7 @@ export const otherProjects: Omit<Project, 'imageSrc'>[] = [
     id: 'crypto-tracker',
     title: 'Crypto Tracker',
     description:
-      'A web app to track real-time cryptocurrencies prices. Cryptocurrencies data is supported by CryptoGecko API. Built with React, JavaScript, and Tailwind.',
+      'A web app to track most up-to-date cryptocurrencies prices. Cryptocurrencies data is supported by CryptoGecko API. Built with React, JavaScript, and Tailwind.',
     githubUrl: 'https://github.com/hanstanawi/crypto-tracker',
     demoUrl: 'https://crypto-tracker-beta-three.vercel.app/',
     technologies: ['React', 'JavaScript', 'TailwindCSS'],
@@ -58,7 +58,7 @@ export const otherProjects: Omit<Project, 'imageSrc'>[] = [
     id: 'lumina-desk',
     title: 'Lumina Desk',
     description:
-      'Simple web app to split bills and calculate tip built with React, TypeScript and Styled Components',
+      'Lumina Desk landing page. Showcasing Lumina second major product, a smart desk optimized for home-office and remote work. Built with Next.js TypeScript, TailwindCSS and Framer Motion',
     githubUrl: null,
     demoUrl: 'http://getlumina.com/desk',
     technologies: ['Next.js', 'TypeScript', 'TailwindCSS', 'Framer Motion'],

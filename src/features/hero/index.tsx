@@ -6,6 +6,7 @@ import SectionLayout from 'components/SectionLayout';
 import SocialLinks from 'components/SocialLinks';
 import { animateInViewElement } from 'lib/animation.lib';
 import useMediaQuery from 'hooks/use-media-query';
+import Parallax from 'components/Parallax';
 
 const SUBTITLE = `I'm a full stack engineer specializing building things for web
 and based in Taipei, Taiwan`;
@@ -54,20 +55,22 @@ const Hero = () => {
   return (
     <section id='hero' ref={ref}>
       <SectionLayout>
-        <div className='h-[100vh] flex flex-col justify-center items-start gap-y-2 pt-14'>
-          {items.map((item, i) => (
-            <div
-              key={i}
-              style={animateInViewElement(isInView, {
-                direction: 'translateY(20px)',
-                speed: 0.3,
-                delay: (i + initialDelay) * 200,
-              })}
-            >
-              {item}
-            </div>
-          ))}
-        </div>
+        <Parallax offset={0}>
+          <div className='h-[100vh] flex flex-col justify-center items-start gap-y-2 pt-14'>
+            {items.map((item, i) => (
+              <div
+                key={i}
+                style={animateInViewElement(isInView, {
+                  direction: 'translateY(20px)',
+                  speed: 0.3,
+                  delay: (i + initialDelay) * 200,
+                })}
+              >
+                {item}
+              </div>
+            ))}
+          </div>
+        </Parallax>
       </SectionLayout>
     </section>
   );

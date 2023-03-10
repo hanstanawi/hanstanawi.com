@@ -1,21 +1,30 @@
+import Link from 'next/link';
 import SkillSection from './SkillSection';
 
 const Content = () => {
   return (
     <div className='md:w-1/2 w-full'>
-      <div className='flex flex-col gap-y-5 text-gray-500 text-justify md:text-lg text-base'>
+      <div className='flex flex-col gap-y-3 text-gray-500 md:text-base text-sm'>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.{' '}
+          Hey there! I&apos;m Hans, a full stack software engineer who enjoys
+          building things that live on the internet. I love working in the realm
+          between frontend and backend applications.
         </p>
-        <p className=''>
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.
+        <p>
+          I grew up in Indonesia and continued my career in Taiwan. Having the
+          opportunity to pursue my career abroad, not only giving me a chance to
+          about new experience and culture, but also make me fluent in Chinese
+          and English professionally.
         </p>
+        <p>
+          Crafting beautiful UI components with excellent user experience and
+          building performant and secure server APIs never fail to excite me.
+          <br />
+          My main focus these days is building web user interfaces and
+          performant backend APIs at and working on my side projects whilst
+          learning new technologies.
+        </p>
+        <p className='mt-4'>Technologies I’ve been working with recently:</p>
         <SkillSection />
       </div>
     </div>
