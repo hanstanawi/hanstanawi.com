@@ -14,7 +14,7 @@ const FeaturedSection = () => {
     <section id='featured' ref={ref}>
       <SectionLayout>
         <Parallax>
-          <div className='h-[2000px] md:h-[1900px] w-full'>
+          <div className='h-[2000px] md:h-[1800px] w-full'>
             <div className='flex flex-col justify-center h-full'>
               {/* TITLE */}
               <div
