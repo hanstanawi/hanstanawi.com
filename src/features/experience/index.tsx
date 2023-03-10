@@ -12,7 +12,7 @@ const Experience = () => {
     <section id='experience' ref={ref}>
       <SectionLayout>
         <Parallax>
-          <div className='h-[1100px] md:h-[1050px] w-full'>
+          <div className='md:my-24 my-14 w-full'>
             <div className='h-full flex flex-col justify-center'>
               <div
                 className='flex items-center md:gap-x-1 md:mb-6 mb-2'
