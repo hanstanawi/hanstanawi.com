@@ -60,7 +60,7 @@ const SideNavbar = ({ onClickClose }: SideNavbarProps) => {
             to={link.link}
             smooth={true}
             duration={700}
-            offset={-20}
+            offset={-60}
             delay={800}
             key={link.title}
           >
