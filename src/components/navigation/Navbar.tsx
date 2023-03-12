@@ -40,7 +40,7 @@ const Navbar = () => {
       ref={navbarRef}
     >
       {/* CONTAINER */}
-      <div className='flex container justify-between mx-auto items-center md:px-10 px-4 relative'>
+      <div className='flex container justify-between mx-auto items-center lg:px-10 px-4 relative'>
         {/* LOGO */}
         <SmoothScrollLink
           to={'hero'}
@@ -64,7 +64,7 @@ const Navbar = () => {
           </div>
         </SmoothScrollLink>
         {/* NAV DESKTOP */}
-        <nav className='md:flex items-center gap-x-12 hidden'>
+        <nav className='lg:flex items-center gap-x-12 hidden'>
           <ul className='flex gap-x-12 text-base'>
             {LINKS.map((link, i) => (
               <NavItem
