@@ -14,7 +14,7 @@ const About = () => {
     <section id='about' ref={ref}>
       <SectionLayout>
         <Parallax>
-          <div className='md:my-20 my-10 w-full'>
+          <div className='md:mb-20 md:mt-10 mt-0 mb-10 w-full'>
             {/* TITLE */}
             <div
               className='flex items-center md:gap-x-16 gap-x-4 mb-6'
