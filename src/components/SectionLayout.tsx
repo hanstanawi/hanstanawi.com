@@ -6,7 +6,7 @@ type SectionLayoutProps = {
 
 const SectionLayout = ({ children }: SectionLayoutProps) => {
   return (
-    <div className='my-0 mx-auto box-border relative xl:max-w-6xl sm:max-w-3xl max-w-sm sm:px-0 px-6 w-full h-full'>
+    <div className='my-0 mx-auto box-border relative xl:max-w-6xl lg:max-w-5xl sm:max-w-2xl max-w-sm sm:px-0 px-6 w-full h-full'>
       {children}
     </div>
   );
