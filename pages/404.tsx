@@ -1,13 +1,10 @@
 import Button from 'components/Button';
-import Footer from 'components/navigation/Footer';
-import Navbar from 'components/navigation/Navbar';
 import SectionLayout from 'components/SectionLayout';
 import Link from 'next/link';
 
 const NotFoundPage = () => {
   return (
     <div className='bg-white font-basic lg:scroll-smooth'>
-      <Navbar />
       <main>
         <SectionLayout>
           <div className='md:min-h-[100vh] min-h-[90vh] flex flex-col items-center justify-center'>
@@ -23,7 +20,6 @@ const NotFoundPage = () => {
           </div>
         </SectionLayout>
       </main>
-      <Footer />
     </div>
   );
 };
