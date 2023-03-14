@@ -29,7 +29,7 @@ const Hero = () => {
   );
 
   const subtitle = (
-    <h3 className='text-gray-500 md:text-3xl text-xl font-light md:w-2/3 w-11/12 md:pb-4 pb-1'>
+    <h3 className='text-gray-500 md:text-3xl text-xl font-light lg:w-2/3 w-11/12 md:pb-4 pb-1'>
       {SUBTITLE}
     </h3>
   );
