@@ -13,7 +13,7 @@ const Projects = () => {
     <section id='project' ref={ref}>
       <SectionLayout>
         <Parallax>
-          <div className='md:h-[800px] h-[2080px] w-full flex flex-col justify-center'>
+          <div className='w-full flex flex-col justify-center'>
             {/* TITLE */}
             <div
               className='flex items-center justify-center mb-10'

@@ -15,6 +15,11 @@ const ExperienceTimeline = () => {
                   aria-hidden='true'
                 />
               ) : null}
+              {/* BASE LINE */}
+              <span
+                className='absolute top-4 md:left-[7px] left-[5px] -ml-px h-[85%] w-0.5 bg-gray-200'
+                aria-hidden='true'
+              />
               <div className='relative flex space-x-6'>
                 <div className='pt-2.5'>
                   <span

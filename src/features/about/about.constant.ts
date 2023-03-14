@@ -4,7 +4,7 @@ export const LANGUAGES_SKILLS = [
   'HTML',
   'CSS/Sass',
   'SQL',
-  'Python',
+  'Golang',
 ];
 
 export const FRAMEWORKS_SKILLS = [
