@@ -57,14 +57,14 @@ const Navbar = () => {
             })}
           >
             <Logo />
-            <div className='text-sm hidden md:block'>
+            <div className='text-sm hidden lg:block'>
               <p>Hans Tanawi</p>
               <p>Full Stack Engineer</p>
             </div>
           </div>
         </SmoothScrollLink>
         {/* NAV DESKTOP */}
-        <nav className='md:flex items-center gap-x-12 hidden'>
+        <nav className='sm:flex items-center gap-x-12 hidden'>
           <ul className='flex gap-x-12 text-base'>
             {LINKS.map((link, i) => (
               <NavItem
