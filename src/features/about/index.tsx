@@ -17,14 +17,14 @@ const About = () => {
           <div className='md:mb-20 md:mt-10 mt-0 mb-10 w-full'>
             {/* TITLE */}
             <div
-              className='flex items-center md:gap-x-16 gap-x-4 mb-6'
+              className='flex items-center lg:gap-x-16 sm:gap-x-6 gap-x-4 mb-6'
               style={animateInViewElement(isInView, {
                 direction: 'translateY(30px)',
                 speed: 0.3,
               })}
             >
               <div className='h-[1px] bg-[#E5E5E5] md:w-1/2 w-3/4'></div>
-              <h1 className='md:text-5xl text-3xl text-black md:w-1/2 w-1/4'>
+              <h1 className='lg:text-5xl sm:text-4xl text-3xl text-black md:w-1/2 w-1/4'>
                 About
               </h1>
             </div>
