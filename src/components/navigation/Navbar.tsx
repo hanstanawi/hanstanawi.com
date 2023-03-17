@@ -40,7 +40,7 @@ const Navbar = () => {
       ref={navbarRef}
     >
       {/* CONTAINER */}
-      <div className='flex container justify-between mx-auto items-center md:px-10 px-4 relative'>
+      <div className='flex container justify-between mx-auto items-center xl:max-w-6xl lg:max-w-4xl sm:max-w-2xl max-w-sm sm:px-0 px-3 relative'>
         {/* LOGO */}
         <SmoothScrollLink
           to={'hero'}
@@ -57,14 +57,14 @@ const Navbar = () => {
             })}
           >
             <Logo />
-            <div className='text-sm hidden md:block'>
+            <div className='text-sm hidden lg:block'>
               <p>Hans Tanawi</p>
               <p>Full Stack Engineer</p>
             </div>
           </div>
         </SmoothScrollLink>
         {/* NAV DESKTOP */}
-        <nav className='md:flex items-center gap-x-12 hidden'>
+        <nav className='lg:flex items-center gap-x-12 hidden'>
           <ul className='flex gap-x-12 text-base'>
             {LINKS.map((link, i) => (
               <NavItem

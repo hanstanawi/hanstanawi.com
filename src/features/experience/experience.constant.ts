@@ -11,7 +11,7 @@ export const EXPERIENCES: Experience[] = [
     endDate: null,
     description: `Lumina is a software and hardware technology company that builds beautifully
     integrated hardware to make remote work better. 
-    As the web team lead in Lumina, I responsible for Lumina e-commerce landing page and backend API services.`,
+    As the web team lead in Lumina, I'm responsible for Lumina e-commerce landing page and backend API services.`,
     responsibilities: [
       `Lead, develop, and maintain Lumina Next.js e-commerce landing page development.`,
       `Implement AB tests periodically to enhance landing page conversion rate.`,
@@ -30,7 +30,7 @@ export const EXPERIENCES: Experience[] = [
     startDate: '2020-05-31',
     endDate: '2021-11-01',
     description: `Molteo is a digital workspace, which provides real-time overview of projects
-    and construction sites, flexible resource capturing, and paperless billing. As a frontend engineer, I responsible for the development and stability of the Molteo web platform, as well as collaborate with backend team to develop performant platform and APIs.`,
+    and construction sites, flexible resource capturing, and paperless billing. As a frontend engineer, I'm responsible for the development and stability of the Molteo web platform, as well as collaborate with backend team to develop performant platform and APIs.`,
     responsibilities: [
       `Develop and maintain modern, performant, and robust code of Molteo
     Vue.js web application.`,

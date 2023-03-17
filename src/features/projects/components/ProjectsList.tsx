@@ -7,7 +7,7 @@ function calculateDelay(index: number): number {
 
 const ProjectsList = () => {
   return (
-    <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 md:w-11/12 w-full'>
+    <div className='grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 lg:w-11/12 w-full'>
       {otherProjects.map((project, i) => (
         <ProjectItem
           key={project.id}

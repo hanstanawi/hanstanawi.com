@@ -22,7 +22,7 @@ const NavItem = ({ title, link, isInView, delay }: NavItemProps) => {
         to={link}
         smooth={true}
         duration={700}
-        offset={-20}
+        offset={-60}
         className='border-b-[1.5px] hover:border-black border-transparent pb-1 transition duration-300'
       >
         {title}

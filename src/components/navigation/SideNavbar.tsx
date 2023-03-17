@@ -35,7 +35,7 @@ const SideNavbar = ({ onClickClose }: SideNavbarProps) => {
   return (
     <motion.aside
       className='fixed bg-white max-h-screen h-screen w-3/4 right-0 
-      top-0 flex flex-col items-center justify-center z-40 md:hidden'
+      top-0 flex flex-col items-center justify-center z-40 lg:hidden'
       initial={{ width: 0 }}
       animate={{
         width: '75%',
@@ -49,7 +49,7 @@ const SideNavbar = ({ onClickClose }: SideNavbarProps) => {
       }}
     >
       <motion.ul
-        className='flex flex-col justify-center gap-y-12'
+        className='flex flex-col justify-center md:gap-y-16 gap-y-12'
         initial='closed'
         animate='open'
         exit='closed'
@@ -60,12 +60,12 @@ const SideNavbar = ({ onClickClose }: SideNavbarProps) => {
             to={link.link}
             smooth={true}
             duration={700}
-            offset={-20}
+            offset={-60}
             delay={800}
             key={link.title}
           >
             <motion.li
-              className='text-2xl text-black cursor-pointer'
+              className='md:text-4xl text-2xl text-black cursor-pointer'
               variants={itemVariants}
               onClick={onClickClose}
             >
@@ -76,7 +76,9 @@ const SideNavbar = ({ onClickClose }: SideNavbarProps) => {
         <motion.div variants={itemVariants}>
           <Link href={'/resume.pdf'}>
             <a target='_blank'>
-              <Button sizeClasses='px-8 py-3 text-lg'>Resume</Button>
+              <Button sizeClasses='md:px-10 px-8 md:py-5 py-3 md:text-3xl text-lg'>
+                Resume
+              </Button>
             </a>
           </Link>
         </motion.div>

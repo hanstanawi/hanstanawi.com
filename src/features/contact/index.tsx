@@ -21,10 +21,10 @@ const Contact = () => {
                 speed: 0.3,
               })}
             >
-              <h1 className='md:text-5xl text-3xl text-center font-semibold text-black'>
+              <h1 className='lg:text-5xl md:text-4xl text-3xl text-center font-semibold text-black'>
                 Get In Touch
               </h1>
-              <div className='md:text-xl text-sm text-center text-gray-500 md:w-7/12 w-full font-light mb-3'>
+              <div className='md:text-xl text-sm text-center text-gray-500 lg:w-7/12 md:w-9/12 w-full font-light mb-3'>
                 <h4 className='mb-1'>
                   I&apos;m currently open to new exciting opportunities globally
                   and open-source projects collaboration. Don&apos;t hesitate to

@@ -4,7 +4,7 @@ import JobDescription from './JobDescription';
 
 const ExperienceTimeline = () => {
   return (
-    <div className='flow-root md:max-w-3xl'>
+    <div className='flow-root lg:max-w-3xl sm:max-w-2xl'>
       <ul role='list' className='-mb-8'>
         {EXPERIENCES.map((experience, idx) => (
           <li key={experience.id}>
@@ -17,7 +17,7 @@ const ExperienceTimeline = () => {
               ) : null}
               {/* BASE LINE */}
               <span
-                className='absolute top-4 md:left-[7px] left-[5px] -ml-px h-[85%] w-0.5 bg-gray-200'
+                className='absolute top-4 md:left-[7px] left-[5px] -ml-px h-[90%] sm:h-[85%] w-0.5 bg-gray-200'
                 aria-hidden='true'
               />
               <div className='relative flex space-x-6'>
