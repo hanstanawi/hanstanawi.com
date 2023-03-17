@@ -25,11 +25,13 @@ const Hero = () => {
   );
 
   const secondTitle = (
-    <h1 className='text-black md:text-7xl text-5xl'>Hans Tanawi.</h1>
+    <h1 className='text-black lg:text-7xl md:text-6xl text-5xl'>
+      Hans Tanawi.
+    </h1>
   );
 
   const subtitle = (
-    <h3 className='text-gray-500 md:text-3xl text-xl font-light lg:w-2/3 w-11/12 md:pb-4 pb-1'>
+    <h3 className='text-gray-500 lg:text-3xl md:text-2xl text-xl font-light xl:w-2/3 md:w-9/12 w-11/12 md:pb-4 pb-1'>
       {SUBTITLE}
     </h3>
   );

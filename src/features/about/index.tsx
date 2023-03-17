@@ -17,7 +17,7 @@ const About = () => {
           <div className='md:mb-20 md:mt-10 mt-0 mb-10 w-full'>
             {/* TITLE */}
             <div
-              className='flex items-center lg:gap-x-16 sm:gap-x-6 gap-x-4 mb-6'
+              className='flex items-center lg:gap-x-16 md:gap-x-10 sm:gap-x-6 gap-x-4 mb-6'
               style={animateInViewElement(isInView, {
                 direction: 'translateY(30px)',
                 speed: 0.3,

@@ -9,10 +9,10 @@ type ContentProps = {
 const Content = ({ project }: ContentProps) => {
   return (
     <div className='xl:w-1/2 lg:w-8/12 md:w-11/12 w-full flex flex-col justify-start items-start'>
-      <p className='text-tealGreen md:text-lg text-sm'>Featured Project</p>
+      <p className='text-tealGreen lg:text-lg text-sm'>Featured Project</p>
       <Link href={project.demoUrl}>
         <a
-          className='font-semibold text-black md:text-2xl text-xl md:mb-5 mb-3 mt-1.5'
+          className='font-semibold text-black lg:text-2xl text-xl md:mb-5 mb-3 mt-1.5'
           target='_blank'
         >
           {project.title}

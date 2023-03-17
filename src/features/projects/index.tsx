@@ -1,9 +1,10 @@
 import { useRef } from 'react';
 import { useInView } from 'framer-motion';
+
+import Parallax from 'components/Parallax';
 import ProjectsList from './components/ProjectsList';
 import SectionLayout from 'components/SectionLayout';
 import { animateInViewElement } from 'lib/animation.lib';
-import Parallax from 'components/Parallax';
 
 const Projects = () => {
   const ref = useRef<HTMLDivElement | null>(null);
