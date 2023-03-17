@@ -19,8 +19,8 @@ const ProjectItem = ({ project, index }: ProjectItemProps) => {
   return (
     <div
       className={cx(
-        'flex items-center h-full md:w-11/12 w-full gap-x-16 flex-col md:gap-y-0 gap-y-6',
-        isOdd ? 'md:flex-row' : 'md:flex-row-reverse'
+        'flex items-center h-full lg:w-11/12 w-full gap-x-16 flex-col lg:gap-y-0 gap-y-6',
+        isOdd ? 'lg:flex-row' : 'lg:flex-row-reverse'
       )}
       ref={ref}
       style={animateInViewElement(isInView, {

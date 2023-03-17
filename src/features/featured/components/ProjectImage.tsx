@@ -27,7 +27,7 @@ const ProjectImage = ({ project }: ProjectImageProps) => {
   return (
     <Link href={project.demoUrl}>
       <a
-        className='cursor-pointer md:w-8/12 w-full relative flex items-center h-full'
+        className='cursor-pointer lg:w-8/12 md:w-11/12 w-full relative flex items-center h-full'
         target={'_blank'}
       >
         <Image

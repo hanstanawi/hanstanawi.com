@@ -23,14 +23,14 @@ const About = () => {
                 speed: 0.3,
               })}
             >
-              <div className='h-[1px] bg-[#E5E5E5] md:w-1/2 w-3/4'></div>
-              <h1 className='lg:text-5xl sm:text-4xl text-3xl text-black md:w-1/2 w-1/4'>
+              <div className='h-[1px] bg-[#E5E5E5] lg:w-1/2 md:w-10/12 w-3/4'></div>
+              <h1 className='xl:text-5xl sm:text-4xl text-3xl text-black lg:w-1/2 md:w-2/12 w-1/4'>
                 About
               </h1>
             </div>
             {/* CONTENT */}
             <div
-              className='flex md:flex-row flex-col md:gap-x-16 gap-x-0 md:gap-y-0 gap-y-8 items-start'
+              className='flex lg:flex-row flex-col lg:gap-x-16 gap-x-0 lg:gap-y-0 gap-y-8 lg:items-start items-center'
               style={animateInViewElement(isInView, {
                 direction: 'translateY(30px)',
                 speed: 0.3,

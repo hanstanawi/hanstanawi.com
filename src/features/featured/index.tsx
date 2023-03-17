@@ -24,8 +24,8 @@ const FeaturedSection = () => {
                   speed: 0.3,
                 })}
               >
-                <div className='h-[1px] bg-[#E5E5E5] md:w-10/12 w-8/12'></div>
-                <h1 className='md:text-5xl text-3xl text-black text-right md:w-2/12 w-4/12'>
+                <div className='h-[1px] bg-[#E5E5E5] md:w-9/12 w-9/12'></div>
+                <h1 className='xl:text-5xl sm:text-4xl text-2xl text-black sm:text-left text-right md:w-2/12 w-4/12'>
                   Projects
                 </h1>
               </div>

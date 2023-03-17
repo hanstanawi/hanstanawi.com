@@ -4,7 +4,7 @@ import JobDescription from './JobDescription';
 
 const ExperienceTimeline = () => {
   return (
-    <div className='flow-root md:max-w-3xl'>
+    <div className='flow-root lg:max-w-3xl sm:max-w-2xl'>
       <ul role='list' className='-mb-8'>
         {EXPERIENCES.map((experience, idx) => (
           <li key={experience.id}>
