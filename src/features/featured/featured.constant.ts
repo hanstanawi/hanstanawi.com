@@ -4,7 +4,7 @@ export const projects: Project[] = [
   {
     id: 'lumina-landing',
     title: 'Lumina Landing Page',
-    description: `FilmSeeker is actually my own fictional startup idea during my second year of college. It's a web application where users can search for movies, add them to a watchlist, add ratings to the movies, etc.`,
+    description: `One of the projects at my current job, building Lumina webcam e-commerce landing page. Showcasing Lumina webcam as 4K quality webcam and AI features. Built with Next.js, TypeScript, TailwindCSS and Shopify API integration.`,
     githubUrl: null,
     demoUrl: 'https://getlumina.com',
     technologies: ['Next.js', 'TypeScript', 'TailwindCSS'],

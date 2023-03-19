@@ -40,7 +40,7 @@ const Navbar = () => {
       ref={navbarRef}
     >
       {/* CONTAINER */}
-      <div className='flex container justify-between mx-auto items-center xl:max-w-6xl lg:max-w-4xl sm:max-w-2xl max-w-sm sm:px-0 px-3 relative'>
+      <div className='flex container justify-between mx-auto items-center xl:max-w-6xl lg:max-w-4xl md:max-w-2xl sm:max-w-lg max-w-sm sm:px-0 px-3 relative'>
         {/* LOGO */}
         <SmoothScrollLink
           to={'hero'}
