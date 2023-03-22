@@ -15,6 +15,7 @@ import useScrollLock from 'hooks/use-scroll-lock';
 import useScrollVisible from 'hooks/use-scroll-visible';
 import { LINKS } from 'constants/navigation.constant';
 import { animateInViewElement } from 'lib/animation.lib';
+import DarkModeToggle from 'components/DarkModeToggle';
 
 const Navbar = () => {
   const [open, cycleOpen] = useCycle(false, true);
@@ -76,18 +77,21 @@ const Navbar = () => {
               />
             ))}
           </ul>
-          <Link href={'/resume.pdf'}>
-            <a
-              target='_blank'
-              style={animateInViewElement(isInView, {
-                direction: 'translateY(-20px)',
-                speed: 0.3,
-                delay: 500,
-              })}
-            >
-              <Button sizeClasses='px-4 py-2.5 text-sm'>Resume</Button>
-            </a>
-          </Link>
+          <div className='flex items-center gap-x-8'>
+            <Link href={'/resume.pdf'}>
+              <a
+                target='_blank'
+                style={animateInViewElement(isInView, {
+                  direction: 'translateY(-20px)',
+                  speed: 0.3,
+                  delay: 500,
+                })}
+              >
+                <Button sizeClasses='px-4 py-2.5 text-sm'>Resume</Button>
+              </a>
+            </Link>
+            <DarkModeToggle />
+          </div>
         </nav>
       </div>
       <Hamburger isOpen={open} onToggleOpen={cycleOpen} isInView={isInView} />
