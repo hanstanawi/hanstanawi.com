@@ -32,7 +32,7 @@ const DarkModeToggle = () => {
   return (
     <AnimatePresence exitBeforeEnter initial={false}>
       <motion.button
-        className='text-2xl text-gray-400 focus:outline-none'
+        className='text-2xl dark:text-yellow-500 text-gray-400 focus:outline-none'
         onClick={() => toggleMode()}
         key={isDark ? 'dark-icon' : 'light-icon'}
         initial={{ y: -20, opacity: 0 }}

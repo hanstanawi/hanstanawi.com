@@ -9,13 +9,13 @@ import Overlay from 'components/Overlay';
 import Logo from 'public/icons/ht-logo.svg';
 import Button from '../Button';
 import Hamburger from './Hamburger';
+import DarkModeToggle from 'components/DarkModeToggle';
 import NavItem from './NavItem';
 import SideNavbar from './SideNavbar';
 import useScrollLock from 'hooks/use-scroll-lock';
 import useScrollVisible from 'hooks/use-scroll-visible';
 import { LINKS } from 'constants/navigation.constant';
 import { animateInViewElement } from 'lib/animation.lib';
-import DarkModeToggle from 'components/DarkModeToggle';
 
 const Navbar = () => {
   const [open, cycleOpen] = useCycle(false, true);
@@ -35,7 +35,7 @@ const Navbar = () => {
   return (
     <header
       className={cx(
-        'w-full bg-white fixed md:h-24 h-[80px] flex items-center border-b border-gray-200 z-20 transition-top duration-700',
+        'w-full fixed md:h-24 h-[80px] flex items-center border-b dark:border-transparent border-gray-200 z-20 transition-top duration-700',
         visible ? 'top-0 left-0' : '-top-[100px]'
       )}
       ref={navbarRef}
@@ -58,7 +58,7 @@ const Navbar = () => {
             })}
           >
             <Logo />
-            <div className='text-sm hidden lg:block'>
+            <div className='text-sm hidden lg:block dark:text-gray-300 text-black'>
               <p>Hans Tanawi</p>
               <p>Full Stack Engineer</p>
             </div>

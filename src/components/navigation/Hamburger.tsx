@@ -25,9 +25,9 @@ const Hamburger = ({ isOpen, onToggleOpen, isInView }: HamburgerProps) => {
           )}
           onClick={onToggleOpen}
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <span className='bg-black dark:bg-tealGreen'></span>
+          <span className='bg-black dark:bg-tealGreen'></span>
+          <span className='bg-black dark:bg-tealGreen'></span>
         </div>
       </div>
       <style jsx>{`
@@ -46,7 +46,6 @@ const Hamburger = ({ isOpen, onToggleOpen, isInView }: HamburgerProps) => {
           position: absolute;
           height: 1.7px;
           width: 100%;
-          background: black;
           opacity: 1;
           left: 0;
           transform: rotate(0deg);
