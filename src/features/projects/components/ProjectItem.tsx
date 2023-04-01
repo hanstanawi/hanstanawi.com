@@ -39,7 +39,7 @@ const ProjectItem = ({ project, delay }: ProjectItemProps) => {
   return (
     <>
       <motion.div
-        className='flex flex-col justify-start items-center p-8 border dark:border-transparent border-gray-200 rounded-md shadow-lg cursor-pointer dark:bg-darkV5'
+        className='flex flex-col justify-start items-center p-8 border dark:border-transparent border-gray-200 rounded-md shadow-lg cursor-pointer dark:bg-dark'
         whileHover={{ y: isMobile ? '0px' : '-10px' }}
         onHoverStart={() => handleSetHover(true)}
         onHoverEnd={() => handleSetHover(false)}
