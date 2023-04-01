@@ -23,7 +23,7 @@ const Projects = () => {
                 speed: 0.3,
               })}
             >
-              <h1 className='md:text-2xl text-xl font-semibold text-center'>
+              <h1 className='md:text-2xl text-xl dark:text-gray-300 text-black font-semibold text-center'>
                 Other Noteworthy Projects
               </h1>
             </div>

@@ -35,7 +35,7 @@ const Navbar = () => {
   return (
     <header
       className={cx(
-        'w-full fixed md:h-24 h-[80px] flex items-center border-b dark:border-transparent border-gray-200 z-20 transition-top duration-700',
+        'w-full dark:bg-inherit  bg-white fixed md:h-24 h-[80px] flex items-center border-b dark:border-transparent border-gray-200 z-20 transition-top duration-700',
         visible ? 'top-0 left-0' : '-top-[100px]'
       )}
       ref={navbarRef}

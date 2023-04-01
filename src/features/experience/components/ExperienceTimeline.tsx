@@ -11,21 +11,21 @@ const ExperienceTimeline = () => {
             <div className='relative pb-14'>
               {idx !== EXPERIENCES.length - 1 ? (
                 <span
-                  className='absolute top-4 md:left-[7px] left-[5px] -ml-px h-full w-0.5 bg-gray-200'
+                  className='absolute top-4 md:left-[7px] left-[5px] -ml-px h-full dark:w-[1px] w-0.5 bg-gray-200'
                   aria-hidden='true'
                 />
               ) : null}
               {/* BASE LINE */}
               <span
-                className='absolute top-4 md:left-[7px] left-[5px] -ml-px h-[90%] sm:h-[85%] w-0.5 bg-gray-200'
+                className='absolute top-4 md:left-[7px] left-[5px] -ml-px h-[90%] sm:h-[85%] dark:w-[1px] w-0.5 bg-gray-200'
                 aria-hidden='true'
               />
               <div className='relative flex space-x-6'>
                 <div className='pt-2.5'>
                   <span
                     className={cx(
-                      'bg-gray-300',
-                      'md:h-3.5 md:w-3.5 h-2.5 w-2.5 rounded-full flex items-center justify-center ring-8 ring-white'
+                      'bg-gray-200',
+                      'md:h-3.5 md:w-3.5 h-2.5 w-2.5 rounded-full flex items-center justify-center ring-8 dark:ring-darkV2 ring-white'
                     )}
                   ></span>
                 </div>

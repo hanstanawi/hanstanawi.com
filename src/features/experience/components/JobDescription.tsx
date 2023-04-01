@@ -31,7 +31,9 @@ const JobDescription = ({ experience, isSelected }: JobDescriptionProps) => {
       )}
     >
       <h3 className='lg:text-3xl sm:text-2xl text-xl'>
-        <span className='font-semibold'>{experience.role}</span>{' '}
+        <span className='font-semibold dark:text-gray-300 text-black'>
+          {experience.role}
+        </span>{' '}
         <span className='text-tealGreen font-medium'>
           <Link href={experience.url}>
             <a
@@ -44,18 +46,18 @@ const JobDescription = ({ experience, isSelected }: JobDescriptionProps) => {
         </span>
       </h3>
       <div>
-        <p className='text-gray-800 md:text-lg text-base pb-1'>
+        <p className='dark:text-gray-400 text-gray-800 md:text-lg text-base pb-1'>
           {experience.location}
         </p>
-        <p className='text-gray-500 md:text-base text-sm'>
+        <p className='dark:text-gray-300 text-gray-500 md:text-base text-sm'>
           {formattedStartDate} - {formattedEndDate}
         </p>
       </div>
-      <p className='lg:text-lg md:text-base text-sm'>
+      <p className='lg:text-lg lg:leading-[26px] md:text-base dark:text-gray-300 text-black text-sm'>
         {experience.description}
       </p>
 
-      <ul className='flex flex-col gap-y-4 list-disc text-gray-500 md:text-base text-[13px] pl-4'>
+      <ul className='flex flex-col gap-y-4 list-disc dark:text-gray-400 text-gray-500 md:text-base text-[13px] pl-4'>
         {experience.responsibilities.map((r) => (
           <li key={r}>{r}</li>
         ))}

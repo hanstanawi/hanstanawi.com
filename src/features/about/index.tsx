@@ -23,8 +23,8 @@ const About = () => {
                 speed: 0.3,
               })}
             >
-              <div className='h-[1px] bg-[#E5E5E5] lg:w-1/2 md:w-10/12 w-3/4'></div>
-              <h1 className='xl:text-5xl sm:text-4xl text-3xl text-black lg:w-1/2 md:w-2/12 w-1/4'>
+              <div className='dark:h-[0.5px] h-[1px] dark:bg-gray-300 bg-[#E5E5E5] lg:w-1/2 md:w-10/12 w-3/4'></div>
+              <h1 className='xl:text-5xl sm:text-4xl text-3xl dark:text-gray-300 text-black lg:w-1/2 md:w-2/12 w-1/4'>
                 About
               </h1>
             </div>
