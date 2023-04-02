@@ -7,7 +7,6 @@ import { useInView } from 'framer-motion';
 
 import Overlay from 'components/Overlay';
 import Logo from 'public/icons/ht-logo.svg';
-import WhiteLogo from 'public/icons/logo-white.svg';
 import Button from '../Button';
 import Hamburger from './Hamburger';
 import DarkModeToggle from 'components/DarkModeToggle';
