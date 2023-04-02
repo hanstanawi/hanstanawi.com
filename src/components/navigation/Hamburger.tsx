@@ -1,4 +1,5 @@
 import cx from 'classnames';
+import DarkModeToggle from 'components/DarkModeToggle';
 import { animateInViewElement } from 'lib/animation.lib';
 
 type HamburgerProps = {
@@ -11,13 +12,14 @@ const Hamburger = ({ isOpen, onToggleOpen, isInView }: HamburgerProps) => {
   return (
     <>
       <div
-        className='lg:hidden flex items-center z-50 absolute md:right-20 sm:right-10 right-7 sm:top-10 top-8'
+        className='lg:hidden flex items-center gap-x-6 z-50 absolute md:right-14 sm:right-6 right-5 sm:top-9 top-6'
         style={animateInViewElement(isInView, {
           direction: 'translateY(-20px)',
           speed: 0.3,
           delay: 100,
         })}
       >
+        <DarkModeToggle />
         <div
           className={cx(
             'nav-icon absolute align text-3xl',
@@ -25,9 +27,9 @@ const Hamburger = ({ isOpen, onToggleOpen, isInView }: HamburgerProps) => {
           )}
           onClick={onToggleOpen}
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <span className='bg-black dark:bg-tealGreen'></span>
+          <span className='bg-black dark:bg-tealGreen'></span>
+          <span className='bg-black dark:bg-tealGreen'></span>
         </div>
       </div>
       <style jsx>{`
@@ -46,7 +48,6 @@ const Hamburger = ({ isOpen, onToggleOpen, isInView }: HamburgerProps) => {
           position: absolute;
           height: 1.7px;
           width: 100%;
-          background: black;
           opacity: 1;
           left: 0;
           transform: rotate(0deg);

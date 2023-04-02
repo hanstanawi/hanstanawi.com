@@ -4,7 +4,7 @@ import SkillSection from './SkillSection';
 const Content = () => {
   return (
     <div className='lg:w-1/2 md:w-11/12 w-full'>
-      <div className='flex flex-col gap-y-3 text-gray-500 md:text-base text-sm'>
+      <div className='flex flex-col gap-y-3 dark:text-gray-400 text-gray-500 md:text-base text-sm'>
         <p>
           Hey there! I&apos;m Hans, a full stack software engineer who enjoys
           building things that live on the internet. I love working in the realm

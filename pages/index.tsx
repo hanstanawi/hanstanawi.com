@@ -16,7 +16,7 @@ const Home: NextPage = () => {
   return (
     <>
       <NextSeo {...homeSeoConfig} />
-      <div className='bg-white font-basic lg:scroll-smooth'>
+      <div className='font-basic lg:scroll-smooth'>
         <main>
           <Hero />
           <About />

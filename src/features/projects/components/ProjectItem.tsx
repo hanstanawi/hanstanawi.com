@@ -39,7 +39,7 @@ const ProjectItem = ({ project, delay }: ProjectItemProps) => {
   return (
     <>
       <motion.div
-        className='flex flex-col justify-start items-center p-8 border border-gray-200 rounded-md shadow-lg cursor-pointer'
+        className='flex flex-col justify-start items-center p-8 border dark:border-transparent border-gray-200 rounded-md shadow-lg cursor-pointer dark:bg-dark'
         whileHover={{ y: isMobile ? '0px' : '-10px' }}
         onHoverStart={() => handleSetHover(true)}
         onHoverEnd={() => handleSetHover(false)}
@@ -63,12 +63,14 @@ const ProjectItem = ({ project, delay }: ProjectItemProps) => {
           <h3
             className={cx(
               'font-semibold md:text-xl text-lg transition duration-150',
-              isHovered ? 'text-tealGreen' : 'text-black'
+              isHovered ? 'text-tealGreen' : 'dark:text-gray-300 text-black'
             )}
           >
             {project.title}
           </h3>
-          <p className='md:text-sm text-[13px] mb-4'>{project.description}</p>
+          <p className='md:text-sm text-[13px] mb-4 dark:text-gray-300 text-black'>
+            {project.description}
+          </p>
           <div className='flex md:gap-x-3 md:gap-y-2 gap-y-2 gap-x-3 md:text-base text-[13px] flex-wrap'>
             {project.technologies.map((tech) => (
               <p key={tech} className='text-sm text-gray-400'>

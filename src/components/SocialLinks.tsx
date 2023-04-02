@@ -22,7 +22,7 @@ const SocialLinks = ({ small = false }: SocialLinksProps) => {
         <Link href={SOCIAL_LINKS.GITHUB}>
           <a target='_blank' className='cursor-pointer'>
             <FaGithub
-              className='hover:text-black text-gray-500 transition duration-500'
+              className='hover:text-black dark:hover:text-tealGreen dark:text-gray-300 text-gray-500 transition duration-500'
               size={desktopSize}
             />
           </a>
@@ -30,7 +30,7 @@ const SocialLinks = ({ small = false }: SocialLinksProps) => {
         <Link href={SOCIAL_LINKS.LINKEDIN}>
           <a target='_blank' className='cursor-pointer'>
             <FaLinkedin
-              className='hover:text-black text-gray-500 transition duration-500'
+              className='hover:text-black dark:hover:text-tealGreen dark:text-gray-300 text-gray-500  transition duration-500'
               size={desktopSize}
             />
           </a>
@@ -38,7 +38,7 @@ const SocialLinks = ({ small = false }: SocialLinksProps) => {
         <Link href={SOCIAL_LINKS.INSTAGRAM}>
           <a target='_blank' className='cursor-pointer'>
             <FaInstagram
-              className='hover:text-black text-gray-500 transition duration-500'
+              className='hover:text-black dark:hover:text-tealGreen dark:text-gray-300 text-gray-500  transition duration-500'
               size={desktopSize}
             />
           </a>
@@ -48,17 +48,26 @@ const SocialLinks = ({ small = false }: SocialLinksProps) => {
       <div className='flex gap-x-4 my-4 md:hidden'>
         <Link href={SOCIAL_LINKS.GITHUB}>
           <a target='_blank' className='cursor-pointer'>
-            <FaGithub className='text-gray-500' size={mobileSize} />
+            <FaGithub
+              className='dark:text-gray-300 text-gray-500'
+              size={mobileSize}
+            />
           </a>
         </Link>
         <Link href={SOCIAL_LINKS.LINKEDIN}>
           <a target='_blank' className='cursor-pointer'>
-            <FaLinkedin className='text-gray-500' size={mobileSize} />
+            <FaLinkedin
+              className='dark:text-gray-300 text-gray-500'
+              size={mobileSize}
+            />
           </a>
         </Link>
         <Link href={SOCIAL_LINKS.INSTAGRAM}>
           <a target='_blank' className='cursor-pointer'>
-            <FaInstagram className='text-gray-500' size={mobileSize} />
+            <FaInstagram
+              className='dark:text-gray-300 text-gray-500'
+              size={mobileSize}
+            />
           </a>
         </Link>
       </div>

@@ -21,10 +21,10 @@ const Contact = () => {
                 speed: 0.3,
               })}
             >
-              <h1 className='lg:text-5xl md:text-4xl text-3xl text-center font-semibold text-black'>
+              <h1 className='lg:text-5xl md:text-4xl text-3xl text-center font-semibold dark:text-gray-300 text-black'>
                 Get In Touch
               </h1>
-              <div className='md:text-xl text-sm text-center text-gray-500 lg:w-7/12 md:w-9/12 w-full font-light mb-3'>
+              <div className='md:text-xl text-sm text-center dark:text-gray-300 text-gray-500 lg:w-7/12 md:w-9/12 w-full font-light mb-3'>
                 <h4 className='mb-1'>
                   I&apos;m currently open to new exciting opportunities globally
                   and open-source projects collaboration. Don&apos;t hesitate to
@@ -33,7 +33,11 @@ const Contact = () => {
                 <h4>My inbox is always open!</h4>
               </div>
               <Link href={'mailto:hanstanawi@gmail.com'}>
-                <a className='border-black border md:p-4 p-3 md:text-lg text-sm rounded-md md:hover:text-white md:hover:bg-black transition duration-300'>
+                <a
+                  className='dark:border-tealGreen border-black border md:p-4 p-3 md:text-lg text-sm rounded-md 
+                md:hover:text-white md:hover:bg-black transition duration-300 dark:text-tealGreen text-black
+                dark:md:hover:text-white dark:md:hover:bg-tealGreen dark:md:hover:bg-opacity-20'
+                >
                   Contact Me
                 </a>
               </Link>

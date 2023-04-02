@@ -12,13 +12,13 @@ const Content = ({ project }: ContentProps) => {
       <p className='text-tealGreen lg:text-lg text-sm'>Featured Project</p>
       <Link href={project.demoUrl}>
         <a
-          className='font-semibold text-black lg:text-2xl text-xl md:mb-5 mb-3 mt-1.5'
+          className='font-semibold dark:text-gray-300 text-black lg:text-2xl text-xl md:mb-5 mb-3 mt-1.5'
           target='_blank'
         >
           {project.title}
         </a>
       </Link>
-      <div className='rounded-sm md:mb-3 mb-5 break-words md:text-base text-sm'>
+      <div className='rounded-sm md:mb-3 mb-5 dark:text-gray-400 text-black break-words md:text-base text-sm'>
         <p>{project.description}</p>
       </div>
       <div className='flex md:gap-x-4 md:gap-y-0 gap-y-2 gap-x-3 md:mb-4 mb-5 md:text-base text-sm flex-wrap'>
