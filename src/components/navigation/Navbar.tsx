@@ -93,7 +93,16 @@ const Navbar = () => {
                   <Button sizeClasses='px-4 py-2.5 text-sm'>Resume</Button>
                 </a>
               </Link>
-              <DarkModeToggle />
+              <div
+                style={animateInViewElement(isInView, {
+                  direction: 'translateY(-20px)',
+                  speed: 0.3,
+                  delay: 600,
+                })}
+                className='md:flex block items-center'
+              >
+                <DarkModeToggle />
+              </div>
             </div>
           </nav>
         </div>
