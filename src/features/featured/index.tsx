@@ -25,7 +25,7 @@ const FeaturedSection = () => {
                 })}
               >
                 <div className='dark:h-[0.5px] h-[1px] dark:bg-gray-300 bg-[#E5E5E5] md:w-9/12 w-9/12'></div>
-                <h1 className='xl:text-5xl sm:text-4xl text-2x dark:text-gray-300 text-black sm:text-left text-right md:w-2/12 w-4/12'>
+                <h1 className='xl:text-5xl sm:text-4xl text-2xl dark:text-gray-300 text-black sm:text-left text-right md:w-2/12 w-4/12'>
                   Projects
                 </h1>
               </div>

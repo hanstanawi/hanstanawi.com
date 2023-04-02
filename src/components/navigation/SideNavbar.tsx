@@ -34,7 +34,7 @@ const itemVariants = {
 const SideNavbar = ({ onClickClose }: SideNavbarProps) => {
   return (
     <motion.aside
-      className='fixed bg-darkV2 max-h-screen h-screen w-3/4 right-0 
+      className='fixed bg-inherit max-h-screen h-screen w-3/4 right-0 
       top-0 flex flex-col items-center justify-center z-40 lg:hidden'
       initial={{ width: 0 }}
       animate={{

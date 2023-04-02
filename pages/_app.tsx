@@ -5,6 +5,8 @@ import Navbar from 'components/navigation/Navbar';
 import type { AppProps } from 'next/app';
 import '../styles/globals.css';
 
+import DarkModeContextProvider from 'context/DarkModeContext';
+
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     if (
@@ -19,12 +21,14 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, []);
 
   return (
-    <div className='dark:bg-darkV2 bg-white transition duration-300'>
-      <Navbar />
-      <Component {...pageProps} />
-      <Footer />
-      <Analytics />
-    </div>
+    <DarkModeContextProvider>
+      <div className='dark:bg-darkV2 bg-white transition duration-300'>
+        <Navbar />
+        <Component {...pageProps} />
+        <Footer />
+        <Analytics />
+      </div>
+    </DarkModeContextProvider>
   );
 }
 
