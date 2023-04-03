@@ -44,6 +44,18 @@ const DarkModeContextProvider = ({
 
   useEffect(() => {
     setIsDark(checkDarkMode());
+
+    // Watch for changes
+    window
+      .matchMedia('(prefers-color-scheme: dark)')
+      .addEventListener('change', (event) => {
+        const colorScheme = event.matches ? 'dark' : 'light';
+        if (colorScheme === 'dark') {
+          setIsDark(true);
+        } else {
+          setIsDark(false);
+        }
+      });
   }, []);
 
   return (
