@@ -18,6 +18,18 @@ function MyApp({ Component, pageProps }: AppProps) {
     } else {
       document.documentElement.classList.remove('dark');
     }
+
+    // Watch for changes
+    window
+      .matchMedia('(prefers-color-scheme: dark)')
+      .addEventListener('change', (event) => {
+        const colorScheme = event.matches ? 'dark' : 'light';
+        if (colorScheme === 'dark') {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      });
   }, []);
 
   return (
