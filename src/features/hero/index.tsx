@@ -7,6 +7,7 @@ import SocialLinks from 'components/SocialLinks';
 import { animateInViewElement } from 'lib/animation.lib';
 import useMediaQuery from 'hooks/use-media-query';
 import Parallax from 'components/Parallax';
+import Circles from 'public/images/circles.svg';
 
 const SUBTITLE = `I'm a full stack engineer specializing building things for web
 and based in Taipei, Taiwan`;
@@ -55,7 +56,7 @@ const Hero = () => {
   const items = [firstTitle, secondTitle, subtitle, cta];
 
   return (
-    <section id='hero' ref={ref}>
+    <section id='hero' ref={ref} className='relative'>
       <SectionLayout>
         <Parallax offset={0}>
           <div className='h-[100vh] flex flex-col justify-center items-start gap-y-2 pt-14'>
@@ -67,6 +68,7 @@ const Hero = () => {
                   speed: 0.3,
                   delay: (i + initialDelay) * 200,
                 })}
+                className='z-10'
               >
                 {item}
               </div>
@@ -74,6 +76,9 @@ const Hero = () => {
           </div>
         </Parallax>
       </SectionLayout>
+      <div className='dark:hidden lg:block hidden absolute top-0 right-0'>
+        <Circles />
+      </div>
     </section>
   );
 };
