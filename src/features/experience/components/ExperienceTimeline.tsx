@@ -1,6 +1,7 @@
 import cx from 'classnames';
 import { EXPERIENCES } from '../experience.constant';
 import JobDescription from './JobDescription';
+import Circles from 'public/images/circles-3.svg';
 
 const ExperienceTimeline = () => {
   return (
@@ -29,10 +30,16 @@ const ExperienceTimeline = () => {
                     )}
                   ></span>
                 </div>
-                <div className='flex min-w-0 flex-1 justify-between space-x-4'>
+                <div className='flex min-w-0 flex-1 justify-between space-x-4 z-20'>
                   <JobDescription experience={experience} isSelected />
                 </div>
               </div>
+            </div>
+            <div
+              className='dark:hidden lg:block hidden absolute -bottom-24 -right-2 z-0 opacity-40'
+              // style={{ transform: 'scaleX(-1)' }}
+            >
+              <Circles />
             </div>
           </li>
         ))}

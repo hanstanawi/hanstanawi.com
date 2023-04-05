@@ -37,7 +37,7 @@ const About = () => {
                 delay: 300,
               })}
             >
-              <ProfileImage />
+              <ProfileImage isInView={isInView} />
               <Content />
             </div>
           </div>

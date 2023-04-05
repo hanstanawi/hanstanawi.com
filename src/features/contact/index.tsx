@@ -15,16 +15,16 @@ const Contact = () => {
       <SectionLayout>
         <div className='h-[450px] md:h-[600px] w-full'>
           <div
-            className='flex flex-col h-full justify-center items-center md:gap-y-7 gap-y-4 z-20'
+            className='flex flex-col h-full justify-center items-center md:gap-y-7 gap-y-4'
             style={animateInViewElement(isInView, {
               direction: 'translateY(30px)',
               speed: 0.3,
             })}
           >
-            <h1 className='lg:text-5xl md:text-4xl text-3xl text-center font-semibold dark:text-gray-300 text-black'>
+            <h1 className='lg:text-5xl z-40 md:text-4xl text-3xl text-center font-semibold dark:text-gray-300 text-black'>
               Get In Touch
             </h1>
-            <div className='md:text-xl text-sm text-center dark:text-gray-300 text-gray-500 lg:w-7/12 md:w-9/12 w-full font-light mb-3'>
+            <div className='md:text-xl text-sm text-center dark:text-gray-300 text-gray-500 lg:w-7/12 md:w-9/12 w-full font-light mb-3 z-50'>
               <h4 className='mb-1'>
                 I&apos;m currently open to new exciting opportunities globally
                 and open-source projects collaboration. Don&apos;t hesitate to
@@ -43,10 +43,13 @@ const Contact = () => {
             </Link>
           </div>
         </div>
+        <div
+          className='dark:hidden lg:block hidden absolute -top-16 left-32 z-0 opacity-40'
+          style={{ transform: 'scaleX(-1)' }}
+        >
+          <Circles />
+        </div>
       </SectionLayout>
-      <div className='dark:hidden lg:block hidden absolute top-0 right-0 opacity-70 transform'>
-        <Circles />
-      </div>
     </section>
   );
 };

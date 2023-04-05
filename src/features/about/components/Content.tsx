@@ -11,8 +11,8 @@ const Content = () => {
           between frontend and backend applications.
         </p>
         <p>
-          I grew up in Indonesia and continued my study in Taiwan. Having the
-          opportunity to pursue my study abroad, not only learn about new
+          I grew up in Indonesia and continued my career in Taiwan. Having the
+          opportunity to pursue my career abroad, not only learn about new
           experience and culture, but also make me fluent in Chinese and English
           professionally.
         </p>
