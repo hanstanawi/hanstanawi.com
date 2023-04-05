@@ -34,7 +34,7 @@ const Contact = () => {
             </div>
             <Link href={'mailto:hanstanawi@gmail.com'}>
               <a
-                className='dark:border-tealGreen border-black border md:p-4 p-3 md:text-lg text-sm rounded-md 
+                className='dark:border-tealGreen z-50 border-black border md:p-4 p-3 md:text-lg text-sm rounded-md 
                 md:hover:text-white md:hover:bg-black transition duration-300 dark:text-tealGreen text-black
                 dark:md:hover:text-white dark:md:hover:bg-tealGreen dark:md:hover:bg-opacity-20'
               >
@@ -44,7 +44,7 @@ const Contact = () => {
           </div>
         </div>
         <div
-          className='dark:hidden lg:block hidden absolute -top-16 left-32 z-0 opacity-40'
+          className='dark:hidden lg:block hidden absolute -top-16 left-32 opacity-40'
           style={{ transform: 'scaleX(-1)' }}
         >
           <Circles />
