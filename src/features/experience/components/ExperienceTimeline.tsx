@@ -1,7 +1,7 @@
 import cx from 'classnames';
-import { EXPERIENCES } from '../experience.constant';
+import Circles from 'public/assets/circles-3.svg';
 import JobDescription from './JobDescription';
-import Circles from 'public/images/circles-3.svg';
+import { EXPERIENCES } from '../experience.constant';
 
 const ExperienceTimeline = () => {
   return (

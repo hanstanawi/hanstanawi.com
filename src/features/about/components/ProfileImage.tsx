@@ -1,8 +1,7 @@
 import Image from 'next/image';
-import Circles from 'public/images/circles-1.svg';
-import { animateInViewElement } from 'lib/animation.lib';
+import Circles from 'public/assets/circles-2.svg';
 
-const ProfileImage = ({ isInView }: { isInView: boolean }) => {
+const ProfileImage = () => {
   return (
     <div className='lg:w-1/2 md:w-9/12 w-full pt-2.5 relative'>
       <Image

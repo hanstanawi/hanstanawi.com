@@ -4,7 +4,7 @@ import { Link as SmoothScrollLink } from 'react-scroll';
 import Button from 'components/Button';
 import SectionLayout from 'components/SectionLayout';
 import SocialLinks from 'components/SocialLinks';
-import Circles from 'public/images/circles.svg';
+import Circles from 'public/assets/circles.svg';
 import Parallax from 'components/Parallax';
 import useMediaQuery from 'hooks/use-media-query';
 import { animateInViewElement } from 'lib/animation.lib';
