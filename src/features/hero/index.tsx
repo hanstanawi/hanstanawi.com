@@ -4,9 +4,10 @@ import { Link as SmoothScrollLink } from 'react-scroll';
 import Button from 'components/Button';
 import SectionLayout from 'components/SectionLayout';
 import SocialLinks from 'components/SocialLinks';
-import { animateInViewElement } from 'lib/animation.lib';
-import useMediaQuery from 'hooks/use-media-query';
+import Circles from 'public/images/circles.svg';
 import Parallax from 'components/Parallax';
+import useMediaQuery from 'hooks/use-media-query';
+import { animateInViewElement } from 'lib/animation.lib';
 
 const SUBTITLE = `I'm a full stack engineer specializing building things for web
 and based in Taipei, Taiwan`;
@@ -67,12 +68,24 @@ const Hero = () => {
                   speed: 0.3,
                   delay: (i + initialDelay) * 200,
                 })}
+                className='z-10'
               >
                 {item}
               </div>
             ))}
           </div>
         </Parallax>
+        <div
+          className='dark:hidden lg:block hidden absolute top-0 -right-32'
+          style={animateInViewElement(isInView, {
+            direction: 'translateY(0px)',
+            speed: 1,
+            delay: 1400,
+            opacity: 0.5,
+          })}
+        >
+          <Circles />
+        </div>
       </SectionLayout>
     </section>
   );
