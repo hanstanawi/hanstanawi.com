@@ -81,6 +81,7 @@ const Hero = () => {
             direction: 'translateY(0px)',
             speed: 1,
             delay: 1400,
+            opacity: 0.5,
           })}
         >
           <Circles />

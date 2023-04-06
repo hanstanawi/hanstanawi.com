@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Circles from 'public/images/circles-1.svg';
+import { animateInViewElement } from 'lib/animation.lib';
 
 const ProfileImage = ({ isInView }: { isInView: boolean }) => {
   return (
@@ -13,7 +14,7 @@ const ProfileImage = ({ isInView }: { isInView: boolean }) => {
         placeholder='blur'
         blurDataURL={`/_next/image?url=/images/profile.jpg&w=16&q=1`}
       />
-      <div className='dark:hidden lg:block opacity-60 hidden absolute -bottom-20 -right-8'>
+      <div className='dark:hidden lg:block opacity-50 hidden absolute -bottom-20 -right-8'>
         <Circles />
       </div>
     </div>

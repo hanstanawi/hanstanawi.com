@@ -35,10 +35,7 @@ const ExperienceTimeline = () => {
                 </div>
               </div>
             </div>
-            <div
-              className='dark:hidden lg:block hidden absolute -bottom-24 -right-2 z-0 opacity-40'
-              // style={{ transform: 'scaleX(-1)' }}
-            >
+            <div className='dark:hidden lg:block hidden absolute -bottom-24 -right-2 z-0 opacity-50'>
               <Circles />
             </div>
           </li>

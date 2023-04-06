@@ -44,7 +44,7 @@ const Contact = () => {
           </div>
         </div>
         <div
-          className='dark:hidden lg:block hidden absolute -top-16 left-32 opacity-40'
+          className='dark:hidden lg:block hidden absolute -top-16 left-32 opacity-50'
           style={{ transform: 'scaleX(-1)' }}
         >
           <Circles />
