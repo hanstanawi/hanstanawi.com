@@ -1,6 +1,6 @@
 import cx from 'classnames';
-import { format } from 'date-fns';
 import Link from 'next/link';
+import { format } from 'date-fns';
 import { Experience } from '../experience.type';
 
 type JobDescriptionProps = {

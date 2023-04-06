@@ -1,10 +1,11 @@
+import { useRef } from 'react';
+import { useInView } from 'framer-motion';
+
+import Content from './components/Content';
 import Parallax from 'components/Parallax';
 import SectionLayout from 'components/SectionLayout';
-import { useInView } from 'framer-motion';
-import { animateInViewElement } from 'lib/animation.lib';
-import { useRef } from 'react';
-import Content from './components/Content';
 import ProfileImage from './components/ProfileImage';
+import { animateInViewElement } from 'lib/animation.lib';
 
 const About = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -37,7 +38,7 @@ const About = () => {
                 delay: 300,
               })}
             >
-              <ProfileImage isInView={isInView} />
+              <ProfileImage />
               <Content />
             </div>
           </div>
