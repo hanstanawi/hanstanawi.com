@@ -13,12 +13,17 @@ export const EXPERIENCES: Experience[] = [
     integrated hardware to make remote work better. 
     As the web team lead in Lumina, I'm responsible for Lumina e-commerce landing page and backend API services.`,
     responsibilities: [
-      `Lead, develop, and maintain Lumina Next.js e-commerce landing page development.`,
-      `Implement AB tests periodically to enhance landing page conversion rate.`,
-      `Increase the website performance by 30%.`,
-      `Lead and implement the migration process from serverless services to full backend API service.`,
-      `Architect, develop, and maintain Lumina backend APIs with Node.js, NestJS,
-    and PostgreSQL as backend API for Lumina Studio native application.`,
+      `Develop and maintain Lumina ecommerce landing page with Next.js,
+      React, TypeScript, and Shopify integration.`,
+      `Enhance the website performance and conversion rate by implementing
+      AB tests, code splitting, and lazy loading, resulting in 30% increase in
+      pagespeed score.`,
+      `Applied a migration process from serverless functions architect to full
+      backend API service, resulting in a 15% performance and reduction in
+      cost.`,
+      `Architect and develop backend REST API with Node.js, NestJS, and
+      PostgreSQL and write unit and integration tests using Jest and Supertest
+      to maintain code assurance and cover main usage scenarios.`,
     ],
   },
   {
@@ -32,13 +37,17 @@ export const EXPERIENCES: Experience[] = [
     description: `Molteo is a digital workspace, which provides real-time overview of projects
     and construction sites, flexible resource capturing, and paperless billing. As a frontend engineer, I'm responsible for the development and stability of the Molteo web platform, as well as collaborate with backend team to develop performant platform and APIs.`,
     responsibilities: [
-      `Develop and maintain modern, performant, and robust code of Molteo
-    Vue.js web application.`,
-      `Revamp the overall web app UI design to enchance user experience.`,
-      `Implement frontend codebase refactoring to enhance performance by 25% and code readibility, such as migrate whole codebase from JavaScript to
-      TypeScript for type safety.`,
-      `Write thorough web application end-to-end tests using Cypress.`,
-      `Assist and collaborate with backend team developing and maintaining APIs with Node.js, Express and PostgreSQL.`,
+      `Developed and maintained modern, performant, and robust code of
+      Molteo web application with Vue.js, Vuex, Vuetify, and wrote end-to-end
+      tests to cover main usage scenarios and code assurance.`,
+      `Applied a migration process on frontend codebase from JavaScript to
+      TypeScript to enhance code quality and improve performance, leading to
+      a 20% reduction in bugs.`,
+      `Collaborated with backend team to develop backend services APIs with
+      Feathers.js, TypeScript, and PostgreSQL and maintained seamless
+      frontend to backend integration.`,
+      `Implemented new interface design from Figma to code and redesigned
+      main components to improve overall user experience.`,
     ],
   },
 ];
