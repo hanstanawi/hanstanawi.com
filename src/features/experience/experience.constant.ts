@@ -44,7 +44,7 @@ export const EXPERIENCES: Experience[] = [
       TypeScript to enhance code quality and improve performance, leading to
       a 20% reduction in bugs.`,
       `Collaborated with backend team to develop backend services APIs with
-      Feathers.js, TypeScript, and PostgreSQL and maintained seamless
+      Node.js, Feathers.js, TypeScript, and PostgreSQL and maintained seamless
       frontend to backend integration.`,
       `Implemented new interface design from Figma to code and redesigned
       main components to improve overall user experience.`,

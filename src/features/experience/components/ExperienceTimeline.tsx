@@ -9,7 +9,7 @@ const ExperienceTimeline = () => {
       <ul role='list' className='-mb-8'>
         {EXPERIENCES.map((experience, idx) => (
           <li key={experience.id}>
-            <div className='relative pb-14'>
+            <div className='relative pb-10'>
               {idx !== EXPERIENCES.length - 1 ? (
                 <span
                   className='absolute top-4 md:left-[7px] left-[5px] -ml-px h-full dark:w-[1px] w-0.5 bg-gray-200'
@@ -18,7 +18,7 @@ const ExperienceTimeline = () => {
               ) : null}
               {/* BASE LINE */}
               <span
-                className='absolute top-4 md:left-[7px] left-[5px] -ml-px h-[90%] sm:h-[85%] dark:w-[1px] w-0.5 bg-gray-200'
+                className='absolute top-4 md:left-[7px] left-[5px] -ml-px h-[92%] sm:h-[90%] dark:w-[1px] w-0.5 bg-gray-200'
                 aria-hidden='true'
               />
               <div className='relative flex space-x-6'>
