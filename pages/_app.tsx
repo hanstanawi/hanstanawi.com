@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
-import { Analytics } from '@vercel/analytics/react';
 import Footer from 'components/navigation/Footer';
 import Navbar from 'components/navigation/Navbar';
 import type { AppProps } from 'next/app';
 import '../styles/globals.css';
 
 import DarkModeContextProvider from 'context/DarkModeContext';
+import Analytics from 'components/Analytics';
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -33,14 +33,16 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, []);
 
   return (
-    <DarkModeContextProvider>
-      <div className='dark:bg-darkV2 bg-white transition duration-300'>
-        <Navbar />
-        <Component {...pageProps} />
-        <Footer />
-        <Analytics />
-      </div>
-    </DarkModeContextProvider>
+    <>
+      <Analytics />
+      <DarkModeContextProvider>
+        <div className='dark:bg-darkV2 bg-white transition duration-300'>
+          <Navbar />
+          <Component {...pageProps} />
+          <Footer />
+        </div>
+      </DarkModeContextProvider>
+    </>
   );
 }
 
