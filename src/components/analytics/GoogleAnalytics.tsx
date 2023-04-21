@@ -2,7 +2,7 @@ import Script from 'next/script';
 
 const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_TRACKING_ID;
 
-const Analytics = () => {
+const GoogleAnalytics = () => {
   return (
     <>
       <Script
@@ -25,4 +25,4 @@ const Analytics = () => {
   );
 };
 
-export default Analytics;
+export default GoogleAnalytics;
