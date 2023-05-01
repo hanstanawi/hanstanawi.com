@@ -36,7 +36,7 @@ const Contact = () => {
               </div>
               <Link href={'mailto:hanstanawi@gmail.com'}>
                 <a
-                  className='dark:border-tealGreen z-50 border-black border md:p-4 p-3 md:text-lg text-sm rounded-md 
+                  className='dark:border-tealGreen z-50 border-black border md:py-4 md:px-12 py-3 px-8 md:text-lg text-sm rounded-md 
                 md:hover:text-white md:hover:bg-black transition duration-300 dark:text-tealGreen text-black
                 dark:md:hover:text-white dark:md:hover:bg-tealGreen dark:md:hover:bg-opacity-20'
                 >

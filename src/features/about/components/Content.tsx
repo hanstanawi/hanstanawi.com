@@ -19,9 +19,8 @@ const Content = () => {
         <p>
           Crafting beautiful UI components with excellent user experience and
           building performant and secure server APIs never fail to excite me.
-          <br />
-          My main focus these days is building web user interfaces and
-          performant backend APIs at and working on my side projects whilst
+          <br />c My main focus these days is building web user interfaces and
+          performant backend APIs and working on my side projects whilst
           learning new technologies.
         </p>
         <p className='mt-4'>Technologies I’ve been working with recently:</p>
