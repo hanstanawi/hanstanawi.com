@@ -1,10 +1,11 @@
 import Link from 'next/link';
-import { FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin, FaDiscord } from 'react-icons/fa';
 
 const SOCIAL_LINKS = {
   GITHUB: 'https://github.com/hanstanawi',
   LINKEDIN: 'https://linkedin.com/in/hans-tanawi',
   INSTAGRAM: 'https://instagram.com/hanstanawi',
+  DISCORD: 'https://discordapp.com/users/448399646809915392',
 };
 
 type SocialLinksProps = {
@@ -43,6 +44,14 @@ const SocialLinks = ({ small = false }: SocialLinksProps) => {
             />
           </a>
         </Link>
+        <Link href={SOCIAL_LINKS.DISCORD}>
+          <a target='_blank' className='cursor-pointer'>
+            <FaDiscord
+              className='hover:text-black dark:hover:text-tealGreen dark:text-gray-300 text-gray-500  transition duration-500'
+              size={desktopSize}
+            />
+          </a>
+        </Link>
       </div>
       {/* MOBILE */}
       <div className='flex gap-x-4 my-4 md:hidden'>
@@ -65,6 +74,14 @@ const SocialLinks = ({ small = false }: SocialLinksProps) => {
         <Link href={SOCIAL_LINKS.INSTAGRAM}>
           <a target='_blank' className='cursor-pointer'>
             <FaInstagram
+              className='dark:text-gray-300 text-gray-500'
+              size={mobileSize}
+            />
+          </a>
+        </Link>
+        <Link href={SOCIAL_LINKS.DISCORD}>
+          <a target='_blank' className='cursor-pointer'>
+            <FaDiscord
               className='dark:text-gray-300 text-gray-500'
               size={mobileSize}
             />
