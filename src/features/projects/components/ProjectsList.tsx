@@ -26,7 +26,7 @@ const ProjectsList = () => {
           />
         ))}
       </div>
-      <div className='mt-16 flex justify-center'>
+      <div className='mt-16 mb-8 flex justify-center'>
         <Button
           sizeClasses='md:px-8 px-7 md:py-4 py-3 md:text-base text-sm'
           onClick={() => setIsShowMore((prevState) => !prevState)}

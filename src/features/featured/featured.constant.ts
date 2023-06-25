@@ -41,7 +41,7 @@ export const projects: Project[] = [
   {
     id: 'nudge',
     title: 'Nudge',
-    description: `FilmSeeker is actually my own fictional startup idea during my second year of college. A movie database web application where users can search for movies, create a watchlist, add ratings to the movies, etc. All movies data are supported by TMDB API.`,
+    description: `Nudge is a comprehensive supplement to treat irritable bowel syndrome (IBS). Built with React, Next.js, TypeScript, and TailwindCSS with Stripe payment.`,
     githubUrl: null,
     demoUrl: 'https://nudgehealth.co',
     technologies: ['Next.js', 'TypeScript', 'TailwindCSS'],
