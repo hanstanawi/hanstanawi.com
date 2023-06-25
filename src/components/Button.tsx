@@ -4,9 +4,12 @@ import { ReactNode } from 'react';
 type ButtonProps = {
   children: ReactNode;
   sizeClasses: string;
+  onClick?:
+    | ((event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void)
+    | undefined;
 };
 
-const Button = ({ children, sizeClasses }: ButtonProps) => {
+const Button = ({ children, sizeClasses, onClick }: ButtonProps) => {
   return (
     <button
       className={cx(
@@ -15,6 +18,7 @@ const Button = ({ children, sizeClasses }: ButtonProps) => {
         dark:hover:bg-tealGreen dark:hover:bg-opacity-20 transition duration-300`,
         sizeClasses
       )}
+      onClick={onClick}
     >
       {children}
     </button>
