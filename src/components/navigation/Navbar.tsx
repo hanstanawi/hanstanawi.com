@@ -105,8 +105,12 @@ const Navbar = () => {
               </div>
             </div>
           </nav>
+          <Hamburger
+            isOpen={open}
+            onToggleOpen={cycleOpen}
+            isInView={isInView}
+          />
         </div>
-        <Hamburger isOpen={open} onToggleOpen={cycleOpen} isInView={isInView} />
         {/* NAV MOBILE */}
         {open && <Overlay onClickClose={cycleOpen} />}
         <AnimatePresence>
