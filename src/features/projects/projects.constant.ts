@@ -2,6 +2,14 @@ import { Project } from 'types/projects.type';
 
 export const otherProjects: Omit<Project, 'imageSrc'>[] = [
   {
+    id: 'filmseeker-app',
+    title: 'FilmSeeker',
+    description: `FilmSeeker is actually my own fictional startup idea during my second year of college. A movie database web application where users can search for movies, create a watchlist, add ratings to the movies, etc. All movies data are supported by TMDB API.`,
+    githubUrl: 'https://github.com/hanstanawi/filmseeker-webapp',
+    demoUrl: 'https://filmseeker-webapp.vercel.app',
+    technologies: ['Vue', 'JavaScript', 'Vuex', 'Vuetify'],
+  },
+  {
     id: 'contact-keeper',
     title: 'Contact Keeper',
     description:
@@ -46,15 +54,6 @@ export const otherProjects: Omit<Project, 'imageSrc'>[] = [
     technologies: ['Node.js', 'Express', 'JavaScript', 'MongoDB'],
   },
   {
-    id: 'splitter-app',
-    title: 'Splitter',
-    description:
-      'Simple web app to split bills and calculate tip built with React, TypeScript and Styled Components',
-    githubUrl: 'https://github.com/hanstanawi/splitter-app',
-    demoUrl: 'http://splitter-app-mu.vercel.app',
-    technologies: ['React', 'TypeScript', 'Styled Components', 'Vite'],
-  },
-  {
     id: 'lumina-desk',
     title: 'Lumina Desk',
     description:
@@ -62,5 +61,14 @@ export const otherProjects: Omit<Project, 'imageSrc'>[] = [
     githubUrl: null,
     demoUrl: 'http://getlumina.com/desk',
     technologies: ['Next.js', 'TypeScript', 'TailwindCSS', 'Framer Motion'],
+  },
+  {
+    id: 'splitter-app',
+    title: 'Splitter',
+    description:
+      'Simple web app to split bills and calculate tip built with React, TypeScript and Styled Components',
+    githubUrl: 'https://github.com/hanstanawi/splitter-app',
+    demoUrl: 'http://splitter-app-mu.vercel.app',
+    technologies: ['React', 'TypeScript', 'Styled Components', 'Vite'],
   },
 ];

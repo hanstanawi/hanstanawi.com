@@ -1,21 +1,40 @@
 import { otherProjects } from 'features/projects/projects.constant';
 import ProjectItem from './ProjectItem';
+import Button from 'components/Button';
+import { useMemo, useState } from 'react';
 
 function calculateDelay(index: number): number {
   return (index + 2) * 100; // add 100ms
 }
 
 const ProjectsList = () => {
+  const [isShowMore, setIsShowMore] = useState(false);
+
+  const shownProjects = useMemo(() => {
+    if (isShowMore) return otherProjects;
+    return otherProjects.slice(0, 6);
+  }, [isShowMore]);
+
   return (
-    <div className='grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 lg:w-11/12 w-full'>
-      {otherProjects.map((project, i) => (
-        <ProjectItem
-          key={project.id}
-          project={project}
-          delay={calculateDelay(i)}
-        />
-      ))}
-    </div>
+    <>
+      <div className='grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 lg:w-11/12 w-full'>
+        {shownProjects.map((project, i) => (
+          <ProjectItem
+            key={project.id}
+            project={project}
+            delay={calculateDelay(i)}
+          />
+        ))}
+      </div>
+      <div className='mt-16 flex justify-center'>
+        <Button
+          sizeClasses='md:px-8 px-7 md:py-4 py-3 md:text-base text-sm'
+          onClick={() => setIsShowMore((prevState) => !prevState)}
+        >
+          {isShowMore ? 'Show Less' : 'Show More'}
+        </Button>
+      </div>
+    </>
   );
 };
 

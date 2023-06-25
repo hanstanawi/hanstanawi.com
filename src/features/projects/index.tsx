@@ -27,7 +27,7 @@ const Projects = () => {
                 Other Noteworthy Projects
               </h1>
             </div>
-            <div className='flex justify-center'>
+            <div className='flex flex-col justify-center items-center'>
               <ProjectsList />
             </div>
           </div>
