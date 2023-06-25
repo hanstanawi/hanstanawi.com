@@ -12,7 +12,7 @@ const Hamburger = ({ isOpen, onToggleOpen, isInView }: HamburgerProps) => {
   return (
     <>
       <div
-        className='lg:hidden flex items-center gap-x-6 z-50 absolute md:right-14 sm:right-6 right-5 sm:top-9 top-6'
+        className='lg:hidden flex items-center gap-x-6 z-50'
         style={animateInViewElement(isInView, {
           direction: 'translateY(-20px)',
           speed: 0.3,
