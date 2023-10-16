@@ -1,12 +1,32 @@
 {
-  "name": "next-portfolio",
-  "version": "0.1.0",
+  "name": "hanstanawi.com",
+  "version": "1.4.0",
   "private": true,
+  "description": "A starter project",
+  "keywords": [
+    "next.js",
+    "personal-website",
+    "portfolio",
+    "react",
+    "typescript",
+    "tailwind"
+  ],
+  "homepage": "https://github.com/hanstanawi/hanstanawi.com",
+  "bugs": {
+    "url": "https://github.com/threeal/nodejs-starter/issues",
+    "email": "hans.tanawi@outlook.com"
+  },
+  "repository": "github:hanstanawi/hanstanawi.com",
+  "license": "MIT",
+  "author": "Hans Tanawi <hans.tanawi@outlook.com>",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "test": "jest",
+    "test:ci": "jest --ci",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "@vercel/analytics": "^1.0.0",
@@ -22,7 +42,11 @@
     "react-scroll": "^1.8.9"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.1.4",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.5.1",
     "@types/gtag.js": "^0.0.12",
+    "@types/jest": "^29.5.5",
     "@types/node": "18.7.19",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
@@ -30,8 +54,13 @@
     "autoprefixer": "^10.4.12",
     "eslint": "8.24.0",
     "eslint-config-next": "12.3.1",
+    "eslint-plugin-jest-dom": "^5.1.0",
+    "eslint-plugin-testing-library": "^6.1.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
     "postcss": "^8.4.31",
     "tailwindcss": "^3.1.8",
+    "ts-jest": "^29.1.1",
     "typescript": "4.8.3"
   }
 }
