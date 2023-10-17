@@ -13,7 +13,7 @@
   ],
   "homepage": "https://github.com/hanstanawi/hanstanawi.com",
   "bugs": {
-    "url": "https://github.com/threeal/nodejs-starter/issues",
+    "url": "https://github.com/hanstanawi/hanstanawi.com/issues",
     "email": "hans.tanawi@outlook.com"
   },
   "repository": "github:hanstanawi/hanstanawi.com",
@@ -23,7 +23,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format": "prettier --write",
+    "format": "prettier --write ",
     "lint": "next lint",
     "test": "jest",
     "test:ci": "jest --ci",
@@ -34,7 +34,7 @@
     "classnames": "^2.3.2",
     "date-fns": "^2.30.0",
     "framer-motion": "^10.16.4",
-    "next": "^13.5.4",
+    "next": "^13.5.5",
     "next-seo": "^6.1.0",
     "next-svgr": "^0.0.2",
     "react": "^18.2.0",

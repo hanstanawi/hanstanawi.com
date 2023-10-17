@@ -1,19 +1,20 @@
 import Image from 'next/image';
 import Circles from 'public/assets/circles-2.svg';
+import ProfileImageSrc from 'public/images/profile.jpg';
 
 const ProfileImage = () => {
   return (
-    <div className='lg:w-1/2 md:w-9/12 w-full pt-2.5 relative'>
+    <div className="lg:w-1/2 md:w-9/12 w-full pt-2.5 relative">
       <Image
-        src='/images/profile.jpg'
-        height='500'
-        width='600'
-        alt='profile'
-        placeholder='blur'
-        className='object-cover h-full'
+        src={ProfileImageSrc}
+        alt="profile"
+        placeholder="blur"
+        sizes="100vw"
+        className="object-contain h-full"
         blurDataURL={`/_next/image?url=/images/profile.jpg&w=16&q=1`}
+        priority
       />
-      <div className='dark:hidden lg:block opacity-50 hidden absolute -bottom-20 -right-8'>
+      <div className="dark:hidden lg:block opacity-50 hidden absolute -bottom-20 -right-8">
         <Circles />
       </div>
     </div>
