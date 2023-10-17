@@ -37,7 +37,7 @@ const ProjectImage = ({ project }: ProjectImageProps) => {
         height={770}
         className="h-full rounded-md"
         placeholder="blur"
-        priority
+        loading="lazy"
         blurDataURL={`/_next/image?url=${String(project.imageSrc)}&w=16&q=1`}
       />
     </Link>
