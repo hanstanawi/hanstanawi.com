@@ -74,12 +74,10 @@ const SideNavbar = ({ onClickClose }: SideNavbarProps) => {
           </SmoothScrollLink>
         ))}
         <motion.div variants={itemVariants}>
-          <Link href={'/resume.pdf'}>
-            <a target='_blank'>
-              <Button sizeClasses='md:px-10 px-8 md:py-5 py-3 md:text-3xl text-lg'>
-                Resume
-              </Button>
-            </a>
+          <Link href={'/resume.pdf'} target='_blank' rel='noreferrer'>
+            <Button sizeClasses='md:px-10 px-8 md:py-5 py-3 md:text-3xl text-lg'>
+              Resume
+            </Button>
           </Link>
         </motion.div>
       </motion.ul>

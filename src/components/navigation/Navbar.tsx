@@ -81,17 +81,16 @@ const Navbar = () => {
               ))}
             </ul>
             <div className='flex items-center gap-x-8'>
-              <Link href={'/resume.pdf'}>
-                <a
-                  target='_blank'
-                  style={animateInViewElement(isInView, {
-                    direction: 'translateY(-20px)',
-                    speed: 0.3,
-                    delay: 500,
-                  })}
-                >
-                  <Button sizeClasses='px-4 py-2.5 text-sm'>Resume</Button>
-                </a>
+              <Link
+                href={'/resume.pdf'}
+                target='_blank'
+                style={animateInViewElement(isInView, {
+                  direction: 'translateY(-20px)',
+                  speed: 0.3,
+                  delay: 500,
+                })}
+              >
+                <Button sizeClasses='px-4 py-2.5 text-sm'>Resume</Button>
               </Link>
               <div
                 style={animateInViewElement(isInView, {
