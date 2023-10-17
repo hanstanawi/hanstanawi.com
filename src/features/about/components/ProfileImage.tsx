@@ -1,18 +1,17 @@
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import Circles from 'public/assets/circles-2.svg';
-import ProfileImageSrc from 'public/images/profile.jpg';
 
 const ProfileImage = () => {
   return (
     <div className="lg:w-1/2 md:w-9/12 w-full pt-2.5 relative">
       <Image
-        src={ProfileImageSrc}
+        src="/images/profile.jpg"
         alt="profile"
+        height={500}
+        width={600}
         placeholder="blur"
-        sizes="100vw"
-        className="object-cover"
+        objectFit="cover"
         blurDataURL={`/_next/image?url=/images/profile.jpg&w=16&q=1`}
-        loading="lazy"
       />
       <div className="dark:hidden lg:block opacity-50 hidden absolute -bottom-20 -right-8">
         <Circles />

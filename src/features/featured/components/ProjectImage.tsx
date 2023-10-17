@@ -1,6 +1,6 @@
 import cx from 'classnames';
 import Link from 'next/link';
-import Image from 'next/image';
+import Image from 'next/legacy/image';
 import { Project } from 'types/projects.type';
 
 type ProjectImageProps = {
@@ -37,7 +37,6 @@ const ProjectImage = ({ project }: ProjectImageProps) => {
         height={770}
         className="h-full rounded-md"
         placeholder="blur"
-        loading="lazy"
         blurDataURL={`/_next/image?url=${String(project.imageSrc)}&w=16&q=1`}
       />
     </Link>
