@@ -8,9 +8,9 @@ const ProfileImage = () => {
         src='/images/profile.jpg'
         height='500'
         width='600'
-        objectFit='cover'
         alt='profile'
         placeholder='blur'
+        className='object-cover h-full'
         blurDataURL={`/_next/image?url=/images/profile.jpg&w=16&q=1`}
       />
       <div className='dark:hidden lg:block opacity-50 hidden absolute -bottom-20 -right-8'>

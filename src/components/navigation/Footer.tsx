@@ -26,14 +26,9 @@ const Footer = () => {
             target='_blank'
             rel='noreferrer'
           >
-            <a
-              className='dark:hover:text-tealGreen hover:text-black transition duration-100'
-              target='_blank'
-            >
-              <motion.p whileHover={{ y: '-1px', scale: 1.01 }}>
-                Designed & Built by Hans Tanawi
-              </motion.p>
-            </a>
+            <motion.p whileHover={{ y: '-1px', scale: 1.01 }}>
+              Designed & Built by Hans Tanawi
+            </motion.p>
           </Link>
         </div>
       </div>

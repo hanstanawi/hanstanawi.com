@@ -35,7 +35,6 @@ const ProjectImage = ({ project }: ProjectImageProps) => {
         alt={project.id}
         width={1450}
         height={770}
-        objectFit='inherit'
         className='h-full rounded-md'
         placeholder='blur'
         blurDataURL={`/_next/image?url=${String(project.imageSrc)}&w=16&q=1`}
