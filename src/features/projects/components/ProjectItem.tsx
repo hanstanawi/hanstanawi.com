@@ -60,17 +60,16 @@ const ProjectItem = ({ project, delay }: ProjectItemProps) => {
           />
         </div>
         <div className='flex flex-col gap-y-2'>
-          <Link href={project.demoUrl}>
-            <a
-              target='_blank'
-              rel='noreferrer'
-              className={cx(
-                'font-semibold md:text-xl text-lg transition duration-150',
-                isHovered ? 'text-tealGreen' : 'dark:text-gray-300 text-black'
-              )}
-            >
-              {project.title}
-            </a>
+          <Link
+            href={project.demoUrl}
+            target='_blank'
+            rel='noreferrer'
+            className={cx(
+              'font-semibold md:text-xl text-lg transition duration-150',
+              isHovered ? 'text-tealGreen' : 'dark:text-gray-300 text-black'
+            )}
+          >
+            {project.title}
           </Link>
           <p className='md:text-sm text-[13px] mb-4 dark:text-gray-300 text-black'>
             {project.description}

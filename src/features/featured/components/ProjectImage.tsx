@@ -25,22 +25,21 @@ const Overlay = ({ isOdd }: OverlayProps) => {
 
 const ProjectImage = ({ project }: ProjectImageProps) => {
   return (
-    <Link href={project.demoUrl}>
-      <a
-        className='cursor-pointer xl:w-8/12 lg:w-9/12 md:w-11/12 w-full relative flex items-center h-full'
-        target={'_blank'}
-      >
-        <Image
-          src={project.imageSrc}
-          alt={project.id}
-          width={1450}
-          height={770}
-          objectFit='inherit'
-          className='h-full rounded-md'
-          placeholder='blur'
-          blurDataURL={`/_next/image?url=${String(project.imageSrc)}&w=16&q=1`}
-        />
-      </a>
+    <Link
+      href={project.demoUrl}
+      className='cursor-pointer xl:w-8/12 lg:w-9/12 md:w-11/12 w-full relative flex items-center h-full'
+      target={'_blank'}
+    >
+      <Image
+        src={project.imageSrc}
+        alt={project.id}
+        width={1450}
+        height={770}
+        objectFit='inherit'
+        className='h-full rounded-md'
+        placeholder='blur'
+        blurDataURL={`/_next/image?url=${String(project.imageSrc)}&w=16&q=1`}
+      />
     </Link>
   );
 };

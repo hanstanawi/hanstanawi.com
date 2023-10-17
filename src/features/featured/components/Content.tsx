@@ -10,13 +10,13 @@ const Content = ({ project }: ContentProps) => {
   return (
     <div className='xl:w-1/2 lg:w-8/12 md:w-11/12 w-full flex flex-col justify-start items-start'>
       <p className='text-tealGreen lg:text-lg text-sm'>Featured Project</p>
-      <Link href={project.demoUrl}>
-        <a
-          className='font-semibold dark:text-gray-300 text-black lg:text-2xl text-xl md:mb-5 mb-3 mt-1.5'
-          target='_blank'
-        >
-          {project.title}
-        </a>
+      <Link
+        href={project.demoUrl}
+        className='font-semibold dark:text-gray-300 text-black lg:text-2xl text-xl md:mb-5 mb-3 mt-1.5'
+        target='_blank'
+        rel='noreferrer'
+      >
+        {project.title}
       </Link>
       <div className='rounded-sm md:mb-3 mb-5 dark:text-gray-400 text-black break-words md:text-base text-sm'>
         <p>{project.description}</p>

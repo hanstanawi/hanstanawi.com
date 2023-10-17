@@ -35,13 +35,13 @@ const JobDescription = ({ experience, isSelected }: JobDescriptionProps) => {
           {experience.role}
         </span>{' '}
         <span className='text-tealGreen font-medium'>
-          <Link href={experience.url}>
-            <a
-              target={'_blank'}
-              className='border-b-2 md:hover:border-tealGreen border-transparent transition duration-300'
-            >
-              @ {experience.company}
-            </a>
+          <Link
+            href={experience.url}
+            target={'_blank'}
+            className='border-b-2 md:hover:border-tealGreen border-transparent transition duration-300'
+            rel='noreferrer'
+          >
+            @ {experience.company}
           </Link>
         </span>
       </h3>

@@ -14,12 +14,10 @@ const NotFoundPage = () => {
             <h1 className='md:text-4xl text-2xl -mt-6 dark:text-gray-300 text-black'>
               Page Not Found
             </h1>
-            <Link href='/'>
-              <a className='pt-10'>
-                <Button sizeClasses='md:px-10 px-7 md:py-4 py-3 md:text-base text-sm '>
-                  Go Home
-                </Button>
-              </a>
+            <Link href='/' className='pt-10'>
+              <Button sizeClasses='md:px-10 px-7 md:py-4 py-3 md:text-base text-sm '>
+                Go Home
+              </Button>
             </Link>
           </div>
         </SectionLayout>

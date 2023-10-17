@@ -34,14 +34,13 @@ const Contact = () => {
                 </h4>
                 <h4>My inbox is always open!</h4>
               </div>
-              <Link href={'mailto:hanstanawi@gmail.com'}>
-                <a
-                  className='dark:border-tealGreen z-50 border-black border md:py-4 md:px-12 py-3 px-8 md:text-lg text-sm rounded-md 
+              <Link
+                href={'mailto:hanstanawi@gmail.com'}
+                className='dark:border-tealGreen z-50 border-black border md:py-4 md:px-12 py-3 px-8 md:text-lg text-sm rounded-md 
                 md:hover:text-white md:hover:bg-black transition duration-300 dark:text-tealGreen text-black
                 dark:md:hover:text-white dark:md:hover:bg-tealGreen dark:md:hover:bg-opacity-20'
-                >
-                  Contact Me
-                </a>
+              >
+                Contact Me
               </Link>
             </div>
           </div>
