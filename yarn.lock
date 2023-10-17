@@ -1900,10 +1900,10 @@
   dependencies:
     "@types/react" "*"
 
-"@types/react-scroll@^1.8.6":
-  version "1.8.6"
-  resolved "https://registry.yarnpkg.com/@types/react-scroll/-/react-scroll-1.8.6.tgz#a2b1ea795279548172cd9a2c99fa4e5568297ffb"
-  integrity sha512-aMTiNgcmA7dwn1yjoHsiL78RfRnKCXzFyMbv63VrZTXloSfNePBdKtVObC3/My6irwDf0Oz0U4VjEC/vrv6/9w==
+"@types/react-scroll@^1.8.8":
+  version "1.8.8"
+  resolved "https://registry.yarnpkg.com/@types/react-scroll/-/react-scroll-1.8.8.tgz#cd0d844e534fe12b4a6238dd5b6ba41d64968144"
+  integrity sha512-KJRwopG2kgJVzhDGRXhkhbNXCzPFtxNVJrx99czqW7LK8JXU8ufG5POo864cA9vFDEr4vSR+NOlK0NCHbbnjkw==
   dependencies:
     "@types/react" "*"
 
