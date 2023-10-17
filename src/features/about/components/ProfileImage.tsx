@@ -12,7 +12,6 @@ const ProfileImage = () => {
         sizes="100vw"
         className="object-cover"
         blurDataURL={`/_next/image?url=/images/profile.jpg&w=16&q=1`}
-        priority
         loading="lazy"
       />
       <div className="dark:hidden lg:block opacity-50 hidden absolute -bottom-20 -right-8">
