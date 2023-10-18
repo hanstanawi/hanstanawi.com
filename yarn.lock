@@ -2495,10 +2495,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/gtag.js@npm:^0.0.16":
-  version: 0.0.16
-  resolution: "@types/gtag.js@npm:0.0.16"
-  checksum: 90922019d2f2eeda50a8d65456f87c3307e12a1b56c19278c943b337fbe8ebce0c3ba7d3e2a71e08851647b3c28e35785cf8d2d274688bee0d579bc85d7ac77f
+"@types/gtag.js@npm:^0.0.17":
+  version: 0.0.17
+  resolution: "@types/gtag.js@npm:0.0.17"
+  checksum: 9ba341f7ad8b4539606956af1592027dc7846a2f39950aa11f4b987fd959444777f7364d1089871c80019f011cb7b7a523e2f816e8b6fe19e66db0e82e6cbd88
   languageName: node
   linkType: hard
 
@@ -2527,13 +2527,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:^29.5.5":
-  version: 29.5.5
-  resolution: "@types/jest@npm:29.5.5"
+"@types/jest@npm:^29.5.6":
+  version: 29.5.6
+  resolution: "@types/jest@npm:29.5.6"
   dependencies:
     expect: ^29.0.0
     pretty-format: ^29.0.0
-  checksum: 56e55cde9949bcc0ee2fa34ce5b7c32c2bfb20e53424aa4ff3a210859eeaaa3fdf6f42f81a3f655238039cdaaaf108b054b7a8602f394e6c52b903659338d8c6
+  checksum: fa13a27bd1c8efd0381a419478769d0d6d3a8e93e1952d7ac3a16274e8440af6f73ed6f96ac1ff00761198badf2ee226b5ab5583a5d87a78d609ea78da5c5a24
   languageName: node
   linkType: hard
 
@@ -2562,12 +2562,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^20.8.6":
+"@types/node@npm:*":
   version: 20.8.6
   resolution: "@types/node@npm:20.8.6"
   dependencies:
     undici-types: ~5.25.1
   checksum: ccfb7ac482c5a96edeb239893c5c099f5257fcc2ed9ae62fefdfbc782b79e16dbc2af9a85b379665237bf759904b44ca2be68e75d239e0297882aad42f61905c
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^20.8.7":
+  version: 20.8.7
+  resolution: "@types/node@npm:20.8.7"
+  dependencies:
+    undici-types: ~5.25.1
+  checksum: 2173c0c03daefcb60c03a61b1371b28c8fe412e7a40dc6646458b809d14a85fbc7aeb369d957d57f0aaaafd99964e77436f29b3b579232d8f2b20c58abbd1d25
   languageName: node
   linkType: hard
 
@@ -2585,7 +2594,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^18.0.0, @types/react-dom@npm:^18.0.6":
+"@types/react-dom@npm:^18.0.0, @types/react-dom@npm:^18.2.13":
   version: 18.2.13
   resolution: "@types/react-dom@npm:18.2.13"
   dependencies:
@@ -3150,7 +3159,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:^10.4.12":
+"autoprefixer@npm:^10.4.16":
   version: 10.4.16
   resolution: "autoprefixer@npm:10.4.16"
   dependencies:
@@ -5393,14 +5402,14 @@ __metadata:
     "@testing-library/jest-dom": ^6.1.4
     "@testing-library/react": ^14.0.0
     "@testing-library/user-event": ^14.5.1
-    "@types/gtag.js": ^0.0.16
-    "@types/jest": ^29.5.5
-    "@types/node": ^20.8.6
+    "@types/gtag.js": ^0.0.17
+    "@types/jest": ^29.5.6
+    "@types/node": ^20.8.7
     "@types/react": ^18.2.28
-    "@types/react-dom": ^18.0.6
+    "@types/react-dom": ^18.2.13
     "@types/react-scroll": ^1.8.8
     "@vercel/analytics": ^1.1.1
-    autoprefixer: ^10.4.12
+    autoprefixer: ^10.4.16
     classnames: ^2.3.2
     date-fns: ^2.30.0
     eslint: ^8.51.0
