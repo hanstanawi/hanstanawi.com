@@ -28,8 +28,11 @@ jobs:
       - name: Enable Corepack
         run: corepack enable
 
+      - name: Update Yarn
+        run: yarn set version stable
+
       - name: Install dependencies
-        run: yarn --frozen-lockfile
+        run: yarn install --immutable
 
       - name: Build project
         run: yarn build
