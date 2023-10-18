@@ -34,8 +34,8 @@ const itemVariants = {
 const SideNavbar = ({ onClickClose }: SideNavbarProps) => {
   return (
     <motion.aside
-      className='fixed bg-inherit max-h-screen h-screen w-3/4 right-0 
-      top-0 flex flex-col items-center justify-center z-40 lg:hidden'
+      className="fixed bg-inherit max-h-screen h-screen w-3/4 right-0 
+      top-0 flex flex-col items-center justify-center z-40 lg:hidden"
       initial={{ width: 0 }}
       animate={{
         width: '75%',
@@ -49,10 +49,10 @@ const SideNavbar = ({ onClickClose }: SideNavbarProps) => {
       }}
     >
       <motion.ul
-        className='flex flex-col justify-center md:gap-y-16 gap-y-12'
-        initial='closed'
-        animate='open'
-        exit='closed'
+        className="flex flex-col justify-center md:gap-y-16 gap-y-12"
+        initial="closed"
+        animate="open"
+        exit="closed"
         variants={sideVariants}
       >
         {LINKS.map((link) => (
@@ -65,7 +65,7 @@ const SideNavbar = ({ onClickClose }: SideNavbarProps) => {
             key={link.title}
           >
             <motion.li
-              className='md:text-4xl text-2xl dark:text-gray-300 text-black cursor-pointer'
+              className="md:text-4xl text-2xl dark:text-gray-300 text-black cursor-pointer"
               variants={itemVariants}
               onClick={onClickClose}
             >
@@ -74,8 +74,8 @@ const SideNavbar = ({ onClickClose }: SideNavbarProps) => {
           </SmoothScrollLink>
         ))}
         <motion.div variants={itemVariants}>
-          <Link href={'/resume.pdf'} target='_blank' rel='noreferrer'>
-            <Button sizeClasses='md:px-10 px-8 md:py-5 py-3 md:text-3xl text-lg'>
+          <Link href={'/resume.pdf'} target="_blank" rel="noreferrer">
+            <Button sizeClasses="md:px-10 px-8 md:py-5 py-3 md:text-3xl text-lg">
               Resume
             </Button>
           </Link>

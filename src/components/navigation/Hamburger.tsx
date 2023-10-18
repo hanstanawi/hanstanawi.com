@@ -12,7 +12,7 @@ const Hamburger = ({ isOpen, onToggleOpen, isInView }: HamburgerProps) => {
   return (
     <>
       <div
-        className='lg:hidden flex items-center gap-x-6 z-50'
+        className="lg:hidden flex items-center gap-x-6 z-50"
         style={animateInViewElement(isInView, {
           direction: 'translateY(-20px)',
           speed: 0.3,
@@ -23,13 +23,13 @@ const Hamburger = ({ isOpen, onToggleOpen, isInView }: HamburgerProps) => {
         <div
           className={cx(
             'nav-icon absolute align text-3xl',
-            !isOpen ? '' : 'open'
+            !isOpen ? '' : 'open',
           )}
           onClick={onToggleOpen}
         >
-          <span className='bg-black dark:bg-tealGreen'></span>
-          <span className='bg-black dark:bg-tealGreen'></span>
-          <span className='bg-black dark:bg-tealGreen'></span>
+          <span className="bg-black dark:bg-tealGreen"></span>
+          <span className="bg-black dark:bg-tealGreen"></span>
+          <span className="bg-black dark:bg-tealGreen"></span>
         </div>
       </div>
       <style jsx>{`

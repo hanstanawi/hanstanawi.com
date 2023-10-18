@@ -33,7 +33,7 @@ const Parallax = ({
   const yRange = useTransform(
     scrollY,
     [initial, final],
-    [clampInitial ? 0 : offset, clampFinal ? 0 : -offset]
+    [clampInitial ? 0 : offset, clampFinal ? 0 : -offset],
   );
   const y = useSpring(yRange, { stiffness: 400, damping: 90 });
 
@@ -43,7 +43,7 @@ const Parallax = ({
       setElementTop(
         /* @ts-ignore-next */
         element.getBoundingClientRect().top + window.scrollY ||
-          window.pageYOffset
+          window.pageYOffset,
       );
       setClientHeight(window.innerHeight);
     };

@@ -35,7 +35,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <DarkModeContextProvider>
-        <div className='dark:bg-darkV2 bg-white transition duration-300'>
+        <div className="dark:bg-darkV2 bg-white transition duration-300">
           <Navbar />
           <Component {...pageProps} />
           <Footer />

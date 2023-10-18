@@ -24,7 +24,7 @@ type AnimationStyle = {
  */
 export function animateInViewElement(
   isInView: boolean,
-  { direction, speed = 0, delay = 0, opacity = 1 }: AnimationOption
+  { direction, speed = 0, delay = 0, opacity = 1 }: AnimationOption,
 ): AnimationStyle {
   return {
     transform: isInView ? 'none' : direction,

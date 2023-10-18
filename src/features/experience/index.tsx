@@ -9,25 +9,25 @@ const Experience = () => {
   const ref = useRef<HTMLDivElement | null>(null);
   const isInView = useInView(ref, { once: true, amount: 0.1 });
   return (
-    <section id='experience' ref={ref}>
+    <section id="experience" ref={ref}>
       <SectionLayout>
         <Parallax>
-          <div className='md:my-24 my-14 w-full'>
-            <div className='h-full flex flex-col justify-center'>
+          <div className="md:my-24 my-14 w-full">
+            <div className="h-full flex flex-col justify-center">
               <div
-                className='flex items-center md:gap-x-1 md:mb-6 mb-2'
+                className="flex items-center md:gap-x-1 md:mb-6 mb-2"
                 style={animateInViewElement(isInView, {
                   direction: 'translateY(30px)',
                   speed: 0.3,
                 })}
               >
-                <h1 className='xl:text-5xl lg:text-4xl sm:text-3xl text-2xl dark:text-gray-300 text-black w-8/12 lg:w-5/12'>
+                <h1 className="xl:text-5xl lg:text-4xl sm:text-3xl text-2xl dark:text-gray-300 text-black w-8/12 lg:w-5/12">
                   Where I&apos;ve Worked
                 </h1>
-                <div className='dark:h-[0.5px] h-[1px] dark:bg-gray-300 bg-[#E5E5E5] w-4/12 lg:w-7/12'></div>
+                <div className="dark:h-[0.5px] h-[1px] dark:bg-gray-300 bg-[#E5E5E5] w-4/12 lg:w-7/12"></div>
               </div>
               <div
-                className='flex justify-center pt-10'
+                className="flex justify-center pt-10"
                 style={animateInViewElement(isInView, {
                   direction: 'translateY(30px)',
                   speed: 0.3,
