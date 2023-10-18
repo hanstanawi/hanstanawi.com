@@ -17,6 +17,7 @@ const ProjectLinks = ({ githubUrl, demoUrl }: ProjectLinksProps) => {
             target="_blank"
             className="cursor-pointer"
             rel="noreferrer"
+            aria-label="Github Repo"
           >
             <FaGithub
               className="dark:text-gray-300 text-black md:hover:text-tealGreen transition duration-500"
@@ -29,6 +30,7 @@ const ProjectLinks = ({ githubUrl, demoUrl }: ProjectLinksProps) => {
           target="_blank"
           className="cursor-pointer pt-0.5"
           rel="noreferrer"
+          aria-label="Project Demo"
         >
           <FaExternalLinkAlt
             className="dark:text-gray-300 text-black md:hover:text-tealGreen transition duration-500"
@@ -44,6 +46,7 @@ const ProjectLinks = ({ githubUrl, demoUrl }: ProjectLinksProps) => {
             target="_blank"
             className="cursor-pointer"
             rel="noreferrer"
+            aria-label="Github Repo"
           >
             <FaGithub
               className="dark:text-gray-300 text-black md:hover:text-tealGreen transition duration-500"
@@ -51,7 +54,12 @@ const ProjectLinks = ({ githubUrl, demoUrl }: ProjectLinksProps) => {
             />
           </Link>
         )}
-        <Link href={demoUrl} target="_blank" className="cursor-pointer pt-0.5">
+        <Link
+          href={demoUrl}
+          target="_blank"
+          className="cursor-pointer pt-0.5"
+          aria-label="Project Demo"
+        >
           <FaExternalLinkAlt
             className="dark:text-gray-300 text-black md:hover:text-tealGreen transition duration-500"
             size={17}

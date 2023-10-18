@@ -15,6 +15,7 @@ const Content = ({ project }: ContentProps) => {
         className="font-semibold dark:text-gray-300 text-black lg:text-2xl text-xl md:mb-5 mb-3 mt-1.5"
         target="_blank"
         rel="noreferrer"
+        aria-label={project.title}
       >
         {project.title}
       </Link>
