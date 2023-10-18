@@ -19,95 +19,103 @@ const SocialLinks = ({ small = false }: SocialLinksProps) => {
   return (
     <>
       {/* DESKTOP */}
-      <div className='md:flex gap-x-4 my-4 hidden'>
+      <div className="md:flex gap-x-4 my-4 hidden">
         <Link
           href={SOCIAL_LINKS.GITHUB}
-          target='_blank'
-          className='cursor-pointer'
-          rel='noreferrer'
+          target="_blank"
+          className="cursor-pointer"
+          rel="noreferrer"
+          aria-label="Github"
         >
           <FaGithub
-            className='hover:text-black dark:hover:text-tealGreen dark:text-gray-300 text-gray-500 transition duration-500'
+            className="hover:text-black dark:hover:text-tealGreen dark:text-gray-300 text-gray-500 transition duration-500"
             size={desktopSize}
           />
         </Link>
         <Link
           href={SOCIAL_LINKS.LINKEDIN}
-          target='_blank'
-          className='cursor-pointer'
-          rel='noreferrer'
+          target="_blank"
+          className="cursor-pointer"
+          rel="noreferrer"
+          aria-label="LinkedIn"
         >
           <FaLinkedin
-            className='hover:text-black dark:hover:text-tealGreen dark:text-gray-300 text-gray-500 transition duration-500'
+            className="hover:text-black dark:hover:text-tealGreen dark:text-gray-300 text-gray-500 transition duration-500"
             size={desktopSize}
           />
         </Link>
         <Link
           href={SOCIAL_LINKS.INSTAGRAM}
-          target='_blank'
-          className='cursor-pointer'
-          rel='noreferrer'
+          target="_blank"
+          className="cursor-pointer"
+          rel="noreferrer"
+          aria-label="Instagram"
         >
           <FaInstagram
-            className='hover:text-black dark:hover:text-tealGreen dark:text-gray-300 text-gray-500 transition duration-500'
+            className="hover:text-black dark:hover:text-tealGreen dark:text-gray-300 text-gray-500 transition duration-500"
             size={desktopSize}
           />
         </Link>
         <Link
           href={SOCIAL_LINKS.DISCORD}
-          target='_blank'
-          className='cursor-pointer'
-          rel='noreferrer'
+          target="_blank"
+          className="cursor-pointer"
+          rel="noreferrer"
+          aria-label="discord"
         >
           <FaDiscord
-            className='hover:text-black dark:hover:text-tealGreen dark:text-gray-300 text-gray-500 transition duration-500'
+            className="hover:text-black dark:hover:text-tealGreen dark:text-gray-300 text-gray-500 transition duration-500"
             size={desktopSize}
           />
         </Link>
       </div>
       {/* MOBILE */}
-      <div className='flex gap-x-4 my-4 md:hidden'>
+      <div className="flex gap-x-4 my-4 md:hidden">
         <Link
           href={SOCIAL_LINKS.GITHUB}
-          target='_blank'
-          className='cursor-pointer'
-          rel='noreferrer'
+          target="_blank"
+          className="cursor-pointer"
+          rel="noreferrer"
+          aria-label="Github"
         >
           <FaGithub
-            className='dark:text-gray-300 text-gray-500'
+            className="dark:text-gray-300 text-gray-500"
             size={mobileSize}
           />
         </Link>
         <Link
           href={SOCIAL_LINKS.LINKEDIN}
-          target='_blank'
-          className='cursor-pointer'
-          rel='noreferrer'
+          target="_blank"
+          className="cursor-pointer"
+          rel="noreferrer"
+          aria-label="LinkedIn"
         >
           <FaLinkedin
-            className='dark:text-gray-300 text-gray-500'
+            className="dark:text-gray-300 text-gray-500"
             size={mobileSize}
           />
         </Link>
         <Link
           href={SOCIAL_LINKS.INSTAGRAM}
-          target='_blank'
-          className='cursor-pointer'
-          rel='noreferrer'
+          target="_blank"
+          className="cursor-pointer"
+          rel="noreferrer"
+          aria-label="Instagram"
         >
           <FaInstagram
-            className='dark:text-gray-300 text-gray-500'
+            className="dark:text-gray-300 text-gray-500"
             size={mobileSize}
           />
         </Link>
         <Link
           href={SOCIAL_LINKS.DISCORD}
-          target='_blank'
-          className='cursor-pointer'
-          rel='noreferrer'
+          target="_blank"
+          className="cursor-pointer"
+          rel="noreferrer"
+          aria-label="Discord"
         >
           <FaDiscord
-            className='dark:text-gray-300 text-gray-500'
+            className="dark:text-gray-300 text-gray-500"
             size={mobileSize}
           />
         </Link>

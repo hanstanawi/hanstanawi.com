@@ -16,8 +16,9 @@ const Button = ({ children, sizeClasses, onClick }: ButtonProps) => {
         `bg-transparent rounded-lg font-medium dark:text-tealGreen text-black 
         border dark:border-tealGreen border-black md:hover:text-white md:hover:bg-black 
         dark:hover:bg-tealGreen dark:hover:bg-opacity-20 transition duration-300`,
-        sizeClasses
+        sizeClasses,
       )}
+      role="button"
       onClick={onClick}
     >
       {children}
