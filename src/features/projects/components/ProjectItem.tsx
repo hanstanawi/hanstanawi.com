@@ -7,6 +7,7 @@ import useMediaQuery from 'hooks/use-media-query';
 import ProjectLinks from 'components/ProjectLinks';
 import { Project } from 'types/projects.type';
 import { animateInViewElement } from 'lib/animation.lib';
+import Link from 'next/link';
 
 type ProjectItemProps = {
   project: Omit<Project, 'imageSrc'>;
@@ -39,11 +40,10 @@ const ProjectItem = ({ project, delay }: ProjectItemProps) => {
   return (
     <>
       <motion.div
-        className='flex flex-col justify-start items-center p-8 border dark:border-transparent border-gray-200 rounded-md shadow-lg cursor-pointer dark:bg-dark'
+        className='flex flex-col justify-start items-center p-8 border dark:border-transparent border-gray-200 rounded-md shadow-lg dark:bg-dark'
         whileHover={{ y: isMobile ? '0px' : '-10px' }}
         onHoverStart={() => handleSetHover(true)}
         onHoverEnd={() => handleSetHover(false)}
-        onClick={handleRedirectToDemoApp}
         ref={ref}
         style={animateInViewElement(isInView, {
           direction: 'translateY(50px)',
@@ -60,14 +60,17 @@ const ProjectItem = ({ project, delay }: ProjectItemProps) => {
           />
         </div>
         <div className='flex flex-col gap-y-2'>
-          <h3
+          <Link
+            href={project.demoUrl}
+            target='_blank'
+            rel='noreferrer'
             className={cx(
               'font-semibold md:text-xl text-lg transition duration-150',
               isHovered ? 'text-tealGreen' : 'dark:text-gray-300 text-black'
             )}
           >
             {project.title}
-          </h3>
+          </Link>
           <p className='md:text-sm text-[13px] mb-4 dark:text-gray-300 text-black'>
             {project.description}
           </p>
