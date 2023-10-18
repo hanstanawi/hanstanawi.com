@@ -4,5 +4,6 @@
     "plugin:testing-library/react",
     "plugin:jest-dom/recommended",
     "prettier"
-  ]
+  ],
+  "plugins": ["prettier"]
 }
