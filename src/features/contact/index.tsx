@@ -27,12 +27,12 @@ const Contact = () => {
                 Get In Touch
               </h1>
               <div className="md:text-xl text-sm text-center dark:text-gray-300 text-gray-500 lg:w-7/12 md:w-9/12 w-full font-light mb-3 z-50">
-                <h4 className="mb-1">
+                <p className="mb-1">
                   I&apos;m currently open to new exciting opportunities globally
                   and open-source projects collaboration. Don&apos;t hesitate to
                   reach me or just say hi.<br></br>
-                </h4>
-                <h4>My inbox is always open!</h4>
+                </p>
+                <p>My inbox is always open!</p>
               </div>
               <Link
                 href={'mailto:hanstanawi@gmail.com'}

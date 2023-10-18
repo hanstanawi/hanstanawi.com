@@ -30,7 +30,7 @@ const JobDescription = ({ experience, isSelected }: JobDescriptionProps) => {
         'flex-col gap-y-4 transition-opacity duration-100 top-0 left-0',
       )}
     >
-      <h3 className="lg:text-3xl sm:text-2xl text-xl">
+      <h2 className="lg:text-3xl sm:text-2xl text-xl">
         <span className="font-semibold dark:text-gray-300 text-black">
           {experience.role}
         </span>{' '}
@@ -44,7 +44,7 @@ const JobDescription = ({ experience, isSelected }: JobDescriptionProps) => {
             @ {experience.company}
           </Link>
         </span>
-      </h3>
+      </h2>
       <div>
         <p className="dark:text-gray-400 text-gray-800 md:text-lg text-base pb-1">
           {experience.location}
