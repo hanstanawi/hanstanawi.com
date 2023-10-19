@@ -2626,12 +2626,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-scroll@npm:^1.8.8":
-  version: 1.8.8
-  resolution: "@types/react-scroll@npm:1.8.8"
+"@types/react-scroll@npm:^1.8.9":
+  version: 1.8.9
+  resolution: "@types/react-scroll@npm:1.8.9"
   dependencies:
     "@types/react": "*"
-  checksum: 9f99d9518651b021cda8f9bf4f4c00f110914496498cb4780d04662fc5422bd8926ba595675ca04870f6ae6350c5063963923932f8c5a2dbeffcac89801250dc
+  checksum: 25686def417ab8ef42e96b54f2ac27b0d75cf15853ee4183f7af1f6436b265986f6e44f327c63bfe2398c0b255c525513bc81bbdc42ac513de890ce625419638
   languageName: node
   linkType: hard
 
@@ -5618,7 +5618,7 @@ __metadata:
     "@types/node": ^20.8.7
     "@types/react": ^18.2.29
     "@types/react-dom": ^18.2.14
-    "@types/react-scroll": ^1.8.8
+    "@types/react-scroll": ^1.8.9
     "@vercel/analytics": ^1.1.1
     autoprefixer: ^10.4.16
     classnames: ^2.3.2
