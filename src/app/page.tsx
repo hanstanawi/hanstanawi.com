@@ -1,12 +1,11 @@
-'use client';
 import dynamic from 'next/dynamic';
-import Hero from 'features/hero';
+import Hero from 'features/home/hero';
 
-const About = dynamic(() => import('features/about'));
-const Experience = dynamic(() => import('features/experience'));
-const Featured = dynamic(() => import('features/featured'));
-const Projects = dynamic(() => import('features/projects'));
-const Contact = dynamic(() => import('features/contact'));
+const About = dynamic(() => import('features/home/about'));
+const Experience = dynamic(() => import('features/home/experience'));
+const Featured = dynamic(() => import('features/home/featured'));
+const Projects = dynamic(() => import('features/home/projects'));
+const Contact = dynamic(() => import('features/home/contact'));
 
 const HomePage = () => {
   return (

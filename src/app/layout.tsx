@@ -1,15 +1,14 @@
-import { Analytics } from '@vercel/analytics/react';
-import Providers from 'components/Providers';
-import Footer from 'components/navigation/Footer';
-import Navbar from 'components/navigation/Navbar';
 import { Metadata } from 'next';
 import { PropsWithChildren } from 'react';
+import { Analytics } from '@vercel/analytics/react';
+import NavigationLayout from 'components/layouts/NavigationLayout';
+import Providers from './providers';
 import './globals.css';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://hanstanawi.com'),
   title: 'Hans Tanawi | Full Stack Engineer',
   description: 'Hans Tanawi Personal Website & Portfolio',
-  metadataBase: new URL('https://hanstanawi.com'),
   openGraph: {
     images: {
       url: 'https://res.cloudinary.com/dbuvuwofy/image/upload/v1677857831/hanstanawi.com/hanstanawi-logo_smcpsu.png',
@@ -29,7 +28,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
       </head>
       <body className="dark:bg-darkV2 bg-white transition duration-300">
         <Providers>
-          {children}
+          <NavigationLayout>{children}</NavigationLayout>
           <Analytics />
         </Providers>
       </body>
