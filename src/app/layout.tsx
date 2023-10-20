@@ -26,6 +26,12 @@ export const metadata: Metadata = {
     locale: 'en_US',
     type: 'website',
   },
+  viewport: {
+    minimumScale: 1,
+    initialScale: 1,
+    width: 'device-width',
+    viewportFit: 'cover',
+  },
   twitter: {
     title: 'Hans Tanawi',
     card: 'summary_large_image',
