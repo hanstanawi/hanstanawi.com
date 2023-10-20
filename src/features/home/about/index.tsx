@@ -1,9 +1,10 @@
+'use client';
 import { useRef } from 'react';
 import { useInView } from 'framer-motion';
 
 import Content from './components/Content';
-import Parallax from 'components/Parallax';
-import SectionLayout from 'components/SectionLayout';
+import Parallax from 'components/layouts/Parallax';
+import SectionLayout from 'components/layouts/SectionLayout';
 import ProfileImage from './components/ProfileImage';
 import { animateInViewElement } from 'lib/animation.lib';
 
