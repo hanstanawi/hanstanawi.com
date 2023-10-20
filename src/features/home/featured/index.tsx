@@ -1,9 +1,10 @@
+'use client';
 import { useRef } from 'react';
 import { useInView } from 'framer-motion';
 
-import Parallax from 'components/Parallax';
-import SectionLayout from 'components/SectionLayout';
-import ProjectsList from 'features/featured/components/ProjectsList';
+import Parallax from 'components/layouts/Parallax';
+import SectionLayout from 'components/layouts/SectionLayout';
+import ProjectsList from 'features/home/featured/components/ProjectsList';
 import { animateInViewElement } from 'lib/animation.lib';
 
 const FeaturedSection = () => {

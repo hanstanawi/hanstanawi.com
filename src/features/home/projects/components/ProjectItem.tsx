@@ -4,7 +4,7 @@ import { RxKeyboard } from 'react-icons/rx';
 import { motion, useInView } from 'framer-motion';
 
 import useMediaQuery from 'hooks/use-media-query';
-import ProjectLinks from 'components/ProjectLinks';
+import ProjectLinks from 'components/links/ProjectLinks';
 import { Project } from 'types/projects.type';
 import { animateInViewElement } from 'lib/animation.lib';
 import Link from 'next/link';

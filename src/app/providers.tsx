@@ -1,13 +1,8 @@
-import { useEffect } from 'react';
-import { Analytics } from '@vercel/analytics/react';
-import type { AppProps } from 'next/app';
-import '../styles/globals.css';
-
-import Footer from 'components/navigation/Footer';
-import Navbar from 'components/navigation/Navbar';
+'use client';
+import { useEffect, type PropsWithChildren } from 'react';
 import DarkModeContextProvider from 'context/DarkModeContext';
 
-function MyApp({ Component, pageProps }: AppProps) {
+const Providers = ({ children }: PropsWithChildren) => {
   useEffect(() => {
     if (
       localStorage.theme === 'dark' ||
@@ -32,18 +27,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       });
   }, []);
 
-  return (
-    <>
-      <DarkModeContextProvider>
-        <div className="dark:bg-darkV2 bg-white transition duration-300">
-          <Navbar />
-          <Component {...pageProps} />
-          <Footer />
-          <Analytics />
-        </div>
-      </DarkModeContextProvider>
-    </>
-  );
-}
+  return <DarkModeContextProvider>{children}</DarkModeContextProvider>;
+};
 
-export default MyApp;
+export default Providers;

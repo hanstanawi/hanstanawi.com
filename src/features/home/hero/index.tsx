@@ -1,11 +1,12 @@
+'use client';
 import { useRef } from 'react';
 import { useInView } from 'framer-motion';
 import { Link as SmoothScrollLink } from 'react-scroll';
-import Button from 'components/Button';
-import SectionLayout from 'components/SectionLayout';
-import SocialLinks from 'components/SocialLinks';
+import Button from 'components/ui/Button';
+import SectionLayout from 'components/layouts/SectionLayout';
+import SocialLinks from 'components/links/SocialLinks';
 import Circles from 'public/assets/circles.svg';
-import Parallax from 'components/Parallax';
+import Parallax from 'components/layouts/Parallax';
 import useMediaQuery from 'hooks/use-media-query';
 import { animateInViewElement } from 'lib/animation.lib';
 

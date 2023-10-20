@@ -1,9 +1,10 @@
+'use client';
 import { useRef } from 'react';
 import { useInView } from 'framer-motion';
 
-import Parallax from 'components/Parallax';
+import Parallax from 'components/layouts/Parallax';
 import ProjectsList from './components/ProjectsList';
-import SectionLayout from 'components/SectionLayout';
+import SectionLayout from 'components/layouts/SectionLayout';
 import { animateInViewElement } from 'lib/animation.lib';
 
 const Projects = () => {
