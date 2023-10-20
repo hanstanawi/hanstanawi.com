@@ -1,7 +1,7 @@
-import cx from 'classnames';
 import Link from 'next/link';
 import Image from 'next/legacy/image';
 import { Project } from 'types/projects.type';
+import { cn } from 'lib/utils.lib';
 
 type ProjectImageProps = {
   isOdd: boolean;
@@ -15,7 +15,7 @@ type OverlayProps = {
 const Overlay = ({ isOdd }: OverlayProps) => {
   return (
     <div
-      className={cx(
+      className={cn(
         'md:block hidden absolute md:hover:opacity-0 opacity-20 from-black to-transparent transition rounded-md duration-500 left-0 top-0 w-full z-10 h-full',
         isOdd ? 'bg-gradient-to-l' : 'bg-gradient-to-r',
       )}

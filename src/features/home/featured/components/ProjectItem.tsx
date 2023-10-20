@@ -1,10 +1,11 @@
-import cx from 'classnames';
+import { useRef } from 'react';
+import { useInView } from 'framer-motion';
+
 import ProjectContent from './Content';
 import ProjectImage from './ProjectImage';
-import { Project } from 'types/projects.type';
-import { useInView } from 'framer-motion';
-import { useRef } from 'react';
 import { animateInViewElement } from 'lib/animation.lib';
+import { cn } from 'lib/utils.lib';
+import type { Project } from 'types/projects.type';
 
 type ProjectItemProps = {
   project: Project;
@@ -18,7 +19,7 @@ const ProjectItem = ({ project, index }: ProjectItemProps) => {
 
   return (
     <div
-      className={cx(
+      className={cn(
         'flex items-center h-full lg:w-11/12 w-full gap-x-16 flex-col lg:gap-y-0 gap-y-6',
         isOdd ? 'lg:flex-row' : 'lg:flex-row-reverse',
       )}
