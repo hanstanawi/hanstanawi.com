@@ -1,8 +1,9 @@
+'use client';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { Link as SmoothScrollLink } from 'react-scroll';
 
-import Button from 'components/Button';
+import Button from 'components/ui/Button';
 import { LINKS } from 'constants/navigation.constant';
 
 type SideNavbarProps = {

@@ -1,3 +1,4 @@
+'use client';
 import cx from 'classnames';
 import Link from 'next/link';
 import { Link as SmoothScrollLink } from 'react-scroll';
@@ -5,11 +6,11 @@ import { AnimatePresence, motion, useCycle } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 import { useInView } from 'framer-motion';
 
-import Overlay from 'components/Overlay';
+import Overlay from 'components/layouts/Overlay';
 import Logo from 'public/icons/ht-logo.svg';
-import Button from '../Button';
+import Button from '../ui/Button';
 import Hamburger from './Hamburger';
-import DarkModeToggle from 'components/DarkModeToggle';
+import DarkModeToggle from 'components/ui/DarkModeToggle';
 import NavItem from './NavItem';
 import SideNavbar from './SideNavbar';
 import useScrollLock from 'hooks/use-scroll-lock';

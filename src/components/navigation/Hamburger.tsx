@@ -1,5 +1,5 @@
 import cx from 'classnames';
-import DarkModeToggle from 'components/DarkModeToggle';
+import DarkModeToggle from 'components/ui/DarkModeToggle';
 import { animateInViewElement } from 'lib/animation.lib';
 
 type HamburgerProps = {
