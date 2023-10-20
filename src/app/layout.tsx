@@ -7,14 +7,42 @@ import './globals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://hanstanawi.com'),
-  title: 'Hans Tanawi | Full Stack Engineer',
+  title: {
+    default: 'Hans Tanawi | Full Stack Engineer',
+    template: '%s | Hans Tanawi',
+  },
   description: 'Hans Tanawi Personal Website & Portfolio',
   openGraph: {
+    title: 'Hans Tanawi',
+    description: 'Software Engineer. Full Stack Engineer.',
+    url: 'https://hanstanawi.com',
+    siteName: 'Hans Tanawi',
     images: {
       url: 'https://res.cloudinary.com/dbuvuwofy/image/upload/v1677857831/hanstanawi.com/hanstanawi-logo_smcpsu.png',
       alt: 'Hans Tanawi Logo',
+      width: 1920,
+      height: 1080,
     },
     locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    title: 'Hans Tanawi',
+    card: 'summary_large_image',
+  },
+  icons: {
+    shortcut: '/favicon.ico',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 
