@@ -1,6 +1,6 @@
-import { otherProjects } from 'features/projects/projects.constant';
+import { otherProjects } from 'features/home/projects/projects.constant';
 import ProjectItem from './ProjectItem';
-import Button from 'components/Button';
+import Button from 'components/ui/Button';
 import { useMemo, useState } from 'react';
 
 function calculateDelay(index: number): number {
