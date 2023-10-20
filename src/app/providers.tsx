@@ -1,8 +1,6 @@
 'use client';
 import { useEffect, type PropsWithChildren } from 'react';
 import DarkModeContextProvider from 'context/DarkModeContext';
-import Footer from './navigation/Footer';
-import Navbar from './navigation/Navbar';
 
 const Providers = ({ children }: PropsWithChildren) => {
   useEffect(() => {
@@ -29,15 +27,7 @@ const Providers = ({ children }: PropsWithChildren) => {
       });
   }, []);
 
-  return (
-    <>
-      <DarkModeContextProvider>
-        <Navbar />
-        {children}
-        <Footer />
-      </DarkModeContextProvider>
-    </>
-  );
+  return <DarkModeContextProvider>{children}</DarkModeContextProvider>;
 };
 
 export default Providers;
