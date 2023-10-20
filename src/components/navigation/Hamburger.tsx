@@ -1,6 +1,6 @@
-import cx from 'classnames';
 import DarkModeToggle from 'components/ui/DarkModeToggle';
 import { animateInViewElement } from 'lib/animation.lib';
+import { cn } from 'lib/utils.lib';
 
 type HamburgerProps = {
   isOpen: boolean;
@@ -21,7 +21,7 @@ const Hamburger = ({ isOpen, onToggleOpen, isInView }: HamburgerProps) => {
       >
         <DarkModeToggle />
         <div
-          className={cx(
+          className={cn(
             'nav-icon absolute align text-3xl',
             !isOpen ? '' : 'open',
           )}

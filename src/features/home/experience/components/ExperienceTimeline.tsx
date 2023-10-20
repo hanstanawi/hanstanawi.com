@@ -1,7 +1,7 @@
-import cx from 'classnames';
 import Circles from 'public/assets/circles-3.svg';
 import JobDescription from './JobDescription';
 import { EXPERIENCES } from '../experience.constant';
+import { cn } from 'lib/utils.lib';
 
 const ExperienceTimeline = () => {
   return (
@@ -24,7 +24,7 @@ const ExperienceTimeline = () => {
               <div className="relative flex space-x-6">
                 <div className="pt-2.5">
                   <span
-                    className={cx(
+                    className={cn(
                       'bg-gray-200',
                       'md:h-3.5 md:w-3.5 h-2.5 w-2.5 rounded-full flex items-center justify-center ring-8 dark:ring-darkV2 ring-white',
                     )}

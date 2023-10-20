@@ -1,5 +1,5 @@
-import cx from 'classnames';
 import { ReactNode } from 'react';
+import { cn } from 'lib/utils.lib';
 
 type ButtonProps = {
   children: ReactNode;
@@ -12,7 +12,7 @@ type ButtonProps = {
 const Button = ({ children, sizeClasses, onClick }: ButtonProps) => {
   return (
     <button
-      className={cx(
+      className={cn(
         `bg-transparent rounded-lg font-medium dark:text-tealGreen text-black 
         border dark:border-tealGreen border-black md:hover:text-white md:hover:bg-black 
         dark:hover:bg-tealGreen dark:hover:bg-opacity-20 transition duration-300`,

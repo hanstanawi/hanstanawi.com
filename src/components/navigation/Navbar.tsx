@@ -1,5 +1,5 @@
 'use client';
-import cx from 'classnames';
+
 import Link from 'next/link';
 import { Link as SmoothScrollLink } from 'react-scroll';
 import { AnimatePresence, motion, useCycle } from 'framer-motion';
@@ -17,6 +17,7 @@ import useScrollLock from 'hooks/use-scroll-lock';
 import useScrollVisible from 'hooks/use-scroll-visible';
 import { LINKS } from 'constants/navigation.constant';
 import { animateInViewElement } from 'lib/animation.lib';
+import { cn } from 'lib/utils.lib';
 
 const Navbar = () => {
   const [open, cycleOpen] = useCycle(false, true);
@@ -36,7 +37,7 @@ const Navbar = () => {
   return (
     <>
       <header
-        className={cx(
+        className={cn(
           'w-full dark:bg-inherit bg-white fixed md:h-24 h-[80px] flex items-center border-b dark:border-transparent border-gray-200 z-20 transition-top duration-700',
           visible ? 'top-0 left-0' : '-top-[100px]',
         )}

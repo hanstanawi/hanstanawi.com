@@ -1,7 +1,7 @@
-import cx from 'classnames';
 import { useState } from 'react';
-import { EXPERIENCES } from '../experience.constant';
 import JobDescription from './JobDescription';
+import { EXPERIENCES } from '../experience.constant';
+import { cn } from 'lib/utils.lib';
 
 const ExperienceTab = () => {
   const [id, setId] = useState<string>(EXPERIENCES[0].id);
@@ -21,7 +21,7 @@ const ExperienceTab = () => {
         {EXPERIENCES.map((experience) => (
           <p
             key={experience.company}
-            className={cx(
+            className={cn(
               `w-32 h-6 text-center py-6 flex items-center justify-center px-0 border-l-2 border-gray-200 
               text-gray-500 cursor-pointer`,
               id === experience.id

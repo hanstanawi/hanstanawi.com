@@ -1,7 +1,7 @@
-import cx from 'classnames';
 import Link from 'next/link';
 import { format } from 'date-fns';
 import { Experience } from '../experience.type';
+import { cn } from 'lib/utils.lib';
 
 type JobDescriptionProps = {
   experience: Experience;
@@ -25,7 +25,7 @@ const JobDescription = ({ experience, isSelected }: JobDescriptionProps) => {
 
   return (
     <div
-      className={cx(
+      className={cn(
         isSelected ? 'flex w-full opacity-1' : 'absolute opacity-0',
         'flex-col gap-y-4 transition-opacity duration-100 top-0 left-0',
       )}

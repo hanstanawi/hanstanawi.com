@@ -1,13 +1,13 @@
-import cx from 'classnames';
+import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { RxKeyboard } from 'react-icons/rx';
 import { motion, useInView } from 'framer-motion';
 
 import useMediaQuery from 'hooks/use-media-query';
 import ProjectLinks from 'components/links/ProjectLinks';
-import { Project } from 'types/projects.type';
 import { animateInViewElement } from 'lib/animation.lib';
-import Link from 'next/link';
+import { cn } from 'lib/utils.lib';
+import type { Project } from 'types/projects.type';
 
 type ProjectItemProps = {
   project: Omit<Project, 'imageSrc'>;
@@ -64,7 +64,7 @@ const ProjectItem = ({ project, delay }: ProjectItemProps) => {
             href={project.demoUrl}
             target="_blank"
             rel="noreferrer"
-            className={cx(
+            className={cn(
               'font-semibold md:text-xl text-lg transition duration-150',
               isHovered ? 'text-tealGreen' : 'dark:text-gray-300 text-black',
             )}
