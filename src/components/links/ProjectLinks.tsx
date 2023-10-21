@@ -10,7 +10,7 @@ const ProjectLinks = ({ githubUrl, demoUrl }: ProjectLinksProps) => {
   return (
     <>
       {/* DESKTOP */}
-      <div className="md:flex hidden gap-x-4 justify-end">
+      <div className="hidden justify-end gap-x-4 md:flex">
         {githubUrl && (
           <Link
             href={githubUrl}
@@ -20,7 +20,7 @@ const ProjectLinks = ({ githubUrl, demoUrl }: ProjectLinksProps) => {
             aria-label="Github Repo"
           >
             <FaGithub
-              className="dark:text-gray-300 text-black md:hover:text-tealGreen transition duration-500"
+              className="text-black transition duration-500 dark:text-gray-300 md:hover:text-tealGreen"
               size={23}
             />
           </Link>
@@ -33,13 +33,13 @@ const ProjectLinks = ({ githubUrl, demoUrl }: ProjectLinksProps) => {
           aria-label="Project Demo"
         >
           <FaExternalLinkAlt
-            className="dark:text-gray-300 text-black md:hover:text-tealGreen transition duration-500"
+            className="text-black transition duration-500 dark:text-gray-300 md:hover:text-tealGreen"
             size={20}
           />
         </Link>
       </div>
       {/* MOBILE */}
-      <div className="md:hidden flex gap-x-4 justify-end">
+      <div className="flex justify-end gap-x-4 md:hidden">
         {githubUrl && (
           <Link
             href={githubUrl}
@@ -49,7 +49,7 @@ const ProjectLinks = ({ githubUrl, demoUrl }: ProjectLinksProps) => {
             aria-label="Github Repo"
           >
             <FaGithub
-              className="dark:text-gray-300 text-black md:hover:text-tealGreen transition duration-500"
+              className="text-black transition duration-500 dark:text-gray-300 md:hover:text-tealGreen"
               size={20}
             />
           </Link>
@@ -61,7 +61,7 @@ const ProjectLinks = ({ githubUrl, demoUrl }: ProjectLinksProps) => {
           aria-label="Project Demo"
         >
           <FaExternalLinkAlt
-            className="dark:text-gray-300 text-black md:hover:text-tealGreen transition duration-500"
+            className="text-black transition duration-500 dark:text-gray-300 md:hover:text-tealGreen"
             size={17}
           />
         </Link>

@@ -15,15 +15,15 @@ const ExperienceTab = () => {
   };
 
   return (
-    <div className="flex w-[800px] min-h-[300px] relative items-start">
+    <div className="relative flex min-h-[300px] w-[800px] items-start">
       {/* TABS */}
-      <div className="relative z-[3] max-w-full flex flex-col justify-center transition-all ease-linear duration-200">
+      <div className="relative z-[3] flex max-w-full flex-col justify-center transition-all duration-200 ease-linear">
         {EXPERIENCES.map((experience) => (
           <p
             key={experience.company}
             className={cn(
-              `w-32 h-6 text-center py-6 flex items-center justify-center px-0 border-l-2 border-gray-200 
-              text-gray-500 cursor-pointer`,
+              `flex h-6 w-32 cursor-pointer items-center justify-center border-l-2 border-gray-200 px-0 py-6 
+              text-center text-gray-500`,
               id === experience.id
                 ? selectedTabClass
                 : 'hover:bg-gray-200 hover:bg-opacity-50 hover:text-black',
@@ -38,7 +38,7 @@ const ExperienceTab = () => {
         <span className=""></span>
       </div>
       {/* CONTENT */}
-      <div className="relative py-0 px-5">
+      <div className="relative px-5 py-0">
         {EXPERIENCES.map((experience) => (
           <JobDescription
             key={experience.id}

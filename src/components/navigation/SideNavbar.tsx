@@ -34,8 +34,8 @@ const itemVariants = {
 const SideNavbar = ({ onClickClose }: SideNavbarProps) => {
   return (
     <motion.aside
-      className="fixed bg-inherit max-h-screen h-screen w-3/4 right-0 
-      top-0 flex flex-col items-center justify-center z-40 lg:hidden"
+      className="fixed right-0 top-0 z-40 flex h-screen 
+      max-h-screen w-3/4 flex-col items-center justify-center bg-inherit lg:hidden"
       initial={{ width: 0 }}
       animate={{
         width: '75%',
@@ -49,7 +49,7 @@ const SideNavbar = ({ onClickClose }: SideNavbarProps) => {
       }}
     >
       <motion.ul
-        className="flex flex-col justify-center md:gap-y-16 gap-y-12"
+        className="flex flex-col justify-center gap-y-12 md:gap-y-16"
         initial="closed"
         animate="open"
         exit="closed"
@@ -58,7 +58,7 @@ const SideNavbar = ({ onClickClose }: SideNavbarProps) => {
         {LINKS.map((link) => (
           <Link href={link.link} key={link.title}>
             <motion.li
-              className="md:text-4xl text-2xl dark:text-gray-300 text-black cursor-pointer"
+              className="cursor-pointer text-2xl text-black dark:text-gray-300 md:text-4xl"
               variants={itemVariants}
               onClick={onClickClose}
             >

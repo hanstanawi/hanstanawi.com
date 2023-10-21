@@ -26,19 +26,19 @@ const JobDescription = ({ experience, isSelected }: JobDescriptionProps) => {
   return (
     <div
       className={cn(
-        isSelected ? 'flex w-full opacity-1' : 'absolute opacity-0',
-        'flex-col gap-y-4 transition-opacity duration-100 top-0 left-0',
+        isSelected ? 'opacity-1 flex w-full' : 'absolute opacity-0',
+        'left-0 top-0 flex-col gap-y-4 transition-opacity duration-100',
       )}
     >
-      <h2 className="lg:text-3xl sm:text-2xl text-xl">
-        <span className="font-semibold dark:text-gray-300 text-black">
+      <h2 className="text-xl sm:text-2xl lg:text-3xl">
+        <span className="font-semibold text-black dark:text-gray-300">
           {experience.role}
         </span>{' '}
-        <span className="text-tealGreen font-medium">
+        <span className="font-medium text-tealGreen">
           <Link
             href={experience.url}
             target={'_blank'}
-            className="border-b-2 md:hover:border-tealGreen border-transparent transition duration-300"
+            className="border-b-2 border-transparent transition duration-300 md:hover:border-tealGreen"
             rel="noreferrer"
           >
             @ {experience.company}
@@ -46,18 +46,18 @@ const JobDescription = ({ experience, isSelected }: JobDescriptionProps) => {
         </span>
       </h2>
       <div>
-        <p className="dark:text-gray-400 text-gray-800 md:text-lg text-base pb-1">
+        <p className="pb-1 text-base text-gray-800 dark:text-gray-400 md:text-lg">
           {experience.location}
         </p>
-        <p className="dark:text-gray-300 text-gray-500 md:text-base text-sm">
+        <p className="text-sm text-gray-500 dark:text-gray-300 md:text-base">
           {formattedStartDate} - {formattedEndDate}
         </p>
       </div>
-      <p className="lg:text-lg lg:leading-[26px] md:text-base dark:text-gray-300 text-black text-sm">
+      <p className="text-sm text-black dark:text-gray-300 md:text-base lg:text-lg lg:leading-[26px]">
         {experience.description}
       </p>
 
-      <ul className="flex flex-col gap-y-4 list-disc dark:text-gray-400 text-gray-500 md:text-base text-[13px] pl-4">
+      <ul className="flex list-disc flex-col gap-y-4 pl-4 text-[13px] text-gray-500 dark:text-gray-400 md:text-base">
         {experience.responsibilities.map((r) => (
           <li key={r}>{r}</li>
         ))}

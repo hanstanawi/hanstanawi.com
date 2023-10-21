@@ -5,7 +5,7 @@ type OverlayProps = {
 const Overlay = ({ onClickClose }: OverlayProps) => {
   return (
     <div
-      className="fixed top-0 left-0 w-full h-screen z-20 bg-black opacity-60 transition-colors duration-500 delay-1000 backdrop-blur-xl"
+      className="fixed left-0 top-0 z-20 h-screen w-full bg-black opacity-60 backdrop-blur-xl transition-colors delay-1000 duration-500"
       onClick={onClickClose}
     />
   );
