@@ -1,7 +1,7 @@
 'use client';
 import { useRef } from 'react';
 import { useInView } from 'framer-motion';
-import { Link as SmoothScrollLink } from 'react-scroll';
+// import { Link as SmoothScrollLink } from 'react-scroll';
 import Button from 'components/ui/Button';
 import SectionLayout from 'components/layouts/SectionLayout';
 import SocialLinks from 'components/links/SocialLinks';
@@ -9,6 +9,7 @@ import Circles from 'public/assets/circles.svg';
 import Parallax from 'components/layouts/Parallax';
 import useMediaQuery from 'hooks/use-media-query';
 import { animateInViewElement } from 'lib/animation.lib';
+import Link from 'next/link';
 
 const SUBTITLE = `I'm a full stack engineer specializing building things for web
 and based in Taipei, Taiwan`;
@@ -41,54 +42,47 @@ const Hero = () => {
   const cta = (
     <div className="flex flex-col gap-y-2">
       <SocialLinks />
-      <SmoothScrollLink
-        to={'featured'}
-        smooth={true}
-        duration={700}
-        offset={-20}
-      >
+      <Link href={'/#featured'}>
         <Button sizeClasses="md:px-8 px-7 md:py-4 py-3 md:text-base text-sm">
           Check out my projects
         </Button>
-      </SmoothScrollLink>
+      </Link>
     </div>
   );
 
   const items = [firstTitle, secondTitle, subtitle, cta];
 
   return (
-    <section id="hero" ref={ref}>
-      <SectionLayout>
-        <Parallax offset={0}>
-          <div className="h-[100vh] flex flex-col justify-center items-start gap-y-2 pt-14">
-            {items.map((item, i) => (
-              <div
-                key={i}
-                style={animateInViewElement(isInView, {
-                  direction: 'translateY(20px)',
-                  speed: 0.3,
-                  delay: (i + initialDelay) * 200,
-                })}
-                className="z-10"
-              >
-                {item}
-              </div>
-            ))}
-          </div>
-        </Parallax>
-        <div
-          className="dark:hidden lg:block hidden absolute top-0 -right-32"
-          style={animateInViewElement(isInView, {
-            direction: 'translateY(0px)',
-            speed: 1,
-            delay: 1400,
-            opacity: 0.5,
-          })}
-        >
-          <Circles />
+    <SectionLayout id="hero" forwardedRef={ref}>
+      <Parallax offset={0}>
+        <div className="h-[100vh] flex flex-col justify-center items-start gap-y-2 pt-14">
+          {items.map((item, i) => (
+            <div
+              key={i}
+              style={animateInViewElement(isInView, {
+                direction: 'translateY(20px)',
+                speed: 0.3,
+                delay: (i + initialDelay) * 200,
+              })}
+              className="z-10"
+            >
+              {item}
+            </div>
+          ))}
         </div>
-      </SectionLayout>
-    </section>
+      </Parallax>
+      <div
+        className="dark:hidden lg:block hidden absolute top-0 -right-32"
+        style={animateInViewElement(isInView, {
+          direction: 'translateY(0px)',
+          speed: 1,
+          delay: 1400,
+          opacity: 0.5,
+        })}
+      >
+        <Circles />
+      </div>
+    </SectionLayout>
   );
 };
 

@@ -13,7 +13,7 @@ type SideNavbarProps = {
 const sideVariants = {
   closed: {
     transition: {
-      staggerChildren: 0.2,
+      // staggerChildren: 0.2,
       staggerDirection: -1,
     },
   },
@@ -46,7 +46,7 @@ const SideNavbar = ({ onClickClose }: SideNavbarProps) => {
       }}
       exit={{
         width: 0,
-        transition: { delay: 0.7, duration: 0.5 },
+        transition: { duration: 0.2 },
       }}
     >
       <motion.ul
@@ -57,14 +57,7 @@ const SideNavbar = ({ onClickClose }: SideNavbarProps) => {
         variants={sideVariants}
       >
         {LINKS.map((link) => (
-          <SmoothScrollLink
-            to={link.link}
-            smooth={true}
-            duration={700}
-            offset={-60}
-            delay={800}
-            key={link.title}
-          >
+          <Link href={link.link} key={link.title}>
             <motion.li
               className="md:text-4xl text-2xl dark:text-gray-300 text-black cursor-pointer"
               variants={itemVariants}
@@ -72,7 +65,23 @@ const SideNavbar = ({ onClickClose }: SideNavbarProps) => {
             >
               {link.title}
             </motion.li>
-          </SmoothScrollLink>
+          </Link>
+          // <SmoothScrollLink
+          //   to={link.link}
+          //   smooth={true}
+          //   duration={700}
+          //   offset={-60}
+          //   delay={800}
+          //   key={link.title}
+          // >
+          //   <motion.li
+          //     className="md:text-4xl text-2xl dark:text-gray-300 text-black cursor-pointer"
+          //     variants={itemVariants}
+          //     onClick={onClickClose}
+          //   >
+          //     {link.title}
+          //   </motion.li>
+          // </SmoothScrollLink>
         ))}
         <motion.div variants={itemVariants}>
           <Link href={'/resume.pdf'} target="_blank" rel="noreferrer">
