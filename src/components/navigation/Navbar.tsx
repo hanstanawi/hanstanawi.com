@@ -45,7 +45,7 @@ const Navbar = () => {
         {/* CONTAINER */}
         <div className="container relative mx-auto flex max-w-sm items-center justify-between px-3 sm:max-w-lg sm:px-0 md:max-w-2xl lg:max-w-4xl xl:max-w-6xl">
           {/* LOGO */}
-          <Link href="/#hero" className="cursor-pointer">
+          <Link href="/#hero" className="cursor-pointer" aria-label="Homepage">
             <div
               className="flex items-center gap-x-1 "
               style={animateInViewElement(isInView, {
