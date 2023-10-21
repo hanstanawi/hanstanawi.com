@@ -1,7 +1,6 @@
 'use client';
 import { useRef } from 'react';
 import { useInView } from 'framer-motion';
-// import { Link as SmoothScrollLink } from 'react-scroll';
 import Button from 'components/ui/Button';
 import SectionLayout from 'components/layouts/SectionLayout';
 import SocialLinks from 'components/links/SocialLinks';

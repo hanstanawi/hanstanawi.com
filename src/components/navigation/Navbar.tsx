@@ -1,8 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Link as SmoothScrollLink } from 'react-scroll';
-import { AnimatePresence, motion, useCycle } from 'framer-motion';
+import { AnimatePresence, useCycle } from 'framer-motion';
 import { useEffect, useRef } from 'react';
 import { useInView } from 'framer-motion';
 
@@ -46,13 +45,7 @@ const Navbar = () => {
         {/* CONTAINER */}
         <div className="flex container justify-between mx-auto items-center xl:max-w-6xl lg:max-w-4xl md:max-w-2xl sm:max-w-lg max-w-sm sm:px-0 px-3 relative">
           {/* LOGO */}
-          <SmoothScrollLink
-            to={'hero'}
-            smooth={true}
-            duration={700}
-            offset={-20}
-            className="cursor-pointer"
-          >
+          <Link href="/#hero" className="cursor-pointer">
             <div
               className="flex items-center gap-x-1 "
               style={animateInViewElement(isInView, {
@@ -68,7 +61,7 @@ const Navbar = () => {
                 <p>Full Stack Engineer</p>
               </div>
             </div>
-          </SmoothScrollLink>
+          </Link>
           {/* NAV DESKTOP */}
           <nav className="lg:flex items-center gap-x-12 hidden">
             <ul className="flex gap-x-12 text-base">

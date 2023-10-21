@@ -1,7 +1,6 @@
 'use client';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { Link as SmoothScrollLink } from 'react-scroll';
 
 import Button from 'components/ui/Button';
 import { LINKS } from 'constants/navigation.constant';
@@ -46,7 +45,7 @@ const SideNavbar = ({ onClickClose }: SideNavbarProps) => {
       }}
       exit={{
         width: 0,
-        transition: { duration: 0.2 },
+        transition: { duration: 0.4 },
       }}
     >
       <motion.ul
@@ -66,22 +65,6 @@ const SideNavbar = ({ onClickClose }: SideNavbarProps) => {
               {link.title}
             </motion.li>
           </Link>
-          // <SmoothScrollLink
-          //   to={link.link}
-          //   smooth={true}
-          //   duration={700}
-          //   offset={-60}
-          //   delay={800}
-          //   key={link.title}
-          // >
-          //   <motion.li
-          //     className="md:text-4xl text-2xl dark:text-gray-300 text-black cursor-pointer"
-          //     variants={itemVariants}
-          //     onClick={onClickClose}
-          //   >
-          //     {link.title}
-          //   </motion.li>
-          // </SmoothScrollLink>
         ))}
         <motion.div variants={itemVariants}>
           <Link href={'/resume.pdf'} target="_blank" rel="noreferrer">
