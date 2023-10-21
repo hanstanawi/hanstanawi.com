@@ -9,7 +9,7 @@ const Contact = dynamic(() => import('features/home/contact'));
 
 const HomePage = () => {
   return (
-    <div className="font-basic lg:scroll-smooth">
+    <div className="font-basic">
       <main>
         <Hero />
         <About />
