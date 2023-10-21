@@ -7,7 +7,7 @@ import SkillList from './SkillList';
 
 const SkillSection = () => {
   return (
-    <div className="flex md:justify-start justify-between md:gap-x-18 gap-x-9 w-full pt-2">
+    <div className="md:gap-x-18 flex w-full justify-between gap-x-9 pt-2 md:justify-start">
       <SkillList title="Languages" skills={LANGUAGES_SKILLS} />
       <SkillList title="Frameworks" skills={FRAMEWORKS_SKILLS} />
       <SkillList title="Tools" skills={TOOLS_SKILLS} />

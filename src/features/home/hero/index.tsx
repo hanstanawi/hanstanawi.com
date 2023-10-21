@@ -21,19 +21,19 @@ const Hero = () => {
   const initialDelay = isMobile ? 0 : 4;
 
   const firstTitle = (
-    <p className="dark:text-tealGreen text-gray-500 md:text-xl text-lg font-light pb-2">
+    <p className="pb-2 text-lg font-light text-gray-500 dark:text-tealGreen md:text-xl">
       Hi, my name is
     </p>
   );
 
   const secondTitle = (
-    <h1 className="dark:text-gray-300 text-black lg:text-7xl md:text-6xl text-5xl">
+    <h1 className="text-5xl text-black dark:text-gray-300 md:text-6xl lg:text-7xl">
       Hans Tanawi.
     </h1>
   );
 
   const subtitle = (
-    <h2 className="dark:text-gray-400 text-black lg:text-3xl md:text-2xl text-xl font-light xl:w-2/3 md:w-9/12 w-11/12 md:pb-4 pb-1">
+    <h2 className="w-11/12 pb-1 text-xl font-light text-black dark:text-gray-400 md:w-9/12 md:pb-4 md:text-2xl lg:text-3xl xl:w-2/3">
       {SUBTITLE}
     </h2>
   );
@@ -60,7 +60,7 @@ const Hero = () => {
     <section id="hero" ref={ref}>
       <SectionLayout>
         <Parallax offset={0}>
-          <div className="h-[100vh] flex flex-col justify-center items-start gap-y-2 pt-14">
+          <div className="flex h-[100vh] flex-col items-start justify-center gap-y-2 pt-14">
             {items.map((item, i) => (
               <div
                 key={i}
@@ -77,7 +77,7 @@ const Hero = () => {
           </div>
         </Parallax>
         <div
-          className="dark:hidden lg:block hidden absolute top-0 -right-32"
+          className="absolute -right-32 top-0 hidden dark:hidden lg:block"
           style={animateInViewElement(isInView, {
             direction: 'translateY(0px)',
             speed: 1,

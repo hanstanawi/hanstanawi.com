@@ -6,14 +6,14 @@ type SkillListProps = {
 const SkillList = ({ title, skills }: SkillListProps) => {
   return (
     <div className="w-full">
-      <p className="font-bold md:text-base text-sm dark:text-gray-300 text-black uppercase pb-4">
+      <p className="pb-4 text-sm font-bold uppercase text-black dark:text-gray-300 md:text-base">
         {title}
       </p>
       <ul className="flex flex-col gap-y-2">
         {skills.map((skill) => (
           <li
             key={skill}
-            className="font-light dark:text-gray-300 text-black md:text-sm text-xs"
+            className="text-xs font-light text-black dark:text-gray-300 md:text-sm"
           >
             {skill}
           </li>

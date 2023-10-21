@@ -20,7 +20,7 @@ const ProjectItem = ({ project, index }: ProjectItemProps) => {
   return (
     <div
       className={cn(
-        'flex items-center h-full lg:w-11/12 w-full gap-x-16 flex-col lg:gap-y-0 gap-y-6',
+        'flex h-full w-full flex-col items-center gap-x-16 gap-y-6 lg:w-11/12 lg:gap-y-0',
         isOdd ? 'lg:flex-row' : 'lg:flex-row-reverse',
       )}
       ref={ref}

@@ -4,14 +4,14 @@ import SectionLayout from 'components/layouts/SectionLayout';
 
 const NotFoundPage = () => {
   return (
-    <div className="dark:bg-darkV2 bg-white font-basic lg:scroll-smooth">
+    <div className="bg-white font-basic dark:bg-darkV2 lg:scroll-smooth">
       <main>
         <SectionLayout>
-          <div className="md:min-h-[100vh] min-h-[90vh] flex flex-col items-center justify-center">
-            <h1 className="md:text-[182px] text-[132px] font-semibold dark:text-gray-300 text-black">
+          <div className="flex min-h-[90vh] flex-col items-center justify-center md:min-h-[100vh]">
+            <h1 className="text-[132px] font-semibold text-black dark:text-gray-300 md:text-[182px]">
               404
             </h1>
-            <h1 className="md:text-4xl text-2xl -mt-6 dark:text-gray-300 text-black">
+            <h1 className="-mt-6 text-2xl text-black dark:text-gray-300 md:text-4xl">
               Page Not Found
             </h1>
             <Link href="/" className="pt-10">
