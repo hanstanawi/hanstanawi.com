@@ -19,7 +19,7 @@ const SocialLinks = ({ small = false }: SocialLinksProps) => {
   return (
     <>
       {/* DESKTOP */}
-      <div className="md:flex gap-x-4 my-4 hidden">
+      <div className="my-4 hidden gap-x-4 md:flex">
         <Link
           href={SOCIAL_LINKS.GITHUB}
           target="_blank"
@@ -28,7 +28,7 @@ const SocialLinks = ({ small = false }: SocialLinksProps) => {
           aria-label="Github"
         >
           <FaGithub
-            className="hover:text-black dark:hover:text-tealGreen dark:text-gray-300 text-gray-500 transition duration-500"
+            className="text-gray-500 transition duration-500 hover:text-black dark:text-gray-300 dark:hover:text-tealGreen"
             size={desktopSize}
           />
         </Link>
@@ -40,7 +40,7 @@ const SocialLinks = ({ small = false }: SocialLinksProps) => {
           aria-label="LinkedIn"
         >
           <FaLinkedin
-            className="hover:text-black dark:hover:text-tealGreen dark:text-gray-300 text-gray-500 transition duration-500"
+            className="text-gray-500 transition duration-500 hover:text-black dark:text-gray-300 dark:hover:text-tealGreen"
             size={desktopSize}
           />
         </Link>
@@ -52,7 +52,7 @@ const SocialLinks = ({ small = false }: SocialLinksProps) => {
           aria-label="Instagram"
         >
           <FaInstagram
-            className="hover:text-black dark:hover:text-tealGreen dark:text-gray-300 text-gray-500 transition duration-500"
+            className="text-gray-500 transition duration-500 hover:text-black dark:text-gray-300 dark:hover:text-tealGreen"
             size={desktopSize}
           />
         </Link>
@@ -64,13 +64,13 @@ const SocialLinks = ({ small = false }: SocialLinksProps) => {
           aria-label="discord"
         >
           <FaDiscord
-            className="hover:text-black dark:hover:text-tealGreen dark:text-gray-300 text-gray-500 transition duration-500"
+            className="text-gray-500 transition duration-500 hover:text-black dark:text-gray-300 dark:hover:text-tealGreen"
             size={desktopSize}
           />
         </Link>
       </div>
       {/* MOBILE */}
-      <div className="flex gap-x-4 my-4 md:hidden">
+      <div className="my-4 flex gap-x-4 md:hidden">
         <Link
           href={SOCIAL_LINKS.GITHUB}
           target="_blank"
@@ -79,7 +79,7 @@ const SocialLinks = ({ small = false }: SocialLinksProps) => {
           aria-label="Github"
         >
           <FaGithub
-            className="dark:text-gray-300 text-gray-500"
+            className="text-gray-500 dark:text-gray-300"
             size={mobileSize}
           />
         </Link>
@@ -91,7 +91,7 @@ const SocialLinks = ({ small = false }: SocialLinksProps) => {
           aria-label="LinkedIn"
         >
           <FaLinkedin
-            className="dark:text-gray-300 text-gray-500"
+            className="text-gray-500 dark:text-gray-300"
             size={mobileSize}
           />
         </Link>
@@ -103,7 +103,7 @@ const SocialLinks = ({ small = false }: SocialLinksProps) => {
           aria-label="Instagram"
         >
           <FaInstagram
-            className="dark:text-gray-300 text-gray-500"
+            className="text-gray-500 dark:text-gray-300"
             size={mobileSize}
           />
         </Link>
@@ -115,7 +115,7 @@ const SocialLinks = ({ small = false }: SocialLinksProps) => {
           aria-label="Discord"
         >
           <FaDiscord
-            className="dark:text-gray-300 text-gray-500"
+            className="text-gray-500 dark:text-gray-300"
             size={mobileSize}
           />
         </Link>

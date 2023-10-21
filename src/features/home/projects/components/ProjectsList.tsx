@@ -17,7 +17,7 @@ const ProjectsList = () => {
 
   return (
     <>
-      <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 lg:w-11/12 w-full">
+      <div className="grid w-full grid-cols-1 gap-5 md:grid-cols-2 lg:w-11/12 xl:grid-cols-3">
         {shownProjects.map((project, i) => (
           <ProjectItem
             key={project.id}
@@ -26,7 +26,7 @@ const ProjectsList = () => {
           />
         ))}
       </div>
-      <div className="mt-16 mb-8 flex justify-center">
+      <div className="mb-8 mt-16 flex justify-center">
         <Button
           sizeClasses="md:px-8 px-7 md:py-4 py-3 md:text-base text-sm"
           onClick={() => setIsShowMore((prevState) => !prevState)}

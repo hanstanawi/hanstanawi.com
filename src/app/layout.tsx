@@ -60,7 +60,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
         <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
       </head>
-      <body className="dark:bg-darkV2 bg-white transition duration-300">
+      <body className="bg-white transition duration-300 dark:bg-darkV2">
         <Providers>
           <NavigationLayout>{children}</NavigationLayout>
           <Analytics />

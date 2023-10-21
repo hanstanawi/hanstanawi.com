@@ -8,7 +8,7 @@ const DarkModeToggle = () => {
   return (
     <AnimatePresence mode="wait" initial={false}>
       <motion.button
-        className="sm:text-[26px] text-2xl dark:text-yellow-500 text-gray-800 focus:outline-none"
+        className="text-2xl text-gray-800 focus:outline-none dark:text-yellow-500 sm:text-[26px]"
         aria-label="dark-mode-toggle"
         role="button"
         onClick={() => toggleMode()}

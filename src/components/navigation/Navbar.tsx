@@ -38,13 +38,13 @@ const Navbar = () => {
     <>
       <header
         className={cn(
-          'w-full dark:bg-inherit bg-white fixed md:h-24 h-[80px] flex items-center border-b dark:border-transparent border-gray-200 z-20 transition-top duration-700',
-          visible ? 'top-0 left-0' : '-top-[100px]',
+          'fixed z-20 flex h-[80px] w-full items-center border-b border-gray-200 bg-white transition-top duration-700 dark:border-transparent dark:bg-inherit md:h-24',
+          visible ? 'left-0 top-0' : '-top-[100px]',
         )}
         ref={navbarRef}
       >
         {/* CONTAINER */}
-        <div className="flex container justify-between mx-auto items-center xl:max-w-6xl lg:max-w-4xl md:max-w-2xl sm:max-w-lg max-w-sm sm:px-0 px-3 relative">
+        <div className="container relative mx-auto flex max-w-sm items-center justify-between px-3 sm:max-w-lg sm:px-0 md:max-w-2xl lg:max-w-4xl xl:max-w-6xl">
           {/* LOGO */}
           <SmoothScrollLink
             to={'hero'}
@@ -60,17 +60,17 @@ const Navbar = () => {
                 speed: 0.8,
               })}
             >
-              <div className="dark:fill-white dark:filter dark:invert">
+              <div className="dark:fill-white dark:invert dark:filter">
                 <Logo />
               </div>
-              <div className="text-sm hidden lg:block dark:text-gray-300 text-black">
+              <div className="hidden text-sm text-black dark:text-gray-300 lg:block">
                 <p>Hans Tanawi</p>
                 <p>Full Stack Engineer</p>
               </div>
             </div>
           </SmoothScrollLink>
           {/* NAV DESKTOP */}
-          <nav className="lg:flex items-center gap-x-12 hidden">
+          <nav className="hidden items-center gap-x-12 lg:flex">
             <ul className="flex gap-x-12 text-base">
               {LINKS.map((link, i) => (
                 <NavItem
@@ -100,7 +100,7 @@ const Navbar = () => {
                   speed: 0.3,
                   delay: 600,
                 })}
-                className="md:flex block items-center"
+                className="block items-center md:flex"
               >
                 <DarkModeToggle />
               </div>

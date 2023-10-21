@@ -16,7 +16,7 @@ const Overlay = ({ isOdd }: OverlayProps) => {
   return (
     <div
       className={cn(
-        'md:block hidden absolute md:hover:opacity-0 opacity-20 from-black to-transparent transition rounded-md duration-500 left-0 top-0 w-full z-10 h-full',
+        'absolute left-0 top-0 z-10 hidden h-full w-full rounded-md from-black to-transparent opacity-20 transition duration-500 md:block md:hover:opacity-0',
         isOdd ? 'bg-gradient-to-l' : 'bg-gradient-to-r',
       )}
     ></div>
@@ -27,7 +27,7 @@ const ProjectImage = ({ project }: ProjectImageProps) => {
   return (
     <Link
       href={project.demoUrl}
-      className="cursor-pointer xl:w-8/12 lg:w-9/12 md:w-11/12 w-full relative flex items-center h-full"
+      className="relative flex h-full w-full cursor-pointer items-center md:w-11/12 lg:w-9/12 xl:w-8/12"
       target={'_blank'}
     >
       <Image

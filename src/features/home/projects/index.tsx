@@ -15,20 +15,20 @@ const Projects = () => {
     <section id="project" ref={ref}>
       <SectionLayout>
         <Parallax>
-          <div className="w-full flex flex-col justify-center">
+          <div className="flex w-full flex-col justify-center">
             {/* TITLE */}
             <div
-              className="flex items-center justify-center mb-10"
+              className="mb-10 flex items-center justify-center"
               style={animateInViewElement(isInView, {
                 direction: 'transformY(30px)',
                 speed: 0.3,
               })}
             >
-              <h1 className="md:text-2xl text-xl dark:text-gray-300 text-black font-semibold text-center">
+              <h1 className="text-center text-xl font-semibold text-black dark:text-gray-300 md:text-2xl">
                 Other Noteworthy Projects
               </h1>
             </div>
-            <div className="flex flex-col justify-center items-center">
+            <div className="flex flex-col items-center justify-center">
               <ProjectsList />
             </div>
           </div>

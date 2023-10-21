@@ -40,7 +40,7 @@ const ProjectItem = ({ project, delay }: ProjectItemProps) => {
   return (
     <>
       <motion.div
-        className="flex flex-col justify-start items-center p-8 border dark:border-transparent border-gray-200 rounded-md shadow-lg dark:bg-dark"
+        className="flex flex-col items-center justify-start rounded-md border border-gray-200 p-8 shadow-lg dark:border-transparent dark:bg-dark"
         whileHover={{ y: isMobile ? '0px' : '-10px' }}
         onHoverStart={() => handleSetHover(true)}
         onHoverEnd={() => handleSetHover(false)}
@@ -51,9 +51,9 @@ const ProjectItem = ({ project, delay }: ProjectItemProps) => {
           delay: nativeDelay,
         })}
       >
-        <div className="flex justify-between w-full md:mb-8 mb-5 items-center">
-          <RxKeyboard size={40} className="text-tealGreen md:block hidden" />
-          <RxKeyboard size={35} className="text-tealGreen md:hidden block" />
+        <div className="mb-5 flex w-full items-center justify-between md:mb-8">
+          <RxKeyboard size={40} className="hidden text-tealGreen md:block" />
+          <RxKeyboard size={35} className="block text-tealGreen md:hidden" />
           <ProjectLinks
             githubUrl={project.githubUrl}
             demoUrl={project.demoUrl}
@@ -65,16 +65,16 @@ const ProjectItem = ({ project, delay }: ProjectItemProps) => {
             target="_blank"
             rel="noreferrer"
             className={cn(
-              'font-semibold md:text-xl text-lg transition duration-150',
-              isHovered ? 'text-tealGreen' : 'dark:text-gray-300 text-black',
+              'text-lg font-semibold transition duration-150 md:text-xl',
+              isHovered ? 'text-tealGreen' : 'text-black dark:text-gray-300',
             )}
           >
             {project.title}
           </Link>
-          <p className="md:text-sm text-[13px] mb-4 dark:text-gray-300 text-black">
+          <p className="mb-4 text-[13px] text-black dark:text-gray-300 md:text-sm">
             {project.description}
           </p>
-          <div className="flex md:gap-x-3 md:gap-y-2 gap-y-2 gap-x-3 md:text-base text-[13px] flex-wrap">
+          <div className="flex flex-wrap gap-x-3 gap-y-2 text-[13px] md:gap-x-3 md:gap-y-2 md:text-base">
             {project.technologies.map((tech) => (
               <p key={tech} className="text-sm text-gray-400">
                 {tech}

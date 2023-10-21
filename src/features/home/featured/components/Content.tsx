@@ -8,21 +8,21 @@ type ContentProps = {
 
 const Content = ({ project }: ContentProps) => {
   return (
-    <div className="xl:w-1/2 lg:w-8/12 md:w-11/12 w-full flex flex-col justify-start items-start">
-      <p className="text-tealGreen lg:text-lg text-sm">Featured Project</p>
+    <div className="flex w-full flex-col items-start justify-start md:w-11/12 lg:w-8/12 xl:w-1/2">
+      <p className="text-sm text-tealGreen lg:text-lg">Featured Project</p>
       <Link
         href={project.demoUrl}
-        className="font-semibold dark:text-gray-300 text-black lg:text-2xl text-xl md:mb-5 mb-3 mt-1.5"
+        className="mb-3 mt-1.5 text-xl font-semibold text-black dark:text-gray-300 md:mb-5 lg:text-2xl"
         target="_blank"
         rel="noreferrer"
         aria-label={project.title}
       >
         {project.title}
       </Link>
-      <div className="rounded-sm md:mb-3 mb-5 dark:text-gray-400 text-black break-words md:text-base text-sm">
+      <div className="mb-5 break-words rounded-sm text-sm text-black dark:text-gray-400 md:mb-3 md:text-base">
         <p>{project.description}</p>
       </div>
-      <div className="flex md:gap-x-4 md:gap-y-0 gap-y-2 gap-x-3 md:mb-4 mb-5 md:text-base text-sm flex-wrap">
+      <div className="mb-5 flex flex-wrap gap-x-3 gap-y-2 text-sm md:mb-4 md:gap-x-4 md:gap-y-0 md:text-base">
         {project.technologies.map((tech) => (
           <p key={tech} className="text-sm text-gray-400">
             {tech}

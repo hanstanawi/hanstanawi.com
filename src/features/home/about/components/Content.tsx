@@ -3,8 +3,8 @@ import SkillSection from './SkillSection';
 
 const Content = () => {
   return (
-    <div className="lg:w-1/2 md:w-11/12 w-full">
-      <div className="flex flex-col gap-y-3 dark:text-gray-400 text-gray-500 md:text-base text-sm">
+    <div className="w-full md:w-11/12 lg:w-1/2">
+      <div className="flex flex-col gap-y-3 text-sm text-gray-500 dark:text-gray-400 md:text-base">
         <p>
           Hey there! I&apos;m Hans, a full stack software engineer who enjoys
           building things that live on the internet. I love working in the realm

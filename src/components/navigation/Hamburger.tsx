@@ -12,7 +12,7 @@ const Hamburger = ({ isOpen, onToggleOpen, isInView }: HamburgerProps) => {
   return (
     <>
       <div
-        className="lg:hidden flex items-center gap-x-6 z-50"
+        className="z-50 flex items-center gap-x-6 lg:hidden"
         style={animateInViewElement(isInView, {
           direction: 'translateY(-20px)',
           speed: 0.3,
@@ -22,7 +22,7 @@ const Hamburger = ({ isOpen, onToggleOpen, isInView }: HamburgerProps) => {
         <DarkModeToggle />
         <div
           className={cn(
-            'nav-icon absolute align text-3xl',
+            'nav-icon align absolute text-3xl',
             !isOpen ? '' : 'open',
           )}
           onClick={onToggleOpen}
