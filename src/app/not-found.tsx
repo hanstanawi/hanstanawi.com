@@ -6,7 +6,7 @@ const NotFoundPage = () => {
   return (
     <div className="bg-white font-basic dark:bg-darkV2 lg:scroll-smooth">
       <main>
-        <SectionLayout>
+        <SectionLayout id="not-found">
           <div className="flex min-h-[90vh] flex-col items-center justify-center md:min-h-[100vh]">
             <h1 className="text-[132px] font-semibold text-black dark:text-gray-300 md:text-[182px]">
               404

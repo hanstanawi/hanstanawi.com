@@ -12,29 +12,27 @@ const Projects = () => {
   const isInView = useInView(ref, { amount: 0.1, once: true });
 
   return (
-    <section id="project" ref={ref}>
-      <SectionLayout>
-        <Parallax>
-          <div className="flex w-full flex-col justify-center">
-            {/* TITLE */}
-            <div
-              className="mb-10 flex items-center justify-center"
-              style={animateInViewElement(isInView, {
-                direction: 'transformY(30px)',
-                speed: 0.3,
-              })}
-            >
-              <h1 className="text-center text-xl font-semibold text-black dark:text-gray-300 md:text-2xl">
-                Other Noteworthy Projects
-              </h1>
-            </div>
-            <div className="flex flex-col items-center justify-center">
-              <ProjectsList />
-            </div>
+    <SectionLayout id="project" forwardedRef={ref}>
+      <Parallax>
+        <div className="flex w-full flex-col justify-center">
+          {/* TITLE */}
+          <div
+            className="mb-10 flex items-center justify-center"
+            style={animateInViewElement(isInView, {
+              direction: 'transformY(30px)',
+              speed: 0.3,
+            })}
+          >
+            <h1 className="text-center text-xl font-semibold text-black dark:text-gray-300 md:text-2xl">
+              Other Noteworthy Projects
+            </h1>
           </div>
-        </Parallax>
-      </SectionLayout>
-    </section>
+          <div className="flex flex-col items-center justify-center">
+            <ProjectsList />
+          </div>
+        </div>
+      </Parallax>
+    </SectionLayout>
   );
 };
 

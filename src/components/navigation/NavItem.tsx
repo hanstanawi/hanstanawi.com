@@ -1,5 +1,5 @@
 import { animateInViewElement } from 'lib/animation.lib';
-import { Link as SmoothScrollLink } from 'react-scroll';
+import Link from 'next/link';
 
 type NavItemProps = {
   isInView: boolean;
@@ -18,16 +18,13 @@ const NavItem = ({ title, link, isInView, delay }: NavItemProps) => {
         direction: 'translateY(-20px)',
       })}
     >
-      <SmoothScrollLink
-        to={link}
-        smooth={true}
-        duration={700}
-        offset={-60}
+      <Link
         className="border-b-[1.5px] border-transparent pb-1 text-black
          transition duration-300 hover:border-black dark:text-gray-300 dark:hover:border-tealGreen dark:hover:text-tealGreen"
+        href={link}
       >
         {title}
-      </SmoothScrollLink>
+      </Link>
     </li>
   );
 };
