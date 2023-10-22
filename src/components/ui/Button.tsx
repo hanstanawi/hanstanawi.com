@@ -1,15 +1,15 @@
-import { ReactNode } from 'react';
+import { type ButtonHTMLAttributes, type PropsWithChildren } from 'react';
 import { cn } from 'lib/utils.lib';
 
-type ButtonProps = {
-  children: ReactNode;
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   sizeClasses: string;
-  onClick?:
-    | ((event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void)
-    | undefined;
 };
 
-const Button = ({ children, sizeClasses, onClick }: ButtonProps) => {
+const Button = ({
+  children,
+  sizeClasses,
+  ...props
+}: PropsWithChildren<ButtonProps>) => {
   return (
     <button
       className={cn(
@@ -19,7 +19,7 @@ const Button = ({ children, sizeClasses, onClick }: ButtonProps) => {
         sizeClasses,
       )}
       role="button"
-      onClick={onClick}
+      {...props}
     >
       {children}
     </button>
