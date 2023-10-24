@@ -29,7 +29,7 @@ jobs:
         run: corepack enable
 
       - name: Update Yarn
-        run: yarn set version stable
+        run: yarn set version 3.x
 
       - name: Install dependencies
         run: yarn install --immutable
