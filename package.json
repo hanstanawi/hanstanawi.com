@@ -57,7 +57,7 @@
     "@types/gtag.js": "^0.0.18",
     "@types/jest": "^29.5.8",
     "@types/node": "^20.8.9",
-    "@types/react": "^18.2.35",
+    "@types/react": "^18.2.38",
     "@types/react-dom": "^18.2.15",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.53.0",
