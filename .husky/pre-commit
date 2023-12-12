@@ -5,7 +5,7 @@ echo 'Styling your project before committing'
 echo 'please be patient, this may take a while...'
  
 # Check ESLint Standards
-yarn lint ||
+pnpm lint ||
 (
     echo 'you have a problem in your code. Check linter
           Run yarn lint, add changes and try commit again.';
@@ -14,4 +14,4 @@ yarn lint ||
  
 echo '🎉 No error found: committing this now.... ✨🚀🏄‍♂️🍻'
  
-yarn lint-staged
+pnpm lint-staged
