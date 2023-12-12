@@ -19,23 +19,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4.1.1
 
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v4.0.0
+      - name: Install PNPM
+        uses: pnpm/action-setup@v2
         with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'yarn'
+          version: 8.x
 
       - name: Enable Corepack
         run: corepack enable
 
-      - name: Update Yarn
-        run: yarn set version 3.x
-
       - name: Install dependencies
-        run: yarn install --immutable
+        run: pnpm install --frozen-lockfile
 
       - name: Build project
-        run: yarn build
+        run: pnpm build
 
       - name: Run Tests
-        run: yarn test:ci
+        run: pnpm test:ci

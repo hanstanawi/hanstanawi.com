@@ -2,10 +2,9 @@
   "name": "hanstanawi.com",
   "version": "1.4.0",
   "private": true,
-  "packageManager": "yarn@3.6.4",
   "engines": {
     "node": ">= 18.x",
-    "yarn": "3.6.x"
+    "pnpm": ">= 8.x"
   },
   "description": "Personal website of Hans Tanawi",
   "keywords": [
