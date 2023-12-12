@@ -2,6 +2,22 @@ import { Project } from 'types/projects.type';
 
 export const otherProjects: Omit<Project, 'imageSrc'>[] = [
   {
+    id: 'milktab',
+    title: 'milktab',
+    description: `milktab is a supplement pill designed for lactose-intolerant people to digest dairy better. Built with Next 13, TypeScript, and TailwindCSS with Shopify API integration.`,
+    githubUrl: null,
+    demoUrl: 'https://milktab.co',
+    technologies: ['Next.js', 'TypeScript', 'TailwindCSS'],
+  },
+  {
+    id: 'nudge',
+    title: 'Nudge',
+    description: `Nudge is a comprehensive supplement to treat irritable bowel syndrome (IBS). Built with React, Next.js, TypeScript, and TailwindCSS with Stripe payment.`,
+    githubUrl: null,
+    demoUrl: 'https://nudgehealth.co',
+    technologies: ['Next.js', 'TypeScript', 'TailwindCSS'],
+  },
+  {
     id: 'filmseeker-app',
     title: 'FilmSeeker',
     description: `FilmSeeker is actually my own fictional startup idea during my second year of college. A movie database web application where users can search for movies, create a watchlist, add ratings to the movies, etc. All movies data are supported by TMDB API.`,
@@ -26,15 +42,15 @@ export const otherProjects: Omit<Project, 'imageSrc'>[] = [
       'MongoDB',
     ],
   },
-  {
-    id: 'linkedout-backend',
-    title: 'LinkedOut Backend API',
-    description:
-      'REST API built with Node.js, Express.js, Typescript and PostgreSQL to allow users to create, update profile as well as their work experiences deployed on Render.com',
-    githubUrl: 'https://github.com/hanstanawi/linkedout-backend',
-    demoUrl: 'https://filmseeker-api.onrender.com',
-    technologies: ['Node.js', 'Express', 'TypeScript', 'PostgreSQL'],
-  },
+  // {
+  //   id: 'linkedout-backend',
+  //   title: 'LinkedOut Backend API',
+  //   description:
+  //     'REST API built with Node.js, Express.js, Typescript and PostgreSQL to allow users to create, update profile as well as their work experiences deployed on Render.com',
+  //   githubUrl: 'https://github.com/hanstanawi/linkedout-backend',
+  //   demoUrl: 'https://filmseeker-api.onrender.com',
+  //   technologies: ['Node.js', 'Express', 'TypeScript', 'PostgreSQL'],
+  // },
   {
     id: 'crypto-tracker',
     title: 'Crypto Tracker',
@@ -44,15 +60,15 @@ export const otherProjects: Omit<Project, 'imageSrc'>[] = [
     demoUrl: 'https://crypto-tracker-beta-three.vercel.app/',
     technologies: ['React', 'JavaScript', 'TailwindCSS'],
   },
-  {
-    id: 'filmseeker-backend',
-    title: 'FilmSeeker Backend API',
-    description:
-      'Backend REST API for FilmSeeker web app. Built with Node.js, Express, and MongoDB with authentication. All movies data is supported by TMDB API.',
-    githubUrl: 'https://github.com/hanstanawi/filmseeker-api',
-    demoUrl: 'https://filmseeker-api.onrender.com',
-    technologies: ['Node.js', 'Express', 'JavaScript', 'MongoDB'],
-  },
+  // {
+  //   id: 'filmseeker-backend',
+  //   title: 'FilmSeeker Backend API',
+  //   description:
+  //     'Backend REST API for FilmSeeker web app. Built with Node.js, Express, and MongoDB with authentication. All movies data is supported by TMDB API.',
+  //   githubUrl: 'https://github.com/hanstanawi/filmseeker-api',
+  //   demoUrl: 'https://filmseeker-api.onrender.com',
+  //   technologies: ['Node.js', 'Express', 'JavaScript', 'MongoDB'],
+  // },
   {
     id: 'lumina-desk',
     title: 'Lumina Desk',

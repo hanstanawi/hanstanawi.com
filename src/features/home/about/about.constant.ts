@@ -1,27 +1,26 @@
 export const LANGUAGES_SKILLS = [
-  'JavaScript / Node.js',
+  'HTML/CSS',
+  'JavaScript/Node.js',
   'TypeScript',
-  'HTML',
-  'CSS/Sass',
+  'Go',
+  'Python',
   'SQL',
-  'Golang',
 ];
 
 export const FRAMEWORKS_SKILLS = [
   'React',
   'Vue',
-  'Express.js',
-  'NestJS',
-  'TailwindCSS',
   'Redux',
+  'Next.js',
+  'Tailwind',
+  'Nest.js',
 ];
 
 export const TOOLS_SKILLS = [
+  'Git / GitHub',
   'Docker',
-  'Postman',
-  'Bash',
-  'Git / Github',
-  'Figma',
+  'GitHub Actions',
+  'AWS',
   'Linux',
 ];
 
@@ -29,4 +28,4 @@ export const SKILLS = {
   LANGUAGES: LANGUAGES_SKILLS,
   FRAMEWORKS: FRAMEWORKS_SKILLS,
   TOOLS: TOOLS_SKILLS,
-};
+} as const;
