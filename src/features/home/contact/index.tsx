@@ -1,12 +1,11 @@
 'use client';
-import Link from 'next/link';
-import { useRef } from 'react';
-import { useInView } from 'framer-motion';
-
-import SectionLayout from 'components/layouts/SectionLayout';
 import Parallax from 'components/layouts/Parallax';
-import Circles from 'public/assets/circles.svg';
+import SectionLayout from 'components/layouts/SectionLayout';
+import { useInView } from 'framer-motion';
 import { animateInViewElement } from 'lib/animation.lib';
+import Link from 'next/link';
+import Circles from 'public/assets/circles.svg';
+import { useRef } from 'react';
 
 const Contact = () => {
   const ref = useRef<HTMLDivElement | null>(null);

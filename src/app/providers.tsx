@@ -1,6 +1,6 @@
 'use client';
-import { useEffect, type PropsWithChildren } from 'react';
 import DarkModeContextProvider from 'context/DarkModeContext';
+import { type PropsWithChildren, useEffect } from 'react';
 
 const Providers = ({ children }: PropsWithChildren) => {
   useEffect(() => {

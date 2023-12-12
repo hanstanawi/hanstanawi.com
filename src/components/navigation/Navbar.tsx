@@ -1,22 +1,22 @@
 'use client';
 
-import Link from 'next/link';
-import { AnimatePresence, useCycle } from 'framer-motion';
-import { useEffect, useRef } from 'react';
-import { useInView } from 'framer-motion';
-
 import Overlay from 'components/layouts/Overlay';
-import Logo from 'public/icons/ht-logo.svg';
-import Button from '../ui/Button';
-import Hamburger from './Hamburger';
 import DarkModeToggle from 'components/ui/DarkModeToggle';
-import NavItem from './NavItem';
-import SideNavbar from './SideNavbar';
+import { LINKS } from 'constants/navigation.constant';
+import { AnimatePresence, useCycle } from 'framer-motion';
+import { useInView } from 'framer-motion';
 import useScrollLock from 'hooks/use-scroll-lock';
 import useScrollVisible from 'hooks/use-scroll-visible';
-import { LINKS } from 'constants/navigation.constant';
 import { animateInViewElement } from 'lib/animation.lib';
 import { cn } from 'lib/utils.lib';
+import Link from 'next/link';
+import Logo from 'public/icons/ht-logo.svg';
+import { useEffect, useRef } from 'react';
+
+import Button from '../ui/Button';
+import Hamburger from './Hamburger';
+import NavItem from './NavItem';
+import SideNavbar from './SideNavbar';
 
 const Navbar = () => {
   const [open, cycleOpen] = useCycle(false, true);

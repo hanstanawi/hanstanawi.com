@@ -1,5 +1,5 @@
-import FeaturedProject from './ProjectItem';
 import { projects } from '../featured.constant';
+import FeaturedProject from './ProjectItem';
 
 const ProjectsList = () => {
   return (

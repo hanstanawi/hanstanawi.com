@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import Button from 'components/ui/Button';
 import SectionLayout from 'components/layouts/SectionLayout';
+import Button from 'components/ui/Button';
+import Link from 'next/link';
 
 const NotFoundPage = () => {
   return (

@@ -1,12 +1,11 @@
+import ProjectLinks from 'components/links/ProjectLinks';
+import { motion, useInView } from 'framer-motion';
+import useMediaQuery from 'hooks/use-media-query';
+import { animateInViewElement } from 'lib/animation.lib';
+import { cn } from 'lib/utils.lib';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { RxKeyboard } from 'react-icons/rx';
-import { motion, useInView } from 'framer-motion';
-
-import useMediaQuery from 'hooks/use-media-query';
-import ProjectLinks from 'components/links/ProjectLinks';
-import { animateInViewElement } from 'lib/animation.lib';
-import { cn } from 'lib/utils.lib';
 import type { Project } from 'types/projects.type';
 
 type ProjectItemProps = {

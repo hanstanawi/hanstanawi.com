@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import Image from 'next/legacy/image';
-import { Project } from 'types/projects.type';
 import { cn } from 'lib/utils.lib';
+import Image from 'next/legacy/image';
+import Link from 'next/link';
+import { Project } from 'types/projects.type';
 
 type ProjectImageProps = {
   isOdd: boolean;

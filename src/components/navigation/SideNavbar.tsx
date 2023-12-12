@@ -1,9 +1,8 @@
 'use client';
-import Link from 'next/link';
-import { motion } from 'framer-motion';
-
 import Button from 'components/ui/Button';
 import { LINKS } from 'constants/navigation.constant';
+import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 type SideNavbarProps = {
   onClickClose: () => void;

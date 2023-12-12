@@ -1,12 +1,12 @@
 'use client';
-import { useRef } from 'react';
-import { useInView } from 'framer-motion';
-
-import Content from './components/Content';
 import Parallax from 'components/layouts/Parallax';
 import SectionLayout from 'components/layouts/SectionLayout';
-import ProfileImage from './components/ProfileImage';
+import { useInView } from 'framer-motion';
 import { animateInViewElement } from 'lib/animation.lib';
+import { useRef } from 'react';
+
+import Content from './components/Content';
+import ProfileImage from './components/ProfileImage';
 
 const About = () => {
   const ref = useRef<HTMLDivElement>(null);

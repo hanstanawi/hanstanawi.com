@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 
 type ProjectLinksProps = {
   githubUrl: string | null;

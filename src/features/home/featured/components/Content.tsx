@@ -1,5 +1,5 @@
-import Link from 'next/link';
 import ProjectLinks from 'components/links/ProjectLinks';
+import Link from 'next/link';
 import { Project } from 'types/projects.type';
 
 type ContentProps = {

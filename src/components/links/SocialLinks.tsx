@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FaGithub, FaInstagram, FaLinkedin, FaDiscord } from 'react-icons/fa';
+import { FaDiscord, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const SOCIAL_LINKS = {
   GITHUB: 'https://github.com/hanstanawi',
