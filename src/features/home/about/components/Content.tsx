@@ -1,4 +1,5 @@
 import Link from 'next/link';
+
 import SkillSection from './SkillSection';
 
 const Content = () => {

@@ -1,8 +1,8 @@
+import { EMAIl_ADDRESS } from 'constants/contact.constant';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 
 import SocialLinks from '../links/SocialLinks';
-import { EMAIl_ADDRESS } from 'constants/contact.constant';
 
 const REPO_LINK = 'https://github.com/hanstanawi/hanstanawi.com';
 

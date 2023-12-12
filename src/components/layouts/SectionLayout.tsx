@@ -1,5 +1,5 @@
 import { cn } from 'lib/utils.lib';
-import { type RefObject, type PropsWithChildren } from 'react';
+import { type PropsWithChildren, type RefObject } from 'react';
 
 type SectionLayoutProps = {
   id: string;

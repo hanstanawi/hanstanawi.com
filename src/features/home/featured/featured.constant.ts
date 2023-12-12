@@ -12,7 +12,7 @@ export const projects: Project[] = [
   },
   {
     id: 'order-book-app',
-    title: 'Order Book App',
+    title: 'Order Book',
     description:
       'Order Book web application using Websocket built with React, TypeScript, and Redux Toolkit to view realtime orderbook bid and ask price data.',
     githubUrl: 'https://github.com/hanstanawi/order-book-app',
@@ -28,23 +28,5 @@ export const projects: Project[] = [
     demoUrl: 'https://work-experience-app.vercel.app',
     technologies: ['React', 'TypeScript', 'Redux', 'TailwindCSS', 'Vite'],
     imageSrc: '/images/linkedout_app.png',
-  },
-  {
-    id: 'milktab',
-    title: 'milktab',
-    description: `milktab is a supplement pill designed for lactose-intolerant people to digest dairy better. Built with Next 13, TypeScript, and TailwindCSS with Shopify API integration.`,
-    githubUrl: null,
-    demoUrl: 'https://milktab.co',
-    technologies: ['Next.js', 'TypeScript', 'TailwindCSS'],
-    imageSrc: '/images/milktab.png',
-  },
-  {
-    id: 'nudge',
-    title: 'Nudge',
-    description: `Nudge is a comprehensive supplement to treat irritable bowel syndrome (IBS). Built with React, Next.js, TypeScript, and TailwindCSS with Stripe payment.`,
-    githubUrl: null,
-    demoUrl: 'https://nudgehealth.co',
-    technologies: ['Next.js', 'TypeScript', 'TailwindCSS'],
-    imageSrc: '/images/nudge.png',
   },
 ];

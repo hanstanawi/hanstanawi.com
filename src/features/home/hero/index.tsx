@@ -1,14 +1,14 @@
 'use client';
-import { useRef } from 'react';
-import { useInView } from 'framer-motion';
-import Button from 'components/ui/Button';
+import Parallax from 'components/layouts/Parallax';
 import SectionLayout from 'components/layouts/SectionLayout';
 import SocialLinks from 'components/links/SocialLinks';
-import Circles from 'public/assets/circles.svg';
-import Parallax from 'components/layouts/Parallax';
+import Button from 'components/ui/Button';
+import { useInView } from 'framer-motion';
 import useMediaQuery from 'hooks/use-media-query';
 import { animateInViewElement } from 'lib/animation.lib';
 import Link from 'next/link';
+import Circles from 'public/assets/circles.svg';
+import { useRef } from 'react';
 
 const SUBTITLE = `I'm a full stack engineer specializing building things for web
 and based in Taipei, Taiwan`;

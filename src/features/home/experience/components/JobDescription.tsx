@@ -1,7 +1,8 @@
-import Link from 'next/link';
 import { format } from 'date-fns';
-import { Experience } from '../experience.type';
 import { cn } from 'lib/utils.lib';
+import Link from 'next/link';
+
+import { Experience } from '../experience.type';
 
 type JobDescriptionProps = {
   experience: Experience;

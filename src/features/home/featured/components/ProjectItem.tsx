@@ -1,11 +1,11 @@
-import { useRef } from 'react';
 import { useInView } from 'framer-motion';
+import { animateInViewElement } from 'lib/animation.lib';
+import { cn } from 'lib/utils.lib';
+import { useRef } from 'react';
+import type { Project } from 'types/projects.type';
 
 import ProjectContent from './Content';
 import ProjectImage from './ProjectImage';
-import { animateInViewElement } from 'lib/animation.lib';
-import { cn } from 'lib/utils.lib';
-import type { Project } from 'types/projects.type';
 
 type ProjectItemProps = {
   project: Project;

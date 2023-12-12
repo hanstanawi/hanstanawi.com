@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from 'framer-motion';
-import { RiSunFill, RiMoonFill } from 'react-icons/ri';
 import useDarkMode from 'hooks/use-dark-mode';
+import { RiMoonFill, RiSunFill } from 'react-icons/ri';
 
 const DarkModeToggle = () => {
   const { isDark, toggleMode } = useDarkMode();

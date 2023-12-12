@@ -1,7 +1,7 @@
 'use client';
-import { PropsWithChildren } from 'react';
 import Footer from 'components/navigation/Footer';
 import Navbar from 'components/navigation/Navbar';
+import { PropsWithChildren } from 'react';
 
 const NavigationLayout = ({ children }: PropsWithChildren) => {
   return (

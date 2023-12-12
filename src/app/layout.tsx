@@ -1,9 +1,18 @@
-import { Metadata } from 'next';
-import { PropsWithChildren } from 'react';
+import './globals.css';
+
 import { Analytics } from '@vercel/analytics/react';
 import NavigationLayout from 'components/layouts/NavigationLayout';
+import type { Metadata, Viewport } from 'next';
+import { PropsWithChildren } from 'react';
+
 import Providers from './providers';
-import './globals.css';
+
+export const viewport: Viewport = {
+  minimumScale: 1,
+  initialScale: 1,
+  width: 'device-width',
+  viewportFit: 'cover',
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://hanstanawi.com'),
@@ -25,12 +34,6 @@ export const metadata: Metadata = {
     },
     locale: 'en_US',
     type: 'website',
-  },
-  viewport: {
-    minimumScale: 1,
-    initialScale: 1,
-    width: 'device-width',
-    viewportFit: 'cover',
   },
   twitter: {
     title: 'Hans Tanawi',

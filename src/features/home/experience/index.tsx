@@ -1,10 +1,11 @@
 'use client';
-import { useInView } from 'framer-motion';
-import { useRef } from 'react';
-import SectionLayout from 'components/layouts/SectionLayout';
-import ExperienceTimeline from './components/ExperienceTimeline';
 import Parallax from 'components/layouts/Parallax';
+import SectionLayout from 'components/layouts/SectionLayout';
+import { useInView } from 'framer-motion';
 import { animateInViewElement } from 'lib/animation.lib';
+import { useRef } from 'react';
+
+import ExperienceTimeline from './components/ExperienceTimeline';
 
 const Experience = () => {
   const ref = useRef<HTMLDivElement | null>(null);

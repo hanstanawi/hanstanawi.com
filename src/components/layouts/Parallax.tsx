@@ -1,11 +1,11 @@
-import { useState, useRef, useLayoutEffect, ReactNode, useEffect } from 'react';
 import {
   motion,
-  useScroll,
-  useTransform,
-  useSpring,
   useReducedMotion,
+  useScroll,
+  useSpring,
+  useTransform,
 } from 'framer-motion';
+import { ReactNode, useEffect, useLayoutEffect, useRef, useState } from 'react';
 
 type ParallaxProps = {
   children: ReactNode;

@@ -1,5 +1,5 @@
-import { type ButtonHTMLAttributes, type PropsWithChildren } from 'react';
 import { cn } from 'lib/utils.lib';
+import { type ButtonHTMLAttributes, type PropsWithChildren } from 'react';
 
 type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
   sizeClasses: string;

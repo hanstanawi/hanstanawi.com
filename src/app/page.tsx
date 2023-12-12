@@ -1,5 +1,5 @@
-import dynamic from 'next/dynamic';
 import Hero from 'features/home/hero';
+import dynamic from 'next/dynamic';
 
 const About = dynamic(() => import('features/home/about'));
 const Experience = dynamic(() => import('features/home/experience'));

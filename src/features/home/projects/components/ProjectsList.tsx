@@ -1,7 +1,8 @@
-import { otherProjects } from 'features/home/projects/projects.constant';
-import ProjectItem from './ProjectItem';
 import Button from 'components/ui/Button';
+import { otherProjects } from 'features/home/projects/projects.constant';
 import { useMemo, useState } from 'react';
+
+import ProjectItem from './ProjectItem';
 
 function calculateDelay(index: number): number {
   return (index + 2) * 100; // add 100ms

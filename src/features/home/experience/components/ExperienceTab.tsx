@@ -1,7 +1,8 @@
-import { useState } from 'react';
-import JobDescription from './JobDescription';
-import { EXPERIENCES } from '../experience.constant';
 import { cn } from 'lib/utils.lib';
+import { useState } from 'react';
+
+import { EXPERIENCES } from '../experience.constant';
+import JobDescription from './JobDescription';
 
 const ExperienceTab = () => {
   const [id, setId] = useState<string>(EXPERIENCES[0].id);

@@ -5,5 +5,9 @@
     "plugin:jest-dom/recommended",
     "prettier"
   ],
-  "plugins": ["simple-import-sort", "prettier"]
+  "plugins": ["simple-import-sort", "prettier"],
+  "rules": {
+    "simple-import-sort/imports": 1,
+    "simple-import-sort/exports": 1
+  }
 }
