@@ -10,27 +10,34 @@
 <br>
 
 ![demo](public/images/demo.png)
+
 ## 🛠 Installation and Set Up
+
 Make sure <a href="https://www.nodejs.org" target="_blank">Node.js</a> is installed.
 
 1. Install dependencies
+
    ```sh
-   yarn
+   pnpm install
    ```
+
+   Learn more about installing [pnpm here](https://pnpm.io/installation)
+
 2. Start the development server
    ```sh
-   yarn dev
+   pnpm dev
    ```
 
 ## 🚀 Building and Running for Production
+
 1. Generate a full static production build
 
    ```sh
-   yarn build
+   pnpm build
    ```
 
 2. Preview the site
 
    ```sh
-   yarn start
+   pnpm start
    ```
