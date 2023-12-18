@@ -57,7 +57,7 @@
     "@types/jest": "^29.5.8",
     "@types/node": "^20.8.9",
     "@types/react": "^18.2.45",
-    "@types/react-dom": "^18.2.15",
+    "@types/react-dom": "^18.2.18",
     "autoprefixer": "^10.4.16",
     "eslint": "^8.56.0",
     "eslint-config-next": "^14.0.2",
