@@ -1,6 +1,7 @@
 import './globals.css';
 
 import { Analytics } from '@vercel/analytics/react';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import NavigationLayout from 'components/layouts/NavigationLayout';
 import type { Metadata, Viewport } from 'next';
 import { PropsWithChildren } from 'react';
@@ -67,6 +68,7 @@ const RootLayout = ({ children }: PropsWithChildren) => {
         <Providers>
           <NavigationLayout>{children}</NavigationLayout>
           <Analytics />
+          <SpeedInsights />
         </Providers>
       </body>
     </html>
