@@ -30,7 +30,7 @@
     "format": "prettier --write \"./src/**/*.{ts,tsx}\"",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
-    "postinstall": "husky install",
+    "postinstall": "husky",
     "test": "jest",
     "test:ci": "jest --ci",
     "test:watch": "jest --watch"

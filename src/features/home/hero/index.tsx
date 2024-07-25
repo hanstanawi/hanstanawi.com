@@ -11,7 +11,7 @@ import Circles from 'public/assets/circles.svg';
 import { useRef } from 'react';
 
 const SUBTITLE = `I'm a full stack engineer specializing building things for web
-and based in Taipei, Taiwan`;
+and based in Rotterdam, Netherlands`;
 
 const Hero = () => {
   const ref = useRef<HTMLDivElement | null>(null);
