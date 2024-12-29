@@ -94,8 +94,8 @@ importers:
         specifier: ^12.1.1
         version: 12.1.1(eslint@8.57.1)
       eslint-plugin-testing-library:
-        specifier: ^7.0.0
-        version: 7.0.0(eslint@8.57.1)(typescript@5.7.2)
+        specifier: ^7.1.1
+        version: 7.1.1(eslint@8.57.1)(typescript@5.7.2)
       husky:
         specifier: ^9.1.7
         version: 9.1.7
@@ -2327,9 +2327,9 @@ packages:
     peerDependencies:
       eslint: '>=5.0.0'
 
-  eslint-plugin-testing-library@7.0.0:
-    resolution: {integrity: sha512-Bwrn5Qi08Lf5Huv4ZGDNYxwkFLAyGQIPB9lC0ALlojymP32aKsSxWnccP1NvIcI5vMhkENg4Y5Td/Q9/tLYmGQ==}
-    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0, npm: '>=9.8.1'}
+  eslint-plugin-testing-library@7.1.1:
+    resolution: {integrity: sha512-nszC833aZPwB6tik1nMkbFqmtgIXTT0sfJEYs0zMBKMlkQ4to2079yUV96SvmLh00ovSBJI4pgcBC1TiIP8mXg==}
+    engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0, pnpm: ^9.14.0}
     peerDependencies:
       eslint: ^8.57.0 || ^9.0.0
 
@@ -4474,7 +4474,7 @@ snapshots:
       '@babel/core': 7.23.6
       '@babel/helper-compilation-targets': 7.23.6
       '@babel/helper-plugin-utils': 7.22.5
-      debug: 4.3.6
+      debug: 4.4.0
       lodash.debounce: 4.0.8
       resolve: 1.22.8
     transitivePeerDependencies:
@@ -5146,7 +5146,7 @@ snapshots:
       '@babel/helper-split-export-declaration': 7.22.6
       '@babel/parser': 7.23.6
       '@babel/types': 7.23.6
-      debug: 4.3.6
+      debug: 4.4.0
       globals: 11.12.0
     transitivePeerDependencies:
       - supports-color
@@ -5918,7 +5918,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 8.16.0
       '@typescript-eslint/visitor-keys': 8.16.0
-      debug: 4.3.6
+      debug: 4.4.0
       fast-glob: 3.3.2
       is-glob: 4.0.3
       minimatch: 9.0.5
@@ -5933,7 +5933,7 @@ snapshots:
     dependencies:
       '@typescript-eslint/types': 8.7.0
       '@typescript-eslint/visitor-keys': 8.7.0
-      debug: 4.3.6
+      debug: 4.4.0
       fast-glob: 3.3.2
       is-glob: 4.0.3
       minimatch: 9.0.5
@@ -6016,7 +6016,7 @@ snapshots:
 
   agent-base@6.0.2:
     dependencies:
-      debug: 4.3.6
+      debug: 4.4.0
     transitivePeerDependencies:
       - supports-color
 
@@ -6969,7 +6969,7 @@ snapshots:
     dependencies:
       eslint: 8.57.1
 
-  eslint-plugin-testing-library@7.0.0(eslint@8.57.1)(typescript@5.7.2):
+  eslint-plugin-testing-library@7.1.1(eslint@8.57.1)(typescript@5.7.2):
     dependencies:
       '@typescript-eslint/scope-manager': 8.16.0
       '@typescript-eslint/utils': 8.16.0(eslint@8.57.1)(typescript@5.7.2)
@@ -7560,7 +7560,7 @@ snapshots:
 
   istanbul-lib-source-maps@4.0.1:
     dependencies:
-      debug: 4.3.6
+      debug: 4.4.0
       istanbul-lib-coverage: 3.2.2
       source-map: 0.6.1
     transitivePeerDependencies:
