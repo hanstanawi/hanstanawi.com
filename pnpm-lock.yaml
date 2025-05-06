@@ -12,8 +12,8 @@ importers:
         specifier: ^1.5.0
         version: 1.5.0(next@15.3.1(@babel/core@7.23.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       '@vercel/speed-insights':
-        specifier: ^1.1.0
-        version: 1.1.0(next@15.3.1(@babel/core@7.23.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+        specifier: ^1.2.0
+        version: 1.2.0(next@15.3.1(@babel/core@7.23.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -148,6 +148,10 @@ packages:
     resolution: {integrity: sha512-RJlIHRueQgwWitWgF8OdFYGZX328Ax5BCemNGlqHfplnRT9ESi8JkFlvaVYbS+UubVY6dpv87Fs2u5M29iNFVQ==}
     engines: {node: '>=6.9.0'}
 
+  '@babel/code-frame@7.27.1':
+    resolution: {integrity: sha512-cjQ7ZlQ0Mv3b47hABuTevyTuYN4i+loJKGeV9flcCgIK37cCXRh+L1bd3iBHlynerhQ7BhCkn2BPbQUL+rGqFg==}
+    engines: {node: '>=6.9.0'}
+
   '@babel/compat-data@7.23.5':
     resolution: {integrity: sha512-uU27kfDRlhfKl+w1U6vp16IuvSLtjAxdArVXPa9BvLkrr7CYIsxH5adpHObeAGY/41+syctUWOZ140a2Rvkgjw==}
     engines: {node: '>=6.9.0'}
@@ -257,6 +261,10 @@ packages:
 
   '@babel/helper-validator-identifier@7.25.9':
     resolution: {integrity: sha512-Ed61U6XJc3CVRfkERJWDz4dJwKe7iLmmJsbOGu9wSloNSFttHV0I8g6UAgb7qnK5ly5bGLPd4oXZlxCdANBOWQ==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/helper-validator-identifier@7.27.1':
+    resolution: {integrity: sha512-D2hP9eA+Sqx1kBZgzxZh0y1trbuU+JoDkiEwqhQ36nodYqJwyEIhPSdMNd7lOm/4io72luTPWH20Yda0xOuUow==}
     engines: {node: '>=6.9.0'}
 
   '@babel/helper-validator-option@7.23.5':
@@ -761,6 +769,10 @@ packages:
 
   '@babel/runtime@7.27.0':
     resolution: {integrity: sha512-VtPOkrdPHZsKc/clNqyi9WUA8TINkZ4cGk63UUE3u4pmB2k+ZMQRDuIOagv8UVd6j7k0T3+RRIb7beKTebNbcw==}
+    engines: {node: '>=6.9.0'}
+
+  '@babel/runtime@7.27.1':
+    resolution: {integrity: sha512-1x3D2xEk2fRo3PAhwQwu5UubzgiVWSXTBfWpVd2Mx2AzRqJuDJCsgaDVZ7HB5iGzDW1Hl1sWN2mFyKjmR9uAog==}
     engines: {node: '>=6.9.0'}
 
   '@babel/template@7.22.15':
@@ -1568,8 +1580,8 @@ packages:
       vue-router:
         optional: true
 
-  '@vercel/speed-insights@1.1.0':
-    resolution: {integrity: sha512-rAXxuhhO4mlRGC9noa5F7HLMtGg8YF1zAN6Pjd1Ny4pII4cerhtwSG4vympbCl+pWkH7nBS9kVXRD4FAn54dlg==}
+  '@vercel/speed-insights@1.2.0':
+    resolution: {integrity: sha512-y9GVzrUJ2xmgtQlzFP2KhVRoCglwfRQgjyfY607aU0hh0Un6d0OUyrJkjuAlsV18qR4zfoFPs/BiIj9YDS6Wzw==}
     peerDependencies:
       '@sveltejs/kit': ^1 || ^2
       next: '>= 13'
@@ -4570,6 +4582,12 @@ snapshots:
       js-tokens: 4.0.0
       picocolors: 1.1.1
 
+  '@babel/code-frame@7.27.1':
+    dependencies:
+      '@babel/helper-validator-identifier': 7.27.1
+      js-tokens: 4.0.0
+      picocolors: 1.1.1
+
   '@babel/compat-data@7.23.5': {}
 
   '@babel/core@7.23.6':
@@ -4711,6 +4729,8 @@ snapshots:
   '@babel/helper-validator-identifier@7.22.20': {}
 
   '@babel/helper-validator-identifier@7.25.9': {}
+
+  '@babel/helper-validator-identifier@7.27.1': {}
 
   '@babel/helper-validator-option@7.23.5': {}
 
@@ -5301,6 +5321,8 @@ snapshots:
   '@babel/runtime@7.27.0':
     dependencies:
       regenerator-runtime: 0.14.1
+
+  '@babel/runtime@7.27.1': {}
 
   '@babel/template@7.22.15':
     dependencies:
@@ -5935,8 +5957,8 @@ snapshots:
 
   '@testing-library/dom@10.0.0':
     dependencies:
-      '@babel/code-frame': 7.26.2
-      '@babel/runtime': 7.27.0
+      '@babel/code-frame': 7.27.1
+      '@babel/runtime': 7.27.1
       '@types/aria-query': 5.0.4
       aria-query: 5.3.0
       chalk: 4.1.2
@@ -6230,7 +6252,7 @@ snapshots:
       next: 15.3.1(@babel/core@7.23.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
 
-  '@vercel/speed-insights@1.1.0(next@15.3.1(@babel/core@7.23.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)':
+  '@vercel/speed-insights@1.2.0(next@15.3.1(@babel/core@7.23.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)':
     optionalDependencies:
       next: 15.3.1(@babel/core@7.23.6)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
