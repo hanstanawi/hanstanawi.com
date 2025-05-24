@@ -19,8 +19,7 @@ const NavItem = ({ title, link, isInView, delay }: NavItemProps) => {
       })}
     >
       <Link
-        className="border-b-[1.5px] border-transparent pb-1 text-black
-         transition duration-300 hover:border-black dark:text-gray-300 dark:hover:border-tealGreen dark:hover:text-tealGreen"
+        className="border-b-[1.5px] border-transparent pb-1 text-black transition duration-300 hover:border-black dark:text-gray-300 dark:hover:border-tealGreen dark:hover:text-tealGreen"
         href={link}
       >
         {title}

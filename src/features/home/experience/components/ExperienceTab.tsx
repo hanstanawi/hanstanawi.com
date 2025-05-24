@@ -23,8 +23,7 @@ const ExperienceTab = () => {
           <p
             key={experience.company}
             className={cn(
-              `flex h-6 w-32 cursor-pointer items-center justify-center border-l-2 border-gray-200 px-0 py-6 
-              text-center text-gray-500`,
+              `flex h-6 w-32 cursor-pointer items-center justify-center border-l-2 border-gray-200 px-0 py-6 text-center text-gray-500`,
               id === experience.id
                 ? selectedTabClass
                 : 'hover:bg-gray-200 hover:bg-opacity-50 hover:text-black',
