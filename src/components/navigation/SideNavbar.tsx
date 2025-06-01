@@ -33,8 +33,7 @@ const itemVariants = {
 const SideNavbar = ({ onClickClose }: SideNavbarProps) => {
   return (
     <motion.aside
-      className="fixed right-0 top-0 z-40 flex h-screen 
-      max-h-screen w-3/4 flex-col items-center justify-center bg-inherit lg:hidden"
+      className="fixed right-0 top-0 z-40 flex h-screen max-h-screen w-3/4 flex-col items-center justify-center bg-inherit lg:hidden"
       initial={{ width: 0 }}
       animate={{
         width: '75%',
