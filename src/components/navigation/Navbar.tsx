@@ -47,7 +47,7 @@ const Navbar = () => {
           {/* LOGO */}
           <Link href="/#hero" className="cursor-pointer" aria-label="Homepage">
             <div
-              className="flex items-center gap-x-1 "
+              className="flex items-center gap-x-1"
               style={animateInViewElement(isInView, {
                 direction: 'translateY(-1px)',
                 speed: 0.8,

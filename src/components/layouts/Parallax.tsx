@@ -19,7 +19,7 @@ const Parallax = ({
   offset = 50,
   clampInitial,
   clampFinal,
-}: ParallaxProps): JSX.Element => {
+}: ParallaxProps) => {
   const prefersReducedMotion = useReducedMotion();
   const [elementTop, setElementTop] = useState(0);
   const [clientHeight, setClientHeight] = useState(0);

@@ -3,7 +3,7 @@ import { type PropsWithChildren, type RefObject } from 'react';
 
 type SectionLayoutProps = {
   id: string;
-  forwardedRef?: RefObject<HTMLDivElement>;
+  forwardedRef?: RefObject<HTMLDivElement | null>;
   classNames?: string;
 };
 

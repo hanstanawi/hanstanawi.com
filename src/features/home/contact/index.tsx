@@ -35,9 +35,7 @@ const Contact = () => {
             </div>
             <Link
               href={'mailto:hanstanawi@gmail.com'}
-              className="z-50 rounded-md border border-black px-8 py-3 text-sm text-black transition duration-300 dark:border-tealGreen 
-                dark:text-tealGreen md:px-12 md:py-4 md:text-lg md:hover:bg-black md:hover:text-white
-                dark:md:hover:bg-tealGreen dark:md:hover:bg-opacity-20 dark:md:hover:text-white"
+              className="z-50 rounded-md border border-black px-8 py-3 text-sm text-black transition duration-300 dark:border-tealGreen dark:text-tealGreen md:px-12 md:py-4 md:text-lg md:hover:bg-black md:hover:text-white dark:md:hover:bg-tealGreen dark:md:hover:bg-opacity-20 dark:md:hover:text-white"
             >
               Contact Me
             </Link>
